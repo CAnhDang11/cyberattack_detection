@@ -1,0 +1,466 @@
+2026-11-03 19:51:58,313 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:51:58,313 | INFO | START method=baseline case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:51:58,313 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "mlp", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 30, "hidden": 512, "hidden_layers": 4, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "baseline", "mu": 0.01, "n_estimators": 500, "output": "experiments/sklearn_mlp", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:51:58,419 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:51:59,323 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:52:41,394 | INFO | BASELINE FIT | {"step": 30, "train_loss": 0.39260733127593994, "val_loss": 0.4474527835845947, "val_macro_f1": 0.5700772848184058}
+2026-11-03 19:52:41,661 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7420686974687849,
+  "loss": 0.7698660492897034,
+  "per_class": {
+    "Normal": {
+      "precision": 0.9432003811598149,
+      "recall": 0.749054054054054,
+      "f1-score": 0.8349903591226802,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.018709073900841908,
+      "recall": 0.029542097488921712,
+      "f1-score": 0.022909507445589918,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.04452255418863503,
+      "recall": 0.13036020583190394,
+      "f1-score": 0.06637554585152838,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.3674496644295302,
+      "recall": 0.10711665443873808,
+      "f1-score": 0.16587767468282522,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.5688174008407969,
+      "recall": 0.8386633129716133,
+      "f1-score": 0.677872572154656,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.24735397883183066,
+      "recall": 0.4163642362256681,
+      "f1-score": 0.3103405877290053,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.9946299064385761,
+      "recall": 0.9520428170208256,
+      "f1-score": 0.9728705258027833,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.7874713958810069,
+      "recall": 0.7874713958810069,
+      "f1-score": 0.7874713958810069,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.32871536523929473,
+      "recall": 0.6904761904761905,
+      "f1-score": 0.4453924914675768,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.7,
+      "recall": 0.1590909090909091,
+      "f1-score": 0.25925925925925924,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27715,
+      651,
+      3,
+      96,
+      880,
+      7354,
+      16,
+      120,
+      165,
+      0
+    ],
+    [
+      2,
+      20,
+      88,
+      39,
+      523,
+      0,
+      0,
+      5,
+      0,
+      0
+    ],
+    [
+      2,
+      20,
+      76,
+      33,
+      440,
+      2,
+      0,
+      6,
+      4,
+      0
+    ],
+    [
+      34,
+      142,
+      650,
+      438,
+      2681,
+      54,
+      10,
+      35,
+      45,
+      0
+    ],
+    [
+      183,
+      166,
+      633,
+      433,
+      9336,
+      124,
+      54,
+      135,
+      67,
+      1
+    ],
+    [
+      1418,
+      55,
+      171,
+      78,
+      1526,
+      2524,
+      11,
+      72,
+      207,
+      0
+    ],
+    [
+      13,
+      0,
+      5,
+      51,
+      371,
+      93,
+      17966,
+      357,
+      13,
+      2
+    ],
+    [
+      7,
+      15,
+      80,
+      16,
+      575,
+      14,
+      4,
+      2753,
+      32,
+      0
+    ],
+    [
+      10,
+      0,
+      1,
+      7,
+      51,
+      34,
+      1,
+      13,
+      261,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      1,
+      30,
+      5,
+      1,
+      0,
+      0,
+      7
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.5000869720910328,
+  "macro_recall": 0.48601818734798313,
+  "macro_f1-score": 0.4543359919396911,
+  "weighted_precision": 0.8010104087255197,
+  "weighted_recall": 0.7420686974687849,
+  "weighted_f1-score": 0.7572546683760225,
+  "roc_auc_ovr_macro": 0.9471801665066459,
+  "roc_auc_unavailable_reason": null,
+  "method": "baseline",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 42.0712142920238,
+  "evaluation_s": 0.26286833302583545,
+  "model": "mlp",
+  "communication_bytes": null,
+  "train_loss": 0.39260733127593994,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.5700772848184058
+}
+2026-11-03 19:52:41,662 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/sklearn_mlp
+2026-11-03 19:53:22,991 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:53:22,991 | INFO | START method=baseline case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:53:22,991 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "mlp", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 100, "hidden": 512, "hidden_layers": 4, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "baseline", "mu": 0.01, "n_estimators": 500, "output": "experiments/sklearn_mlp", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:53:23,092 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:53:24,029 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:55:44,093 | INFO | BASELINE FIT | {"step": 100, "train_loss": 0.3276090919971466, "val_loss": 0.5797010660171509, "val_macro_f1": 0.5627251346856742}
+2026-11-03 19:55:44,347 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7406354758781519,
+  "loss": 1.4524797201156616,
+  "per_class": {
+    "Normal": {
+      "precision": 0.9205358304070751,
+      "recall": 0.7651891891891892,
+      "f1-score": 0.8357045870476415,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.03377847604084839,
+      "recall": 0.14751286449399656,
+      "f1-score": 0.05496963886225631,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.3425196850393701,
+      "recall": 0.1276595744680851,
+      "f1-score": 0.18599679315873865,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.5876399946026177,
+      "recall": 0.7824290334171757,
+      "f1-score": 0.6711874855513601,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.24490662139219016,
+      "recall": 0.38073243154074565,
+      "f1-score": 0.29807568126049333,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.9919568091670339,
+      "recall": 0.9541624715171427,
+      "f1-score": 0.972692650514545,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.8370057349833987,
+      "recall": 0.7931922196796338,
+      "f1-score": 0.8145102070788662,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.22846781504986402,
+      "recall": 0.6666666666666666,
+      "f1-score": 0.34031060094530724,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.47368421052631576,
+      "recall": 0.20454545454545456,
+      "f1-score": 0.2857142857142857,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      28312,
+      525,
+      6,
+      78,
+      877,
+      6801,
+      28,
+      98,
+      275,
+      0
+    ],
+    [
+      59,
+      0,
+      118,
+      76,
+      401,
+      2,
+      0,
+      20,
+      1,
+      0
+    ],
+    [
+      54,
+      0,
+      86,
+      66,
+      346,
+      3,
+      0,
+      21,
+      7,
+      0
+    ],
+    [
+      88,
+      59,
+      1006,
+      522,
+      2238,
+      51,
+      21,
+      57,
+      46,
+      1
+    ],
+    [
+      283,
+      75,
+      970,
+      499,
+      8710,
+      166,
+      73,
+      218,
+      131,
+      7
+    ],
+    [
+      1761,
+      6,
+      228,
+      207,
+      1113,
+      2308,
+      14,
+      92,
+      333,
+      0
+    ],
+    [
+      147,
+      0,
+      7,
+      41,
+      595,
+      40,
+      18006,
+      20,
+      13,
+      2
+    ],
+    [
+      34,
+      8,
+      124,
+      20,
+      472,
+      17,
+      6,
+      2773,
+      42,
+      0
+    ],
+    [
+      17,
+      0,
+      1,
+      15,
+      43,
+      33,
+      3,
+      14,
+      252,
+      0
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      27,
+      3,
+      1,
+      0,
+      3,
+      9
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.46604951772087133,
+  "macro_recall": 0.482208990551809,
+  "macro_f1-score": 0.4459161930133494,
+  "weighted_precision": 0.7926311259554054,
+  "weighted_recall": 0.7406354758781519,
+  "weighted_f1-score": 0.7571378237373173,
+  "roc_auc_ovr_macro": 0.923542001806247,
+  "roc_auc_unavailable_reason": null,
+  "method": "baseline",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 140.06481012501172,
+  "evaluation_s": 0.24794204198406078,
+  "model": "mlp",
+  "communication_bytes": null,
+  "train_loss": 0.3276090919971466,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.5627251346856742
+}
+2026-11-03 19:55:44,348 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/sklearn_mlp

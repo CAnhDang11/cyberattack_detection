@@ -1,0 +1,1198 @@
+2026-11-03 19:33:11,242 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:33:11,242 | INFO | START method=centralized case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:33:11,242 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "logistic", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 10, "hidden": 128, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "centralized", "mu": 0.01, "n_estimators": 100, "output": "experiments/centralized", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:33:11,343 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:33:12,245 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:33:13,662 | INFO | EPOCH 1 | {"step": 1, "train_loss": 0.712712025186967, "val_loss": 0.55274498462677, "val_macro_f1": 0.40408195180867923, "elapsed_s": 1.4110564580187201, "communication_bytes": null}
+2026-11-03 19:33:14,413 | INFO | EPOCH 2 | {"step": 2, "train_loss": 0.5308115462913654, "val_loss": 0.518630862236023, "val_macro_f1": 0.4358272652386347, "elapsed_s": 2.1623829580203164, "communication_bytes": null}
+2026-11-03 19:33:15,200 | INFO | EPOCH 3 | {"step": 3, "train_loss": 0.5075125665673613, "val_loss": 0.5005393624305725, "val_macro_f1": 0.4664555795134856, "elapsed_s": 2.9494876250100788, "communication_bytes": null}
+2026-11-03 19:33:15,881 | INFO | EPOCH 4 | {"step": 4, "train_loss": 0.49362164516280976, "val_loss": 0.4956624507904053, "val_macro_f1": 0.4832367175276463, "elapsed_s": 3.630304750025971, "communication_bytes": null}
+2026-11-03 19:33:16,626 | INFO | EPOCH 5 | {"step": 5, "train_loss": 0.485258570718805, "val_loss": 0.4848346412181854, "val_macro_f1": 0.4974637479624321, "elapsed_s": 4.375736583024263, "communication_bytes": null}
+2026-11-03 19:33:17,319 | INFO | EPOCH 6 | {"step": 6, "train_loss": 0.4782353594429536, "val_loss": 0.4820728898048401, "val_macro_f1": 0.4873658682903691, "elapsed_s": 5.068544666020898, "communication_bytes": null}
+2026-11-03 19:33:18,123 | INFO | EPOCH 7 | {"step": 7, "train_loss": 0.47314913860409985, "val_loss": 0.47614407539367676, "val_macro_f1": 0.48979460674676545, "elapsed_s": 5.872532291017706, "communication_bytes": null}
+2026-11-03 19:33:18,813 | INFO | EPOCH 8 | {"step": 8, "train_loss": 0.469840081034678, "val_loss": 0.47435641288757324, "val_macro_f1": 0.49385606166634843, "elapsed_s": 6.56253066600766, "communication_bytes": null}
+2026-11-03 19:33:19,554 | INFO | EPOCH 9 | {"step": 9, "train_loss": 0.4661460350743319, "val_loss": 0.46849167346954346, "val_macro_f1": 0.5129265678616907, "elapsed_s": 7.30370045802556, "communication_bytes": null}
+2026-11-03 19:33:20,239 | INFO | EPOCH 10 | {"step": 10, "train_loss": 0.4635143218823983, "val_loss": 0.46917006373405457, "val_macro_f1": 0.5383199966684862, "elapsed_s": 7.988784625020344, "communication_bytes": null}
+2026-11-03 19:33:20,536 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7555264052859155,
+  "loss": 0.5589780211448669,
+  "per_class": {
+    "Normal": {
+      "precision": 0.9689350686194546,
+      "recall": 0.7384594594594595,
+      "f1-score": 0.838141689289713,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.3409090909090909,
+      "recall": 0.025728987993138937,
+      "f1-score": 0.04784688995215311,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.3925174381737476,
+      "recall": 0.15138175593054537,
+      "f1-score": 0.2184962936816096,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.541189307146754,
+      "recall": 0.8911246855910887,
+      "f1-score": 0.6734098160342136,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.2816798092792958,
+      "recall": 0.5067634444077862,
+      "f1-score": 0.3620933521923621,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.9987368189806678,
+      "recall": 0.9636479253881617,
+      "f1-score": 0.980878664473152,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.7159062263675321,
+      "recall": 0.8123569794050344,
+      "f1-score": 0.7610880343025593,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.2917197452229299,
+      "recall": 0.6058201058201058,
+      "f1-score": 0.3938091143594153,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.3333333333333333,
+      "recall": 0.022727272727272728,
+      "f1-score": 0.0425531914893617,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27323,
+      297,
+      0,
+      3,
+      1427,
+      7283,
+      1,
+      532,
+      133,
+      1
+    ],
+    [
+      4,
+      0,
+      0,
+      63,
+      610,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      0,
+      15,
+      72,
+      481,
+      3,
+      0,
+      4,
+      6,
+      0
+    ],
+    [
+      16,
+      0,
+      3,
+      619,
+      3242,
+      107,
+      9,
+      40,
+      53,
+      0
+    ],
+    [
+      78,
+      16,
+      12,
+      535,
+      9920,
+      256,
+      6,
+      208,
+      100,
+      1
+    ],
+    [
+      757,
+      0,
+      9,
+      174,
+      1575,
+      3072,
+      0,
+      272,
+      203,
+      0
+    ],
+    [
+      7,
+      0,
+      2,
+      48,
+      516,
+      93,
+      18185,
+      10,
+      10,
+      0
+    ],
+    [
+      8,
+      0,
+      2,
+      60,
+      488,
+      45,
+      4,
+      2840,
+      49,
+      0
+    ],
+    [
+      4,
+      0,
+      1,
+      1,
+      37,
+      45,
+      0,
+      61,
+      229,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      2,
+      34,
+      2,
+      3,
+      0,
+      2,
+      1
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.48649268380328065,
+  "macro_recall": 0.4718010616722593,
+  "macro_f1-score": 0.431831704577454,
+  "weighted_precision": 0.8120939746799183,
+  "weighted_recall": 0.7555264052859155,
+  "weighted_f1-score": 0.764534249008363,
+  "roc_auc_ovr_macro": 0.9581037366491495,
+  "roc_auc_unavailable_reason": null,
+  "method": "centralized",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 7.989100500009954,
+  "evaluation_s": 0.2886407079931814,
+  "model": "torch_mlp",
+  "communication_bytes": null,
+  "train_loss": 0.4635143218823983,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.5383199966684862
+}
+2026-11-03 19:33:20,536 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/centralized
+2026-11-03 19:38:58,677 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:38:58,677 | INFO | START method=centralized case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:38:58,677 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "logistic", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 10, "hidden": 512, "hidden_layers": 4, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "centralized", "mu": 0.01, "n_estimators": 500, "output": "experiments/centralized", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:38:58,782 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:38:59,689 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:39:01,600 | INFO | EPOCH 1 | {"step": 1, "train_loss": 0.6320731474247806, "val_loss": 0.5276606678962708, "val_macro_f1": 0.43678643273189416, "elapsed_s": 1.9048838339804206, "communication_bytes": null}
+2026-11-03 19:39:02,799 | INFO | EPOCH 2 | {"step": 2, "train_loss": 0.5051987488632109, "val_loss": 0.5004345178604126, "val_macro_f1": 0.47076605561596824, "elapsed_s": 3.103912374994252, "communication_bytes": null}
+2026-11-03 19:39:03,992 | INFO | EPOCH 3 | {"step": 3, "train_loss": 0.4857077923987396, "val_loss": 0.48025956749916077, "val_macro_f1": 0.5147198163160137, "elapsed_s": 4.296990916976938, "communication_bytes": null}
+2026-11-03 19:39:05,273 | INFO | EPOCH 4 | {"step": 4, "train_loss": 0.47474105597051414, "val_loss": 0.476820707321167, "val_macro_f1": 0.4809003120327112, "elapsed_s": 5.578549750003731, "communication_bytes": null}
+2026-11-03 19:39:06,503 | INFO | EPOCH 5 | {"step": 5, "train_loss": 0.4679491729942006, "val_loss": 0.47498956322669983, "val_macro_f1": 0.4982834998767811, "elapsed_s": 6.808036250004079, "communication_bytes": null}
+2026-11-03 19:39:07,750 | INFO | EPOCH 6 | {"step": 6, "train_loss": 0.4614978058582256, "val_loss": 0.4701525866985321, "val_macro_f1": 0.500816156927108, "elapsed_s": 8.055535083985887, "communication_bytes": null}
+2026-11-03 19:39:09,014 | INFO | EPOCH 7 | {"step": 7, "train_loss": 0.45831425363079625, "val_loss": 0.45725786685943604, "val_macro_f1": 0.5396358745965856, "elapsed_s": 9.318756708991714, "communication_bytes": null}
+2026-11-03 19:39:10,218 | INFO | EPOCH 8 | {"step": 8, "train_loss": 0.451959317216462, "val_loss": 0.4624791145324707, "val_macro_f1": 0.506920884902369, "elapsed_s": 10.522670167003525, "communication_bytes": null}
+2026-11-03 19:39:11,409 | INFO | EPOCH 9 | {"step": 9, "train_loss": 0.4478400332683987, "val_loss": 0.45700183510780334, "val_macro_f1": 0.5109650339090258, "elapsed_s": 11.714154833985958, "communication_bytes": null}
+2026-11-03 19:39:12,653 | INFO | EPOCH 10 | {"step": 10, "train_loss": 0.4467346959138618, "val_loss": 0.46065953373908997, "val_macro_f1": 0.5302206355083604, "elapsed_s": 12.95808491698699, "communication_bytes": null}
+2026-11-03 19:39:13,051 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7662391293786134,
+  "loss": 0.523505687713623,
+  "per_class": {
+    "Normal": {
+      "precision": 0.9701487326304029,
+      "recall": 0.751,
+      "f1-score": 0.8466225891959416,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1-score": 0.0,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.17105263157894737,
+      "recall": 0.044596912521440824,
+      "f1-score": 0.0707482993197279,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.5139442231075697,
+      "recall": 0.06309611151870873,
+      "f1-score": 0.11239381398388151,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.5578519493902788,
+      "recall": 0.8753144089112469,
+      "f1-score": 0.6814224273576,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.30386226151698464,
+      "recall": 0.6463213460903993,
+      "f1-score": 0.4133783498628403,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.998682042833608,
+      "recall": 0.9637009167505697,
+      "f1-score": 0.9808796958010841,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.8325235781651901,
+      "recall": 0.8332379862700229,
+      "f1-score": 0.8328806290207291,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.3293333333333333,
+      "recall": 0.6534391534391535,
+      "f1-score": 0.4379432624113475,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.7,
+      "recall": 0.1590909090909091,
+      "f1-score": 0.25925925925925924,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27787,
+      190,
+      1,
+      34,
+      713,
+      8085,
+      1,
+      72,
+      116,
+      1
+    ],
+    [
+      1,
+      0,
+      0,
+      0,
+      676,
+      0,
+      0,
+      0,
+      0,
+      0
+    ],
+    [
+      3,
+      0,
+      26,
+      6,
+      536,
+      5,
+      0,
+      1,
+      6,
+      0
+    ],
+    [
+      36,
+      0,
+      11,
+      258,
+      3549,
+      136,
+      11,
+      33,
+      55,
+      0
+    ],
+    [
+      144,
+      16,
+      90,
+      125,
+      9744,
+      426,
+      8,
+      387,
+      191,
+      1
+    ],
+    [
+      654,
+      0,
+      9,
+      7,
+      1359,
+      3918,
+      0,
+      64,
+      51,
+      0
+    ],
+    [
+      9,
+      0,
+      6,
+      60,
+      436,
+      154,
+      18186,
+      3,
+      16,
+      1
+    ],
+    [
+      3,
+      0,
+      8,
+      10,
+      417,
+      73,
+      4,
+      2913,
+      68,
+      0
+    ],
+    [
+      5,
+      0,
+      1,
+      2,
+      9,
+      88,
+      0,
+      26,
+      247,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      28,
+      9,
+      0,
+      0,
+      0,
+      7
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.5377398752556315,
+  "macro_recall": 0.498979774459245,
+  "macro_f1-score": 0.46355283262124114,
+  "weighted_precision": 0.8266613820790135,
+  "weighted_recall": 0.7662391293786134,
+  "weighted_f1-score": 0.7714647495683853,
+  "roc_auc_ovr_macro": 0.9588490962386313,
+  "roc_auc_unavailable_reason": null,
+  "method": "centralized",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 12.958220542001072,
+  "evaluation_s": 0.3897317500086501,
+  "model": "torch_mlp",
+  "communication_bytes": null,
+  "train_loss": 0.4467346959138618,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.5396358745965856
+}
+2026-11-03 19:39:13,052 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/centralized
+2026-11-03 19:39:25,046 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:39:25,047 | INFO | START method=centralized case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:39:25,047 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "logistic", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 50, "hidden": 512, "hidden_layers": 4, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "centralized", "mu": 0.01, "n_estimators": 500, "output": "experiments/centralized", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:39:25,154 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:39:26,046 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:39:27,977 | INFO | EPOCH 1 | {"step": 1, "train_loss": 0.6320731474247806, "val_loss": 0.5276606678962708, "val_macro_f1": 0.43678643273189416, "elapsed_s": 1.9241754170216154, "communication_bytes": null}
+2026-11-03 19:39:29,271 | INFO | EPOCH 2 | {"step": 2, "train_loss": 0.5051987488632109, "val_loss": 0.5004345178604126, "val_macro_f1": 0.47076605561596824, "elapsed_s": 3.21804470900679, "communication_bytes": null}
+2026-11-03 19:39:30,575 | INFO | EPOCH 3 | {"step": 3, "train_loss": 0.4857077923987396, "val_loss": 0.48025956749916077, "val_macro_f1": 0.5147198163160137, "elapsed_s": 4.5215742500149645, "communication_bytes": null}
+2026-11-03 19:39:31,960 | INFO | EPOCH 4 | {"step": 4, "train_loss": 0.47474105597051414, "val_loss": 0.476820707321167, "val_macro_f1": 0.4809003120327112, "elapsed_s": 5.906976709025912, "communication_bytes": null}
+2026-11-03 19:39:33,403 | INFO | EPOCH 5 | {"step": 5, "train_loss": 0.4679491729942006, "val_loss": 0.47498956322669983, "val_macro_f1": 0.4982834998767811, "elapsed_s": 7.350101834017551, "communication_bytes": null}
+2026-11-03 19:39:34,779 | INFO | EPOCH 6 | {"step": 6, "train_loss": 0.4614978058582256, "val_loss": 0.4701525866985321, "val_macro_f1": 0.500816156927108, "elapsed_s": 8.725990584003739, "communication_bytes": null}
+2026-11-03 19:39:36,257 | INFO | EPOCH 7 | {"step": 7, "train_loss": 0.45831425363079625, "val_loss": 0.45725786685943604, "val_macro_f1": 0.5396358745965856, "elapsed_s": 10.203675000026124, "communication_bytes": null}
+2026-11-03 19:39:37,598 | INFO | EPOCH 8 | {"step": 8, "train_loss": 0.451959317216462, "val_loss": 0.4624791145324707, "val_macro_f1": 0.506920884902369, "elapsed_s": 11.544548834004672, "communication_bytes": null}
+2026-11-03 19:39:39,047 | INFO | EPOCH 9 | {"step": 9, "train_loss": 0.4478400332683987, "val_loss": 0.45700183510780334, "val_macro_f1": 0.5109650339090258, "elapsed_s": 12.994466750009451, "communication_bytes": null}
+2026-11-03 19:39:40,366 | INFO | EPOCH 10 | {"step": 10, "train_loss": 0.4467346959138618, "val_loss": 0.46065953373908997, "val_macro_f1": 0.5302206355083604, "elapsed_s": 14.312800625019008, "communication_bytes": null}
+2026-11-03 19:39:41,756 | INFO | EPOCH 11 | {"step": 11, "train_loss": 0.4408649098068512, "val_loss": 0.4601496458053589, "val_macro_f1": 0.5386294370292608, "elapsed_s": 15.702756625018083, "communication_bytes": null}
+2026-11-03 19:39:43,091 | INFO | EPOCH 12 | {"step": 12, "train_loss": 0.44029004684466644, "val_loss": 0.453119695186615, "val_macro_f1": 0.5503632056573831, "elapsed_s": 17.037624959019013, "communication_bytes": null}
+2026-11-03 19:39:44,412 | INFO | EPOCH 13 | {"step": 13, "train_loss": 0.4356260092143742, "val_loss": 0.452860951423645, "val_macro_f1": 0.5229583273853048, "elapsed_s": 18.35889883400523, "communication_bytes": null}
+2026-11-03 19:39:45,734 | INFO | EPOCH 14 | {"step": 14, "train_loss": 0.4330305046014664, "val_loss": 0.44469717144966125, "val_macro_f1": 0.5554560547504895, "elapsed_s": 19.680984417005675, "communication_bytes": null}
+2026-11-03 19:39:47,008 | INFO | EPOCH 15 | {"step": 15, "train_loss": 0.4315023129852411, "val_loss": 0.44094324111938477, "val_macro_f1": 0.5527653891495741, "elapsed_s": 20.955419542005984, "communication_bytes": null}
+2026-11-03 19:39:48,281 | INFO | EPOCH 16 | {"step": 16, "train_loss": 0.42798174283984525, "val_loss": 0.44296109676361084, "val_macro_f1": 0.5499472224776634, "elapsed_s": 22.22791904202313, "communication_bytes": null}
+2026-11-03 19:39:49,505 | INFO | EPOCH 17 | {"step": 17, "train_loss": 0.4266761883215933, "val_loss": 0.44291719794273376, "val_macro_f1": 0.5551549314305496, "elapsed_s": 23.451839250017656, "communication_bytes": null}
+2026-11-03 19:39:50,749 | INFO | EPOCH 18 | {"step": 18, "train_loss": 0.42621483156655277, "val_loss": 0.4450475573539734, "val_macro_f1": 0.5339949481279873, "elapsed_s": 24.695869834016776, "communication_bytes": null}
+2026-11-03 19:39:51,955 | INFO | EPOCH 19 | {"step": 19, "train_loss": 0.423582462551222, "val_loss": 0.44052043557167053, "val_macro_f1": 0.5566217027745775, "elapsed_s": 25.901944209006615, "communication_bytes": null}
+2026-11-03 19:39:53,195 | INFO | EPOCH 20 | {"step": 20, "train_loss": 0.4208247198907041, "val_loss": 0.44083961844444275, "val_macro_f1": 0.5650288271653804, "elapsed_s": 27.141751417017076, "communication_bytes": null}
+2026-11-03 19:39:54,285 | INFO | EPOCH 21 | {"step": 21, "train_loss": 0.4188193700482142, "val_loss": 0.4382258355617523, "val_macro_f1": 0.5672019580725601, "elapsed_s": 28.231972125009634, "communication_bytes": null}
+2026-11-03 19:39:55,525 | INFO | EPOCH 22 | {"step": 22, "train_loss": 0.41745601278361566, "val_loss": 0.4443354904651642, "val_macro_f1": 0.5378362065147987, "elapsed_s": 29.472407542023575, "communication_bytes": null}
+2026-11-03 19:39:56,761 | INFO | EPOCH 23 | {"step": 23, "train_loss": 0.4145663203958594, "val_loss": 0.44007664918899536, "val_macro_f1": 0.5734757951004299, "elapsed_s": 30.708363542013103, "communication_bytes": null}
+2026-11-03 19:39:57,927 | INFO | EPOCH 24 | {"step": 24, "train_loss": 0.41506438840491333, "val_loss": 0.4415431022644043, "val_macro_f1": 0.5556826847007782, "elapsed_s": 31.873863417014945, "communication_bytes": null}
+2026-11-03 19:39:59,140 | INFO | EPOCH 25 | {"step": 25, "train_loss": 0.412452711776229, "val_loss": 0.44183310866355896, "val_macro_f1": 0.572280312040899, "elapsed_s": 33.08700045902515, "communication_bytes": null}
+2026-11-03 19:40:00,282 | INFO | EPOCH 26 | {"step": 26, "train_loss": 0.4092653813401673, "val_loss": 0.443176805973053, "val_macro_f1": 0.559149534929806, "elapsed_s": 34.229466750024585, "communication_bytes": null}
+2026-11-03 19:40:01,498 | INFO | EPOCH 27 | {"step": 27, "train_loss": 0.40854790739059504, "val_loss": 0.4435451626777649, "val_macro_f1": 0.5534490943403811, "elapsed_s": 35.44499220899888, "communication_bytes": null}
+2026-11-03 19:40:02,699 | INFO | EPOCH 28 | {"step": 28, "train_loss": 0.4071843912362956, "val_loss": 0.43938934803009033, "val_macro_f1": 0.5616134342808948, "elapsed_s": 36.6456724590098, "communication_bytes": null}
+2026-11-03 19:40:03,893 | INFO | EPOCH 29 | {"step": 29, "train_loss": 0.40567134647572906, "val_loss": 0.4439208209514618, "val_macro_f1": 0.5536310701651036, "elapsed_s": 37.83978104201378, "communication_bytes": null}
+2026-11-03 19:40:05,104 | INFO | EPOCH 30 | {"step": 30, "train_loss": 0.405021928506219, "val_loss": 0.44108647108078003, "val_macro_f1": 0.5561429755036698, "elapsed_s": 39.05086679200758, "communication_bytes": null}
+2026-11-03 19:40:06,254 | INFO | EPOCH 31 | {"step": 31, "train_loss": 0.40361785672621875, "val_loss": 0.44218364357948303, "val_macro_f1": 0.5700577168190784, "elapsed_s": 40.200588917010464, "communication_bytes": null}
+2026-11-03 19:40:07,442 | INFO | EPOCH 32 | {"step": 32, "train_loss": 0.40187228933559604, "val_loss": 0.4466896653175354, "val_macro_f1": 0.5566916991562927, "elapsed_s": 41.38904866701341, "communication_bytes": null}
+2026-11-03 19:40:08,597 | INFO | EPOCH 33 | {"step": 33, "train_loss": 0.3993870258734122, "val_loss": 0.4541332423686981, "val_macro_f1": 0.5526902809406466, "elapsed_s": 42.543555542011745, "communication_bytes": null}
+2026-11-03 19:40:09,823 | INFO | EPOCH 34 | {"step": 34, "train_loss": 0.4001235028756104, "val_loss": 0.44056805968284607, "val_macro_f1": 0.575431988010739, "elapsed_s": 43.77012208400993, "communication_bytes": null}
+2026-11-03 19:40:11,085 | INFO | EPOCH 35 | {"step": 35, "train_loss": 0.39758085440269725, "val_loss": 0.4450971186161041, "val_macro_f1": 0.580902236605515, "elapsed_s": 45.031746749999, "communication_bytes": null}
+2026-11-03 19:40:12,273 | INFO | EPOCH 36 | {"step": 36, "train_loss": 0.3962150714608921, "val_loss": 0.4424069821834564, "val_macro_f1": 0.5614960931445288, "elapsed_s": 46.219849500019336, "communication_bytes": null}
+2026-11-03 19:40:13,493 | INFO | EPOCH 37 | {"step": 37, "train_loss": 0.40294630976780055, "val_loss": 0.44662874937057495, "val_macro_f1": 0.5677812721701019, "elapsed_s": 47.43959862500196, "communication_bytes": null}
+2026-11-03 19:40:14,664 | INFO | EPOCH 38 | {"step": 38, "train_loss": 0.39667829829471885, "val_loss": 0.45032376050949097, "val_macro_f1": 0.5603088936339108, "elapsed_s": 48.61059204200865, "communication_bytes": null}
+2026-11-03 19:40:15,877 | INFO | EPOCH 39 | {"step": 39, "train_loss": 0.39328462954017, "val_loss": 0.4455777704715729, "val_macro_f1": 0.5689525088776741, "elapsed_s": 49.82360958401114, "communication_bytes": null}
+2026-11-03 19:40:17,102 | INFO | EPOCH 40 | {"step": 40, "train_loss": 0.39108422582727037, "val_loss": 0.4455234110355377, "val_macro_f1": 0.5703555640416955, "elapsed_s": 51.048961167020025, "communication_bytes": null}
+2026-11-03 19:40:18,316 | INFO | EPOCH 41 | {"step": 41, "train_loss": 0.3908711812923535, "val_loss": 0.4487095773220062, "val_macro_f1": 0.5688909392073525, "elapsed_s": 52.26287595901522, "communication_bytes": null}
+2026-11-03 19:40:19,596 | INFO | EPOCH 42 | {"step": 42, "train_loss": 0.38934895048988905, "val_loss": 0.4509449303150177, "val_macro_f1": 0.5630491280886709, "elapsed_s": 53.54344587502419, "communication_bytes": null}
+2026-11-03 19:40:20,790 | INFO | EPOCH 43 | {"step": 43, "train_loss": 0.38873078373304476, "val_loss": 0.44880443811416626, "val_macro_f1": 0.580102763158445, "elapsed_s": 54.73681858400232, "communication_bytes": null}
+2026-11-03 19:40:22,020 | INFO | EPOCH 44 | {"step": 44, "train_loss": 0.38723581244464383, "val_loss": 0.4493757486343384, "val_macro_f1": 0.5637334477937789, "elapsed_s": 55.966849167016335, "communication_bytes": null}
+2026-11-03 19:40:23,459 | INFO | EPOCH 45 | {"step": 45, "train_loss": 0.3880102155720581, "val_loss": 0.4484211802482605, "val_macro_f1": 0.5690845510742151, "elapsed_s": 57.40652779201628, "communication_bytes": null}
+2026-11-03 19:40:24,947 | INFO | EPOCH 46 | {"step": 46, "train_loss": 0.3856443951139398, "val_loss": 0.4574156701564789, "val_macro_f1": 0.5575229489064218, "elapsed_s": 58.89407491701422, "communication_bytes": null}
+2026-11-03 19:40:26,253 | INFO | EPOCH 47 | {"step": 47, "train_loss": 0.38405821587745304, "val_loss": 0.46080026030540466, "val_macro_f1": 0.5605941098989239, "elapsed_s": 60.19977220901637, "communication_bytes": null}
+2026-11-03 19:40:27,610 | INFO | EPOCH 48 | {"step": 48, "train_loss": 0.38677792481915385, "val_loss": 0.4579557478427887, "val_macro_f1": 0.5587450986433857, "elapsed_s": 61.55732858402189, "communication_bytes": null}
+2026-11-03 19:40:28,931 | INFO | EPOCH 49 | {"step": 49, "train_loss": 0.38195959667296625, "val_loss": 0.4611109495162964, "val_macro_f1": 0.5560340304332057, "elapsed_s": 62.878008708998095, "communication_bytes": null}
+2026-11-03 19:40:30,199 | INFO | EPOCH 50 | {"step": 50, "train_loss": 0.3795020119811417, "val_loss": 0.4606173634529114, "val_macro_f1": 0.5735120371254117, "elapsed_s": 64.14645983400987, "communication_bytes": null}
+2026-11-03 19:40:30,520 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7424330758392849,
+  "loss": 0.7426641583442688,
+  "per_class": {
+    "Normal": {
+      "precision": 0.968458284714119,
+      "recall": 0.7178108108108108,
+      "f1-score": 0.8245063951322489,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.017218543046357615,
+      "recall": 0.03840472673559823,
+      "f1-score": 0.02377686328303612,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.04088397790055249,
+      "recall": 0.0634648370497427,
+      "f1-score": 0.04973118279569892,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.4786392405063291,
+      "recall": 0.1479579359256542,
+      "f1-score": 0.22604147207173547,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.5656601750938003,
+      "recall": 0.8532159540064679,
+      "f1-score": 0.6802993947641729,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.2633377135348226,
+      "recall": 0.4958759485318377,
+      "f1-score": 0.3439949648108943,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.9961894393032118,
+      "recall": 0.9697419320650734,
+      "f1-score": 0.9827877876533928,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.8916852500796432,
+      "recall": 0.8006292906178489,
+      "f1-score": 0.8437076111529767,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.1920265780730897,
+      "recall": 0.7645502645502645,
+      "f1-score": 0.3069569835369092,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.7777777777777778,
+      "recall": 0.1590909090909091,
+      "f1-score": 0.2641509433962264,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      26559,
+      528,
+      3,
+      25,
+      1205,
+      8147,
+      14,
+      87,
+      432,
+      0
+    ],
+    [
+      0,
+      26,
+      45,
+      50,
+      555,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      0,
+      26,
+      37,
+      34,
+      478,
+      1,
+      0,
+      1,
+      6,
+      0
+    ],
+    [
+      15,
+      394,
+      350,
+      605,
+      2583,
+      44,
+      13,
+      27,
+      58,
+      0
+    ],
+    [
+      65,
+      392,
+      359,
+      376,
+      9498,
+      137,
+      35,
+      151,
+      119,
+      0
+    ],
+    [
+      768,
+      98,
+      52,
+      83,
+      1482,
+      3006,
+      5,
+      51,
+      517,
+      0
+    ],
+    [
+      4,
+      0,
+      8,
+      52,
+      433,
+      45,
+      18300,
+      9,
+      18,
+      2
+    ],
+    [
+      13,
+      46,
+      49,
+      36,
+      473,
+      14,
+      1,
+      2799,
+      65,
+      0
+    ],
+    [
+      0,
+      0,
+      2,
+      3,
+      51,
+      19,
+      0,
+      14,
+      289,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      33,
+      2,
+      1,
+      0,
+      1,
+      7
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.5191876980029704,
+  "macro_recall": 0.5010742609384207,
+  "macro_f1-score": 0.45459535985972915,
+  "weighted_precision": 0.8227920833006201,
+  "weighted_recall": 0.7424330758392849,
+  "weighted_f1-score": 0.7622545703382625,
+  "roc_auc_ovr_macro": 0.9494586181107204,
+  "roc_auc_unavailable_reason": null,
+  "method": "centralized",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 64.14657995902235,
+  "evaluation_s": 0.3123710000072606,
+  "model": "torch_mlp",
+  "communication_bytes": null,
+  "train_loss": 0.3795020119811417,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.580902236605515
+}
+2026-11-03 19:40:30,521 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/centralized
+2026-11-03 19:41:11,763 | INFO | ==================== NEW RUN ====================
+2026-11-03 19:41:11,764 | INFO | START method=centralized case=equal_iid seed=42 world_size=1 device=cpu
+2026-11-03 19:41:11,764 | INFO | CONFIG {"alpha": 0.5, "baseline_model": "logistic", "batch_size": 256, "case": "equal_iid", "clients": 4, "data": "experiments/data/data.npz", "device": "cpu", "epochs": 200, "hidden": 512, "hidden_layers": 4, "l2": 0.0, "limit_per_class": 0, "local_epochs": 1, "lr": 0.001, "max_depth": null, "method": "centralized", "mu": 0.01, "n_estimators": 500, "output": "experiments/centralized", "participation": 1.0, "rounds": 10, "seed": 42, "test_csv": "UNSW_NB15_testing-set.csv", "train_csv": "UNSW_NB15_training-set.csv", "tree_lr": 0.3}
+2026-11-03 19:41:11,867 | INFO | DATA experiments/data/data.npz | fit=140273 | validation=35068 | test=82332
+2026-11-03 19:41:12,782 | INFO | CLIENT DISTRIBUTIONS
+client,count,Normal,Analysis,Backdoor,DoS,Exploits,Fuzzers,Generic,Reconnaissance,Shellcode,Worms
+0,35069,11232,397,349,2486,6675,3669,7967,2048,219,27
+1,35068,11209,381,340,2526,6632,3622,8065,2047,217,29
+2,35068,11158,387,369,2403,6690,3680,7908,2200,251,22
+3,35068,11201,435,339,2396,6717,3577,8060,2098,219,26
+
+2026-11-03 19:41:14,665 | INFO | EPOCH 1 | {"step": 1, "train_loss": 0.6320731474247806, "val_loss": 0.5276606678962708, "val_macro_f1": 0.43678643273189416, "elapsed_s": 1.8759044160251506, "communication_bytes": null}
+2026-11-03 19:41:15,888 | INFO | EPOCH 2 | {"step": 2, "train_loss": 0.5051987488632109, "val_loss": 0.5004345178604126, "val_macro_f1": 0.47076605561596824, "elapsed_s": 3.098961458017584, "communication_bytes": null}
+2026-11-03 19:41:17,096 | INFO | EPOCH 3 | {"step": 3, "train_loss": 0.4857077923987396, "val_loss": 0.48025956749916077, "val_macro_f1": 0.5147198163160137, "elapsed_s": 4.30604000002495, "communication_bytes": null}
+2026-11-03 19:41:18,257 | INFO | EPOCH 4 | {"step": 4, "train_loss": 0.47474105597051414, "val_loss": 0.476820707321167, "val_macro_f1": 0.4809003120327112, "elapsed_s": 5.4674497910018545, "communication_bytes": null}
+2026-11-03 19:41:19,496 | INFO | EPOCH 5 | {"step": 5, "train_loss": 0.4679491729942006, "val_loss": 0.47498956322669983, "val_macro_f1": 0.4982834998767811, "elapsed_s": 6.70638700001291, "communication_bytes": null}
+2026-11-03 19:41:20,685 | INFO | EPOCH 6 | {"step": 6, "train_loss": 0.4614978058582256, "val_loss": 0.4701525866985321, "val_macro_f1": 0.500816156927108, "elapsed_s": 7.895431583019672, "communication_bytes": null}
+2026-11-03 19:41:21,917 | INFO | EPOCH 7 | {"step": 7, "train_loss": 0.45831425363079625, "val_loss": 0.45725786685943604, "val_macro_f1": 0.5396358745965856, "elapsed_s": 9.127244583010906, "communication_bytes": null}
+2026-11-03 19:41:23,069 | INFO | EPOCH 8 | {"step": 8, "train_loss": 0.451959317216462, "val_loss": 0.4624791145324707, "val_macro_f1": 0.506920884902369, "elapsed_s": 10.279063875001157, "communication_bytes": null}
+2026-11-03 19:41:24,289 | INFO | EPOCH 9 | {"step": 9, "train_loss": 0.4478400332683987, "val_loss": 0.45700183510780334, "val_macro_f1": 0.5109650339090258, "elapsed_s": 11.499745750013972, "communication_bytes": null}
+2026-11-03 19:41:25,461 | INFO | EPOCH 10 | {"step": 10, "train_loss": 0.4467346959138618, "val_loss": 0.46065953373908997, "val_macro_f1": 0.5302206355083604, "elapsed_s": 12.671668833005242, "communication_bytes": null}
+2026-11-03 19:41:26,664 | INFO | EPOCH 11 | {"step": 11, "train_loss": 0.4408649098068512, "val_loss": 0.4601496458053589, "val_macro_f1": 0.5386294370292608, "elapsed_s": 13.87474770800327, "communication_bytes": null}
+2026-11-03 19:41:27,865 | INFO | EPOCH 12 | {"step": 12, "train_loss": 0.44029004684466644, "val_loss": 0.453119695186615, "val_macro_f1": 0.5503632056573831, "elapsed_s": 15.07560279101017, "communication_bytes": null}
+2026-11-03 19:41:29,122 | INFO | EPOCH 13 | {"step": 13, "train_loss": 0.4356260092143742, "val_loss": 0.452860951423645, "val_macro_f1": 0.5229583273853048, "elapsed_s": 16.33280316600576, "communication_bytes": null}
+2026-11-03 19:41:30,318 | INFO | EPOCH 14 | {"step": 14, "train_loss": 0.4330305046014664, "val_loss": 0.44469717144966125, "val_macro_f1": 0.5554560547504895, "elapsed_s": 17.528162083006464, "communication_bytes": null}
+2026-11-03 19:41:31,478 | INFO | EPOCH 15 | {"step": 15, "train_loss": 0.4315023129852411, "val_loss": 0.44094324111938477, "val_macro_f1": 0.5527653891495741, "elapsed_s": 18.68847375002224, "communication_bytes": null}
+2026-11-03 19:41:32,757 | INFO | EPOCH 16 | {"step": 16, "train_loss": 0.42798174283984525, "val_loss": 0.44296109676361084, "val_macro_f1": 0.5499472224776634, "elapsed_s": 19.96775658300612, "communication_bytes": null}
+2026-11-03 19:41:33,933 | INFO | EPOCH 17 | {"step": 17, "train_loss": 0.4266761883215933, "val_loss": 0.44291719794273376, "val_macro_f1": 0.5551549314305496, "elapsed_s": 21.14392487501027, "communication_bytes": null}
+2026-11-03 19:41:35,172 | INFO | EPOCH 18 | {"step": 18, "train_loss": 0.42621483156655277, "val_loss": 0.4450475573539734, "val_macro_f1": 0.5339949481279873, "elapsed_s": 22.382714750012383, "communication_bytes": null}
+2026-11-03 19:41:36,392 | INFO | EPOCH 19 | {"step": 19, "train_loss": 0.423582462551222, "val_loss": 0.44052043557167053, "val_macro_f1": 0.5566217027745775, "elapsed_s": 23.602525375026744, "communication_bytes": null}
+2026-11-03 19:41:37,541 | INFO | EPOCH 20 | {"step": 20, "train_loss": 0.4208247198907041, "val_loss": 0.44083961844444275, "val_macro_f1": 0.5650288271653804, "elapsed_s": 24.75126116600586, "communication_bytes": null}
+2026-11-03 19:41:38,682 | INFO | EPOCH 21 | {"step": 21, "train_loss": 0.4188193700482142, "val_loss": 0.4382258355617523, "val_macro_f1": 0.5672019580725601, "elapsed_s": 25.892168791004224, "communication_bytes": null}
+2026-11-03 19:41:39,869 | INFO | EPOCH 22 | {"step": 22, "train_loss": 0.41745601278361566, "val_loss": 0.4443354904651642, "val_macro_f1": 0.5378362065147987, "elapsed_s": 27.079055791022256, "communication_bytes": null}
+2026-11-03 19:41:41,035 | INFO | EPOCH 23 | {"step": 23, "train_loss": 0.4145663203958594, "val_loss": 0.44007664918899536, "val_macro_f1": 0.5734757951004299, "elapsed_s": 28.245297458022833, "communication_bytes": null}
+2026-11-03 19:41:42,256 | INFO | EPOCH 24 | {"step": 24, "train_loss": 0.41506438840491333, "val_loss": 0.4415431022644043, "val_macro_f1": 0.5556826847007782, "elapsed_s": 29.466698666015873, "communication_bytes": null}
+2026-11-03 19:41:43,488 | INFO | EPOCH 25 | {"step": 25, "train_loss": 0.412452711776229, "val_loss": 0.44183310866355896, "val_macro_f1": 0.572280312040899, "elapsed_s": 30.698881458025426, "communication_bytes": null}
+2026-11-03 19:41:44,712 | INFO | EPOCH 26 | {"step": 26, "train_loss": 0.4092653813401673, "val_loss": 0.443176805973053, "val_macro_f1": 0.559149534929806, "elapsed_s": 31.92273520800518, "communication_bytes": null}
+2026-11-03 19:41:45,910 | INFO | EPOCH 27 | {"step": 27, "train_loss": 0.40854790739059504, "val_loss": 0.4435451626777649, "val_macro_f1": 0.5534490943403811, "elapsed_s": 33.12007008300861, "communication_bytes": null}
+2026-11-03 19:41:47,117 | INFO | EPOCH 28 | {"step": 28, "train_loss": 0.4071843912362956, "val_loss": 0.43938934803009033, "val_macro_f1": 0.5616134342808948, "elapsed_s": 34.32778537500417, "communication_bytes": null}
+2026-11-03 19:41:48,335 | INFO | EPOCH 29 | {"step": 29, "train_loss": 0.40567134647572906, "val_loss": 0.4439208209514618, "val_macro_f1": 0.5536310701651036, "elapsed_s": 35.54522579102195, "communication_bytes": null}
+2026-11-03 19:41:49,531 | INFO | EPOCH 30 | {"step": 30, "train_loss": 0.405021928506219, "val_loss": 0.44108647108078003, "val_macro_f1": 0.5561429755036698, "elapsed_s": 36.741520625015255, "communication_bytes": null}
+2026-11-03 19:41:50,700 | INFO | EPOCH 31 | {"step": 31, "train_loss": 0.40361785672621875, "val_loss": 0.44218364357948303, "val_macro_f1": 0.5700577168190784, "elapsed_s": 37.91089854101301, "communication_bytes": null}
+2026-11-03 19:41:51,922 | INFO | EPOCH 32 | {"step": 32, "train_loss": 0.40187228933559604, "val_loss": 0.4466896653175354, "val_macro_f1": 0.5566916991562927, "elapsed_s": 39.13238912500674, "communication_bytes": null}
+2026-11-03 19:41:53,110 | INFO | EPOCH 33 | {"step": 33, "train_loss": 0.3993870258734122, "val_loss": 0.4541332423686981, "val_macro_f1": 0.5526902809406466, "elapsed_s": 40.32069712501834, "communication_bytes": null}
+2026-11-03 19:41:54,313 | INFO | EPOCH 34 | {"step": 34, "train_loss": 0.4001235028756104, "val_loss": 0.44056805968284607, "val_macro_f1": 0.575431988010739, "elapsed_s": 41.524009958026, "communication_bytes": null}
+2026-11-03 19:41:55,515 | INFO | EPOCH 35 | {"step": 35, "train_loss": 0.39758085440269725, "val_loss": 0.4450971186161041, "val_macro_f1": 0.580902236605515, "elapsed_s": 42.725804500019876, "communication_bytes": null}
+2026-11-03 19:41:56,693 | INFO | EPOCH 36 | {"step": 36, "train_loss": 0.3962150714608921, "val_loss": 0.4424069821834564, "val_macro_f1": 0.5614960931445288, "elapsed_s": 43.90387787501095, "communication_bytes": null}
+2026-11-03 19:41:57,954 | INFO | EPOCH 37 | {"step": 37, "train_loss": 0.40294630976780055, "val_loss": 0.44662874937057495, "val_macro_f1": 0.5677812721701019, "elapsed_s": 45.16454187501222, "communication_bytes": null}
+2026-11-03 19:41:59,140 | INFO | EPOCH 38 | {"step": 38, "train_loss": 0.39667829829471885, "val_loss": 0.45032376050949097, "val_macro_f1": 0.5603088936339108, "elapsed_s": 46.350297500001034, "communication_bytes": null}
+2026-11-03 19:42:00,369 | INFO | EPOCH 39 | {"step": 39, "train_loss": 0.39328462954017, "val_loss": 0.4455777704715729, "val_macro_f1": 0.5689525088776741, "elapsed_s": 47.57995812501758, "communication_bytes": null}
+2026-11-03 19:42:01,576 | INFO | EPOCH 40 | {"step": 40, "train_loss": 0.39108422582727037, "val_loss": 0.4455234110355377, "val_macro_f1": 0.5703555640416955, "elapsed_s": 48.78632383301738, "communication_bytes": null}
+2026-11-03 19:42:02,739 | INFO | EPOCH 41 | {"step": 41, "train_loss": 0.3908711812923535, "val_loss": 0.4487095773220062, "val_macro_f1": 0.5688909392073525, "elapsed_s": 49.949809625017224, "communication_bytes": null}
+2026-11-03 19:42:03,941 | INFO | EPOCH 42 | {"step": 42, "train_loss": 0.38934895048988905, "val_loss": 0.4509449303150177, "val_macro_f1": 0.5630491280886709, "elapsed_s": 51.15177500000573, "communication_bytes": null}
+2026-11-03 19:42:05,079 | INFO | EPOCH 43 | {"step": 43, "train_loss": 0.38873078373304476, "val_loss": 0.44880443811416626, "val_macro_f1": 0.580102763158445, "elapsed_s": 52.28983095800504, "communication_bytes": null}
+2026-11-03 19:42:06,354 | INFO | EPOCH 44 | {"step": 44, "train_loss": 0.38723581244464383, "val_loss": 0.4493757486343384, "val_macro_f1": 0.5637334477937789, "elapsed_s": 53.56428137500188, "communication_bytes": null}
+2026-11-03 19:42:07,543 | INFO | EPOCH 45 | {"step": 45, "train_loss": 0.3880102155720581, "val_loss": 0.4484211802482605, "val_macro_f1": 0.5690845510742151, "elapsed_s": 54.75311450002482, "communication_bytes": null}
+2026-11-03 19:42:08,699 | INFO | EPOCH 46 | {"step": 46, "train_loss": 0.3856443951139398, "val_loss": 0.4574156701564789, "val_macro_f1": 0.5575229489064218, "elapsed_s": 55.909202041017124, "communication_bytes": null}
+2026-11-03 19:42:09,945 | INFO | EPOCH 47 | {"step": 47, "train_loss": 0.38405821587745304, "val_loss": 0.46080026030540466, "val_macro_f1": 0.5605941098989239, "elapsed_s": 57.15538008301519, "communication_bytes": null}
+2026-11-03 19:42:11,083 | INFO | EPOCH 48 | {"step": 48, "train_loss": 0.38677792481915385, "val_loss": 0.4579557478427887, "val_macro_f1": 0.5587450986433857, "elapsed_s": 58.293769958021585, "communication_bytes": null}
+2026-11-03 19:42:12,343 | INFO | EPOCH 49 | {"step": 49, "train_loss": 0.38195959667296625, "val_loss": 0.4611109495162964, "val_macro_f1": 0.5560340304332057, "elapsed_s": 59.55402525002137, "communication_bytes": null}
+2026-11-03 19:42:13,581 | INFO | EPOCH 50 | {"step": 50, "train_loss": 0.3795020119811417, "val_loss": 0.4606173634529114, "val_macro_f1": 0.5735120371254117, "elapsed_s": 60.79126975001418, "communication_bytes": null}
+2026-11-03 19:42:14,719 | INFO | EPOCH 51 | {"step": 51, "train_loss": 0.3795393341849948, "val_loss": 0.4594622552394867, "val_macro_f1": 0.5777527041185634, "elapsed_s": 61.92941762501141, "communication_bytes": null}
+2026-11-03 19:42:15,923 | INFO | EPOCH 52 | {"step": 52, "train_loss": 0.3789228533579335, "val_loss": 0.4624651074409485, "val_macro_f1": 0.5688994060543338, "elapsed_s": 63.1334057910135, "communication_bytes": null}
+2026-11-03 19:42:17,102 | INFO | EPOCH 53 | {"step": 53, "train_loss": 0.3779779128605424, "val_loss": 0.46596604585647583, "val_macro_f1": 0.5540651104588219, "elapsed_s": 64.31239520802046, "communication_bytes": null}
+2026-11-03 19:42:18,320 | INFO | EPOCH 54 | {"step": 54, "train_loss": 0.3774024610891281, "val_loss": 0.46817395091056824, "val_macro_f1": 0.5740433500084953, "elapsed_s": 65.53048720801598, "communication_bytes": null}
+2026-11-03 19:42:19,517 | INFO | EPOCH 55 | {"step": 55, "train_loss": 0.3833895844501519, "val_loss": 0.4675937592983246, "val_macro_f1": 0.5675640027333639, "elapsed_s": 66.72717329100124, "communication_bytes": null}
+2026-11-03 19:42:20,616 | INFO | EPOCH 56 | {"step": 56, "train_loss": 0.3774321308525501, "val_loss": 0.4709140360355377, "val_macro_f1": 0.5751372928260995, "elapsed_s": 67.82693004101748, "communication_bytes": null}
+2026-11-03 19:42:21,780 | INFO | EPOCH 57 | {"step": 57, "train_loss": 0.37473851385652857, "val_loss": 0.47314947843551636, "val_macro_f1": 0.5831209218119375, "elapsed_s": 68.99099162500352, "communication_bytes": null}
+2026-11-03 19:42:22,987 | INFO | EPOCH 58 | {"step": 58, "train_loss": 0.3737952269583308, "val_loss": 0.4699974060058594, "val_macro_f1": 0.5815759860933263, "elapsed_s": 70.19742762501119, "communication_bytes": null}
+2026-11-03 19:42:24,201 | INFO | EPOCH 59 | {"step": 59, "train_loss": 0.3723809968757399, "val_loss": 0.473541259765625, "val_macro_f1": 0.562557133051927, "elapsed_s": 71.41180408300715, "communication_bytes": null}
+2026-11-03 19:42:25,407 | INFO | EPOCH 60 | {"step": 60, "train_loss": 0.37178114781137633, "val_loss": 0.4728108048439026, "val_macro_f1": 0.5738958723117319, "elapsed_s": 72.61775741601014, "communication_bytes": null}
+2026-11-03 19:42:26,578 | INFO | EPOCH 61 | {"step": 61, "train_loss": 0.370969221950377, "val_loss": 0.4822908937931061, "val_macro_f1": 0.5761274788471912, "elapsed_s": 73.78879916601, "communication_bytes": null}
+2026-11-03 19:42:27,744 | INFO | EPOCH 62 | {"step": 62, "train_loss": 0.3703236522373752, "val_loss": 0.4846022427082062, "val_macro_f1": 0.5663781163815554, "elapsed_s": 74.95463937500608, "communication_bytes": null}
+2026-11-03 19:42:28,970 | INFO | EPOCH 63 | {"step": 63, "train_loss": 0.3700985955130399, "val_loss": 0.4713088572025299, "val_macro_f1": 0.5747689860000154, "elapsed_s": 76.18095416601864, "communication_bytes": null}
+2026-11-03 19:42:30,193 | INFO | EPOCH 64 | {"step": 64, "train_loss": 0.3674586899668601, "val_loss": 0.4774576425552368, "val_macro_f1": 0.5808421035979539, "elapsed_s": 77.40383500000462, "communication_bytes": null}
+2026-11-03 19:42:31,346 | INFO | EPOCH 65 | {"step": 65, "train_loss": 0.36773547503616827, "val_loss": 0.46946603059768677, "val_macro_f1": 0.5671306929339425, "elapsed_s": 78.55703387502581, "communication_bytes": null}
+2026-11-03 19:42:32,561 | INFO | EPOCH 66 | {"step": 66, "train_loss": 0.36687849901345315, "val_loss": 0.4785389006137848, "val_macro_f1": 0.5601107741903383, "elapsed_s": 79.771819333022, "communication_bytes": null}
+2026-11-03 19:42:33,691 | INFO | EPOCH 67 | {"step": 67, "train_loss": 0.3655246461185122, "val_loss": 0.4878976345062256, "val_macro_f1": 0.5771910769900666, "elapsed_s": 80.90182750002714, "communication_bytes": null}
+2026-11-03 19:42:34,888 | INFO | EPOCH 68 | {"step": 68, "train_loss": 0.3649399276379642, "val_loss": 0.4860301613807678, "val_macro_f1": 0.5865264668081769, "elapsed_s": 82.09810391601059, "communication_bytes": null}
+2026-11-03 19:42:36,061 | INFO | EPOCH 69 | {"step": 69, "train_loss": 0.36389018795769745, "val_loss": 0.4792737364768982, "val_macro_f1": 0.5782940599059311, "elapsed_s": 83.27155183302239, "communication_bytes": null}
+2026-11-03 19:42:37,425 | INFO | EPOCH 70 | {"step": 70, "train_loss": 0.36221155405042854, "val_loss": 0.48994141817092896, "val_macro_f1": 0.572361427775187, "elapsed_s": 84.63551579101477, "communication_bytes": null}
+2026-11-03 19:42:38,576 | INFO | EPOCH 71 | {"step": 71, "train_loss": 0.3627180892170484, "val_loss": 0.4930739402770996, "val_macro_f1": 0.5779311584561263, "elapsed_s": 85.78685795800993, "communication_bytes": null}
+2026-11-03 19:42:39,768 | INFO | EPOCH 72 | {"step": 72, "train_loss": 0.3609572951472075, "val_loss": 0.4940168559551239, "val_macro_f1": 0.5775357092401845, "elapsed_s": 86.97887662501307, "communication_bytes": null}
+2026-11-03 19:42:40,886 | INFO | EPOCH 73 | {"step": 73, "train_loss": 0.36029683045409416, "val_loss": 0.501309335231781, "val_macro_f1": 0.5777550960162007, "elapsed_s": 88.09691120800562, "communication_bytes": null}
+2026-11-03 19:42:42,108 | INFO | EPOCH 74 | {"step": 74, "train_loss": 0.3588857916048559, "val_loss": 0.4941581189632416, "val_macro_f1": 0.5737784609821579, "elapsed_s": 89.31810250002309, "communication_bytes": null}
+2026-11-03 19:42:43,338 | INFO | EPOCH 75 | {"step": 75, "train_loss": 0.35987876477227954, "val_loss": 0.49679362773895264, "val_macro_f1": 0.5592061919577724, "elapsed_s": 90.54875875002472, "communication_bytes": null}
+2026-11-03 19:42:44,478 | INFO | EPOCH 76 | {"step": 76, "train_loss": 0.3574759179067446, "val_loss": 0.5011364221572876, "val_macro_f1": 0.5665723258985281, "elapsed_s": 91.68847520800773, "communication_bytes": null}
+2026-11-03 19:42:45,755 | INFO | EPOCH 77 | {"step": 77, "train_loss": 0.35725784847109315, "val_loss": 0.49690255522727966, "val_macro_f1": 0.5768877453967424, "elapsed_s": 92.96599383300054, "communication_bytes": null}
+2026-11-03 19:42:47,127 | INFO | EPOCH 78 | {"step": 78, "train_loss": 0.3554402151882959, "val_loss": 0.4996583163738251, "val_macro_f1": 0.5777655900059365, "elapsed_s": 94.33753083299962, "communication_bytes": null}
+2026-11-03 19:42:48,372 | INFO | EPOCH 79 | {"step": 79, "train_loss": 0.3548570826762163, "val_loss": 0.5086514949798584, "val_macro_f1": 0.5754917856696796, "elapsed_s": 95.58295041602105, "communication_bytes": null}
+2026-11-03 19:42:49,568 | INFO | EPOCH 80 | {"step": 80, "train_loss": 0.3554554893936275, "val_loss": 0.5001659989356995, "val_macro_f1": 0.5843713268923613, "elapsed_s": 96.7786814160063, "communication_bytes": null}
+2026-11-03 19:42:50,798 | INFO | EPOCH 81 | {"step": 81, "train_loss": 0.3538135367791299, "val_loss": 0.5131668448448181, "val_macro_f1": 0.5557261267867729, "elapsed_s": 98.00852412500535, "communication_bytes": null}
+2026-11-03 19:42:52,095 | INFO | EPOCH 82 | {"step": 82, "train_loss": 0.3531623959288919, "val_loss": 0.5084271430969238, "val_macro_f1": 0.5661052931157358, "elapsed_s": 99.30585025000619, "communication_bytes": null}
+2026-11-03 19:42:53,351 | INFO | EPOCH 83 | {"step": 83, "train_loss": 0.3527581611891189, "val_loss": 0.5310072898864746, "val_macro_f1": 0.5599500556957803, "elapsed_s": 100.56135895801708, "communication_bytes": null}
+2026-11-03 19:42:54,759 | INFO | EPOCH 84 | {"step": 84, "train_loss": 0.352837801116863, "val_loss": 0.5163103938102722, "val_macro_f1": 0.5634482172909622, "elapsed_s": 101.96991912502563, "communication_bytes": null}
+2026-11-03 19:42:56,122 | INFO | EPOCH 85 | {"step": 85, "train_loss": 0.3505601009813399, "val_loss": 0.5173530578613281, "val_macro_f1": 0.581168979967937, "elapsed_s": 103.3325761250162, "communication_bytes": null}
+2026-11-03 19:42:57,390 | INFO | EPOCH 86 | {"step": 86, "train_loss": 0.35016843710263146, "val_loss": 0.5159163475036621, "val_macro_f1": 0.5635389797903805, "elapsed_s": 104.6009291250084, "communication_bytes": null}
+2026-11-03 19:42:58,739 | INFO | EPOCH 87 | {"step": 87, "train_loss": 0.3488095379060232, "val_loss": 0.5290277600288391, "val_macro_f1": 0.5698640515762605, "elapsed_s": 105.94949012500001, "communication_bytes": null}
+2026-11-03 19:43:00,085 | INFO | EPOCH 88 | {"step": 88, "train_loss": 0.34767577613901635, "val_loss": 0.5210080742835999, "val_macro_f1": 0.579107896504907, "elapsed_s": 107.29527637502179, "communication_bytes": null}
+2026-11-03 19:43:01,377 | INFO | EPOCH 89 | {"step": 89, "train_loss": 0.34787719816316415, "val_loss": 0.5264338254928589, "val_macro_f1": 0.5775665404458701, "elapsed_s": 108.58709566600737, "communication_bytes": null}
+2026-11-03 19:43:02,622 | INFO | EPOCH 90 | {"step": 90, "train_loss": 0.3478528599564586, "val_loss": 0.5313209891319275, "val_macro_f1": 0.5500405059858249, "elapsed_s": 109.83248170802835, "communication_bytes": null}
+2026-11-03 19:43:03,794 | INFO | EPOCH 91 | {"step": 91, "train_loss": 0.34643812186189915, "val_loss": 0.5398536920547485, "val_macro_f1": 0.5693290208062947, "elapsed_s": 111.00446620801813, "communication_bytes": null}
+2026-11-03 19:43:05,021 | INFO | EPOCH 92 | {"step": 92, "train_loss": 0.34533888194231316, "val_loss": 0.5279080271720886, "val_macro_f1": 0.5684301911374937, "elapsed_s": 112.23169995800708, "communication_bytes": null}
+2026-11-03 19:43:06,171 | INFO | EPOCH 93 | {"step": 93, "train_loss": 0.34273030353797707, "val_loss": 0.540799617767334, "val_macro_f1": 0.5596744200159818, "elapsed_s": 113.38118545801262, "communication_bytes": null}
+2026-11-03 19:43:07,362 | INFO | EPOCH 94 | {"step": 94, "train_loss": 0.3425006926904037, "val_loss": 0.5410591959953308, "val_macro_f1": 0.5630811187659193, "elapsed_s": 114.57211750000715, "communication_bytes": null}
+2026-11-03 19:43:08,577 | INFO | EPOCH 95 | {"step": 95, "train_loss": 0.3449018341151558, "val_loss": 0.5403553247451782, "val_macro_f1": 0.5675552965374578, "elapsed_s": 115.78793400002178, "communication_bytes": null}
+2026-11-03 19:43:09,810 | INFO | EPOCH 96 | {"step": 96, "train_loss": 0.3418027812866841, "val_loss": 0.5357184410095215, "val_macro_f1": 0.5709712368427631, "elapsed_s": 117.02083900000434, "communication_bytes": null}
+2026-11-03 19:43:11,038 | INFO | EPOCH 97 | {"step": 97, "train_loss": 0.34296485201952803, "val_loss": 0.5378022789955139, "val_macro_f1": 0.5764807605021758, "elapsed_s": 118.24886870800401, "communication_bytes": null}
+2026-11-03 19:43:12,251 | INFO | EPOCH 98 | {"step": 98, "train_loss": 0.33864693211139046, "val_loss": 0.5410317778587341, "val_macro_f1": 0.5716017200169476, "elapsed_s": 119.46120025002165, "communication_bytes": null}
+2026-11-03 19:43:13,470 | INFO | EPOCH 99 | {"step": 99, "train_loss": 0.33909402647324066, "val_loss": 0.5535252690315247, "val_macro_f1": 0.5745854620552253, "elapsed_s": 120.68084858302609, "communication_bytes": null}
+2026-11-03 19:43:14,748 | INFO | EPOCH 100 | {"step": 100, "train_loss": 0.34275948312731225, "val_loss": 0.5471956133842468, "val_macro_f1": 0.5647598272630594, "elapsed_s": 121.9584230830078, "communication_bytes": null}
+2026-11-03 19:43:15,942 | INFO | EPOCH 101 | {"step": 101, "train_loss": 0.33927185015602157, "val_loss": 0.5525883436203003, "val_macro_f1": 0.5634665382386067, "elapsed_s": 123.15233904100023, "communication_bytes": null}
+2026-11-03 19:43:17,159 | INFO | EPOCH 102 | {"step": 102, "train_loss": 0.33689634311644756, "val_loss": 0.5540133714675903, "val_macro_f1": 0.5560707508593227, "elapsed_s": 124.36999454101897, "communication_bytes": null}
+2026-11-03 19:43:18,417 | INFO | EPOCH 103 | {"step": 103, "train_loss": 0.33582446016086287, "val_loss": 0.5520108938217163, "val_macro_f1": 0.571561020450092, "elapsed_s": 125.62720387501759, "communication_bytes": null}
+2026-11-03 19:43:19,623 | INFO | EPOCH 104 | {"step": 104, "train_loss": 0.33558757035976156, "val_loss": 0.5535646677017212, "val_macro_f1": 0.5693165568436227, "elapsed_s": 126.8333727910067, "communication_bytes": null}
+2026-11-03 19:43:20,907 | INFO | EPOCH 105 | {"step": 105, "train_loss": 0.335743948929113, "val_loss": 0.5594865679740906, "val_macro_f1": 0.5485827126874142, "elapsed_s": 128.11774795802194, "communication_bytes": null}
+2026-11-03 19:43:22,070 | INFO | EPOCH 106 | {"step": 106, "train_loss": 0.3376292115401762, "val_loss": 0.5690245032310486, "val_macro_f1": 0.5698029399544475, "elapsed_s": 129.28032200000598, "communication_bytes": null}
+2026-11-03 19:43:23,296 | INFO | EPOCH 107 | {"step": 107, "train_loss": 0.3362716437767095, "val_loss": 0.5572990775108337, "val_macro_f1": 0.5591202039214056, "elapsed_s": 130.5062337500276, "communication_bytes": null}
+2026-11-03 19:43:24,521 | INFO | EPOCH 108 | {"step": 108, "train_loss": 0.33585523229896014, "val_loss": 0.5656951069831848, "val_macro_f1": 0.5621570529023546, "elapsed_s": 131.7313125000219, "communication_bytes": null}
+2026-11-03 19:43:25,639 | INFO | EPOCH 109 | {"step": 109, "train_loss": 0.3338752325494654, "val_loss": 0.5753664970397949, "val_macro_f1": 0.5639356404672384, "elapsed_s": 132.84922241599998, "communication_bytes": null}
+2026-11-03 19:43:26,784 | INFO | EPOCH 110 | {"step": 110, "train_loss": 0.33263836193216273, "val_loss": 0.5680716037750244, "val_macro_f1": 0.5686031066380461, "elapsed_s": 133.9949010410055, "communication_bytes": null}
+2026-11-03 19:43:28,023 | INFO | EPOCH 111 | {"step": 111, "train_loss": 0.3312525821449125, "val_loss": 0.5778875350952148, "val_macro_f1": 0.5697966647957753, "elapsed_s": 135.2335189160076, "communication_bytes": null}
+2026-11-03 19:43:29,249 | INFO | EPOCH 112 | {"step": 112, "train_loss": 0.332991899628433, "val_loss": 0.5787616968154907, "val_macro_f1": 0.5597686824209778, "elapsed_s": 136.4593643330154, "communication_bytes": null}
+2026-11-03 19:43:30,394 | INFO | EPOCH 113 | {"step": 113, "train_loss": 0.3303094886249558, "val_loss": 0.5719301104545593, "val_macro_f1": 0.5797550914096392, "elapsed_s": 137.6042465000064, "communication_bytes": null}
+2026-11-03 19:43:31,612 | INFO | EPOCH 114 | {"step": 114, "train_loss": 0.32912344806903393, "val_loss": 0.56965172290802, "val_macro_f1": 0.5738745917368064, "elapsed_s": 138.82216645800509, "communication_bytes": null}
+2026-11-03 19:43:32,786 | INFO | EPOCH 115 | {"step": 115, "train_loss": 0.33091427351377983, "val_loss": 0.5805308222770691, "val_macro_f1": 0.5674168937051602, "elapsed_s": 139.99632412500796, "communication_bytes": null}
+2026-11-03 19:43:34,002 | INFO | EPOCH 116 | {"step": 116, "train_loss": 0.3308745007137779, "val_loss": 0.5766857266426086, "val_macro_f1": 0.5747709463828389, "elapsed_s": 141.2130722500151, "communication_bytes": null}
+2026-11-03 19:43:35,213 | INFO | EPOCH 117 | {"step": 117, "train_loss": 0.33005902719216557, "val_loss": 0.5650012493133545, "val_macro_f1": 0.5919614607078464, "elapsed_s": 142.42396058302256, "communication_bytes": null}
+2026-11-03 19:43:36,420 | INFO | EPOCH 118 | {"step": 118, "train_loss": 0.32744609554010096, "val_loss": 0.5813604593276978, "val_macro_f1": 0.5705146006186039, "elapsed_s": 143.6304119580018, "communication_bytes": null}
+2026-11-03 19:43:37,664 | INFO | EPOCH 119 | {"step": 119, "train_loss": 0.32697652139863104, "val_loss": 0.5805370807647705, "val_macro_f1": 0.5666588905503667, "elapsed_s": 144.87441295801545, "communication_bytes": null}
+2026-11-03 19:43:38,852 | INFO | EPOCH 120 | {"step": 120, "train_loss": 0.32655766260553143, "val_loss": 0.5937317609786987, "val_macro_f1": 0.5688837805043205, "elapsed_s": 146.06284616602352, "communication_bytes": null}
+2026-11-03 19:43:40,106 | INFO | EPOCH 121 | {"step": 121, "train_loss": 0.3259344615310068, "val_loss": 0.5963132977485657, "val_macro_f1": 0.5758728282154169, "elapsed_s": 147.31624825001927, "communication_bytes": null}
+2026-11-03 19:43:41,321 | INFO | EPOCH 122 | {"step": 122, "train_loss": 0.32728962695232405, "val_loss": 0.5915197730064392, "val_macro_f1": 0.5604071154109835, "elapsed_s": 148.53160200000275, "communication_bytes": null}
+2026-11-03 19:43:42,557 | INFO | EPOCH 123 | {"step": 123, "train_loss": 0.3242582551914086, "val_loss": 0.6058960556983948, "val_macro_f1": 0.5666090352772467, "elapsed_s": 149.76801937501295, "communication_bytes": null}
+2026-11-03 19:43:43,807 | INFO | EPOCH 124 | {"step": 124, "train_loss": 0.32638225231470275, "val_loss": 0.5911003351211548, "val_macro_f1": 0.5737341516122832, "elapsed_s": 151.0176308330265, "communication_bytes": null}
+2026-11-03 19:43:45,015 | INFO | EPOCH 125 | {"step": 125, "train_loss": 0.3239889291103546, "val_loss": 0.5987818241119385, "val_macro_f1": 0.5746401115110766, "elapsed_s": 152.22598129100516, "communication_bytes": null}
+2026-11-03 19:43:46,298 | INFO | EPOCH 126 | {"step": 126, "train_loss": 0.3248227921622942, "val_loss": 0.6039153933525085, "val_macro_f1": 0.5662814190455372, "elapsed_s": 153.50906800001394, "communication_bytes": null}
+2026-11-03 19:43:47,495 | INFO | EPOCH 127 | {"step": 127, "train_loss": 0.3227856223674647, "val_loss": 0.6006950736045837, "val_macro_f1": 0.5731934210471696, "elapsed_s": 154.70611995802028, "communication_bytes": null}
+2026-11-03 19:43:48,719 | INFO | EPOCH 128 | {"step": 128, "train_loss": 0.32323110114463854, "val_loss": 0.6003982424736023, "val_macro_f1": 0.5585146809640301, "elapsed_s": 155.92934375000186, "communication_bytes": null}
+2026-11-03 19:43:49,943 | INFO | EPOCH 129 | {"step": 129, "train_loss": 0.3216095626503789, "val_loss": 0.6142137050628662, "val_macro_f1": 0.5714348320928454, "elapsed_s": 157.1539481660002, "communication_bytes": null}
+2026-11-03 19:43:51,114 | INFO | EPOCH 130 | {"step": 130, "train_loss": 0.32079848903173724, "val_loss": 0.6174300909042358, "val_macro_f1": 0.5758720841990412, "elapsed_s": 158.32455729102367, "communication_bytes": null}
+2026-11-03 19:43:52,367 | INFO | EPOCH 131 | {"step": 131, "train_loss": 0.32215385084864456, "val_loss": 0.6217190027236938, "val_macro_f1": 0.5770692105176256, "elapsed_s": 159.57734758302104, "communication_bytes": null}
+2026-11-03 19:43:53,545 | INFO | EPOCH 132 | {"step": 132, "train_loss": 0.31950673351926207, "val_loss": 0.6180949211120605, "val_macro_f1": 0.5830694923155759, "elapsed_s": 160.75551687501138, "communication_bytes": null}
+2026-11-03 19:43:54,837 | INFO | EPOCH 133 | {"step": 133, "train_loss": 0.3217136953735007, "val_loss": 0.6267034411430359, "val_macro_f1": 0.5690065063454866, "elapsed_s": 162.0474585830234, "communication_bytes": null}
+2026-11-03 19:43:56,082 | INFO | EPOCH 134 | {"step": 134, "train_loss": 0.3181985442140035, "val_loss": 0.6175696849822998, "val_macro_f1": 0.5582834658795536, "elapsed_s": 163.2926304580178, "communication_bytes": null}
+2026-11-03 19:43:57,380 | INFO | EPOCH 135 | {"step": 135, "train_loss": 0.31853778235240426, "val_loss": 0.6174313426017761, "val_macro_f1": 0.5558078194951457, "elapsed_s": 164.5909729580162, "communication_bytes": null}
+2026-11-03 19:43:58,633 | INFO | EPOCH 136 | {"step": 136, "train_loss": 0.32235222593105284, "val_loss": 0.614746630191803, "val_macro_f1": 0.5849475094933755, "elapsed_s": 165.84358854099992, "communication_bytes": null}
+2026-11-03 19:43:59,845 | INFO | EPOCH 137 | {"step": 137, "train_loss": 0.32047069105442144, "val_loss": 0.6308755874633789, "val_macro_f1": 0.563414562125939, "elapsed_s": 167.0558125830139, "communication_bytes": null}
+2026-11-03 19:44:01,090 | INFO | EPOCH 138 | {"step": 138, "train_loss": 0.3164314701481303, "val_loss": 0.6284375786781311, "val_macro_f1": 0.5716733315050525, "elapsed_s": 168.30093937501078, "communication_bytes": null}
+2026-11-03 19:44:02,354 | INFO | EPOCH 139 | {"step": 139, "train_loss": 0.3170728255100343, "val_loss": 0.6250385046005249, "val_macro_f1": 0.5721944014551561, "elapsed_s": 169.56490804100758, "communication_bytes": null}
+2026-11-03 19:44:03,570 | INFO | EPOCH 140 | {"step": 140, "train_loss": 0.3168739423151642, "val_loss": 0.6136106252670288, "val_macro_f1": 0.5720575018950236, "elapsed_s": 170.78094891601359, "communication_bytes": null}
+2026-11-03 19:44:04,807 | INFO | EPOCH 141 | {"step": 141, "train_loss": 0.31493132570055155, "val_loss": 0.6384585499763489, "val_macro_f1": 0.5691306899635916, "elapsed_s": 172.01802566600963, "communication_bytes": null}
+2026-11-03 19:44:05,995 | INFO | EPOCH 142 | {"step": 142, "train_loss": 0.31661128489897206, "val_loss": 0.6318347454071045, "val_macro_f1": 0.5745252376853729, "elapsed_s": 173.20544591601356, "communication_bytes": null}
+2026-11-03 19:44:07,238 | INFO | EPOCH 143 | {"step": 143, "train_loss": 0.31605032228104063, "val_loss": 0.6342672109603882, "val_macro_f1": 0.5729749500417214, "elapsed_s": 174.44910320802592, "communication_bytes": null}
+2026-11-03 19:44:08,482 | INFO | EPOCH 144 | {"step": 144, "train_loss": 0.3144479568985253, "val_loss": 0.6310527324676514, "val_macro_f1": 0.5792889051353697, "elapsed_s": 175.6929349580023, "communication_bytes": null}
+2026-11-03 19:44:09,648 | INFO | EPOCH 145 | {"step": 145, "train_loss": 0.3178776306184131, "val_loss": 0.6399486064910889, "val_macro_f1": 0.5838835874145486, "elapsed_s": 176.85879616602324, "communication_bytes": null}
+2026-11-03 19:44:10,904 | INFO | EPOCH 146 | {"step": 146, "train_loss": 0.31580266512519656, "val_loss": 0.6504872441291809, "val_macro_f1": 0.5711461426502924, "elapsed_s": 178.11475350000546, "communication_bytes": null}
+2026-11-03 19:44:12,116 | INFO | EPOCH 147 | {"step": 147, "train_loss": 0.31384812655417504, "val_loss": 0.6586948037147522, "val_macro_f1": 0.5728151526019416, "elapsed_s": 179.32711404102156, "communication_bytes": null}
+2026-11-03 19:44:13,358 | INFO | EPOCH 148 | {"step": 148, "train_loss": 0.31366657518667784, "val_loss": 0.6439028382301331, "val_macro_f1": 0.5840619082576063, "elapsed_s": 180.5688645830087, "communication_bytes": null}
+2026-11-03 19:44:14,699 | INFO | EPOCH 149 | {"step": 149, "train_loss": 0.31134002828585616, "val_loss": 0.644618570804596, "val_macro_f1": 0.5592569798136283, "elapsed_s": 181.91005191602744, "communication_bytes": null}
+2026-11-03 19:44:15,903 | INFO | EPOCH 150 | {"step": 150, "train_loss": 0.31643640177333004, "val_loss": 0.6426215767860413, "val_macro_f1": 0.5792550797797963, "elapsed_s": 183.1133006660093, "communication_bytes": null}
+2026-11-03 19:44:17,186 | INFO | EPOCH 151 | {"step": 151, "train_loss": 0.3111892773934459, "val_loss": 0.6432953476905823, "val_macro_f1": 0.5649054352801495, "elapsed_s": 184.39713645802112, "communication_bytes": null}
+2026-11-03 19:44:18,393 | INFO | EPOCH 152 | {"step": 152, "train_loss": 0.3153788510890565, "val_loss": 0.6470531225204468, "val_macro_f1": 0.5664034298277405, "elapsed_s": 185.60386520801694, "communication_bytes": null}
+2026-11-03 19:44:19,634 | INFO | EPOCH 153 | {"step": 153, "train_loss": 0.3086613776308213, "val_loss": 0.6491119861602783, "val_macro_f1": 0.5746750313678851, "elapsed_s": 186.8450414580002, "communication_bytes": null}
+2026-11-03 19:44:20,847 | INFO | EPOCH 154 | {"step": 154, "train_loss": 0.31224461259109393, "val_loss": 0.6570274233818054, "val_macro_f1": 0.5483059201030726, "elapsed_s": 188.05717300000833, "communication_bytes": null}
+2026-11-03 19:44:22,118 | INFO | EPOCH 155 | {"step": 155, "train_loss": 0.31313662808783777, "val_loss": 0.6441783905029297, "val_macro_f1": 0.5695510752093955, "elapsed_s": 189.3284275830083, "communication_bytes": null}
+2026-11-03 19:44:23,365 | INFO | EPOCH 156 | {"step": 156, "train_loss": 0.3108258313860419, "val_loss": 0.6433691382408142, "val_macro_f1": 0.5573123512302814, "elapsed_s": 190.57532233302481, "communication_bytes": null}
+2026-11-03 19:44:24,752 | INFO | EPOCH 157 | {"step": 157, "train_loss": 0.30855519253170655, "val_loss": 0.6754350662231445, "val_macro_f1": 0.5667706290331358, "elapsed_s": 191.9631029580196, "communication_bytes": null}
+2026-11-03 19:44:26,023 | INFO | EPOCH 158 | {"step": 158, "train_loss": 0.3121496069791466, "val_loss": 0.6498781442642212, "val_macro_f1": 0.5799138056270682, "elapsed_s": 193.23380083302618, "communication_bytes": null}
+2026-11-03 19:44:27,237 | INFO | EPOCH 159 | {"step": 159, "train_loss": 0.30978856374749464, "val_loss": 0.6589750051498413, "val_macro_f1": 0.5594735774269038, "elapsed_s": 194.44813166602398, "communication_bytes": null}
+2026-11-03 19:44:28,508 | INFO | EPOCH 160 | {"step": 160, "train_loss": 0.30959362855012684, "val_loss": 0.6591880321502686, "val_macro_f1": 0.5602452789637359, "elapsed_s": 195.71892037501675, "communication_bytes": null}
+2026-11-03 19:44:29,777 | INFO | EPOCH 161 | {"step": 161, "train_loss": 0.30527707528029663, "val_loss": 0.658693790435791, "val_macro_f1": 0.5776650867905943, "elapsed_s": 196.98780245802482, "communication_bytes": null}
+2026-11-03 19:44:31,074 | INFO | EPOCH 162 | {"step": 162, "train_loss": 0.3082755222696389, "val_loss": 0.6595639586448669, "val_macro_f1": 0.5581086065914802, "elapsed_s": 198.28441662501427, "communication_bytes": null}
+2026-11-03 19:44:32,295 | INFO | EPOCH 163 | {"step": 163, "train_loss": 0.31257860549589667, "val_loss": 0.6616601347923279, "val_macro_f1": 0.5497213242717586, "elapsed_s": 199.50530045802589, "communication_bytes": null}
+2026-11-03 19:44:33,536 | INFO | EPOCH 164 | {"step": 164, "train_loss": 0.30620473029855305, "val_loss": 0.6595098972320557, "val_macro_f1": 0.5698070176539406, "elapsed_s": 200.746363208018, "communication_bytes": null}
+2026-11-03 19:44:34,718 | INFO | EPOCH 165 | {"step": 165, "train_loss": 0.306337916695226, "val_loss": 0.6551210284233093, "val_macro_f1": 0.5623276898484856, "elapsed_s": 201.9286857500265, "communication_bytes": null}
+2026-11-03 19:44:35,942 | INFO | EPOCH 166 | {"step": 166, "train_loss": 0.3070302964667354, "val_loss": 0.6896227598190308, "val_macro_f1": 0.5635132209861833, "elapsed_s": 203.15315220801858, "communication_bytes": null}
+2026-11-03 19:44:37,128 | INFO | EPOCH 167 | {"step": 167, "train_loss": 0.3075249874180846, "val_loss": 0.6602376699447632, "val_macro_f1": 0.5655068434680142, "elapsed_s": 204.3390365000232, "communication_bytes": null}
+2026-11-03 19:44:38,364 | INFO | EPOCH 168 | {"step": 168, "train_loss": 0.3074544610542515, "val_loss": 0.6801329255104065, "val_macro_f1": 0.5511707990132738, "elapsed_s": 205.5749810830166, "communication_bytes": null}
+2026-11-03 19:44:39,632 | INFO | EPOCH 169 | {"step": 169, "train_loss": 0.30599708092539607, "val_loss": 0.6736595034599304, "val_macro_f1": 0.5765394831184515, "elapsed_s": 206.84295075002592, "communication_bytes": null}
+2026-11-03 19:44:40,820 | INFO | EPOCH 170 | {"step": 170, "train_loss": 0.3057712948664866, "val_loss": 0.6897420287132263, "val_macro_f1": 0.5708584713693176, "elapsed_s": 208.03107045800425, "communication_bytes": null}
+2026-11-03 19:44:42,053 | INFO | EPOCH 171 | {"step": 171, "train_loss": 0.30415780362262756, "val_loss": 0.6786025762557983, "val_macro_f1": 0.5863536098027746, "elapsed_s": 209.263660541008, "communication_bytes": null}
+2026-11-03 19:44:43,273 | INFO | EPOCH 172 | {"step": 172, "train_loss": 0.30456411977915504, "val_loss": 0.6842814087867737, "val_macro_f1": 0.5601867816022731, "elapsed_s": 210.48391000000993, "communication_bytes": null}
+2026-11-03 19:44:44,469 | INFO | EPOCH 173 | {"step": 173, "train_loss": 0.3054085739276839, "val_loss": 0.6873142123222351, "val_macro_f1": 0.5634181388357568, "elapsed_s": 211.6801496250264, "communication_bytes": null}
+2026-11-03 19:44:45,647 | INFO | EPOCH 174 | {"step": 174, "train_loss": 0.30382148437730205, "val_loss": 0.6975027322769165, "val_macro_f1": 0.5714452368706197, "elapsed_s": 212.85792241600575, "communication_bytes": null}
+2026-11-03 19:44:47,097 | INFO | EPOCH 175 | {"step": 175, "train_loss": 0.30969247515714377, "val_loss": 0.6755959987640381, "val_macro_f1": 0.5542479902402188, "elapsed_s": 214.30721287502092, "communication_bytes": null}
+2026-11-03 19:44:48,452 | INFO | EPOCH 176 | {"step": 176, "train_loss": 0.3032746632690911, "val_loss": 0.6766512989997864, "val_macro_f1": 0.5706304827629332, "elapsed_s": 215.66242420801427, "communication_bytes": null}
+2026-11-03 19:44:49,655 | INFO | EPOCH 177 | {"step": 177, "train_loss": 0.3049060892444302, "val_loss": 0.6780205368995667, "val_macro_f1": 0.5682521803454639, "elapsed_s": 216.8654077500105, "communication_bytes": null}
+2026-11-03 19:44:50,865 | INFO | EPOCH 178 | {"step": 178, "train_loss": 0.3001056686202553, "val_loss": 0.6823293566703796, "val_macro_f1": 0.5686728599907546, "elapsed_s": 218.0752903750108, "communication_bytes": null}
+2026-11-03 19:44:52,070 | INFO | EPOCH 179 | {"step": 179, "train_loss": 0.2998116249545173, "val_loss": 0.6962149739265442, "val_macro_f1": 0.5444204752178518, "elapsed_s": 219.2806096250133, "communication_bytes": null}
+2026-11-03 19:44:53,307 | INFO | EPOCH 180 | {"step": 180, "train_loss": 0.30412080612435394, "val_loss": 0.6806022524833679, "val_macro_f1": 0.5541974190321305, "elapsed_s": 220.51735120802186, "communication_bytes": null}
+2026-11-03 19:44:54,551 | INFO | EPOCH 181 | {"step": 181, "train_loss": 0.308362011338037, "val_loss": 0.6769165396690369, "val_macro_f1": 0.5659398010555504, "elapsed_s": 221.76167250002618, "communication_bytes": null}
+2026-11-03 19:44:55,825 | INFO | EPOCH 182 | {"step": 182, "train_loss": 0.3006076535119147, "val_loss": 0.684394121170044, "val_macro_f1": 0.5785289219370113, "elapsed_s": 223.03581116601708, "communication_bytes": null}
+2026-11-03 19:44:57,099 | INFO | EPOCH 183 | {"step": 183, "train_loss": 0.29887578523671565, "val_loss": 0.6986986398696899, "val_macro_f1": 0.5611589418044776, "elapsed_s": 224.31006141600665, "communication_bytes": null}
+2026-11-03 19:44:58,362 | INFO | EPOCH 184 | {"step": 184, "train_loss": 0.30587036863853123, "val_loss": 0.6904691457748413, "val_macro_f1": 0.5672406430119189, "elapsed_s": 225.57279175001895, "communication_bytes": null}
+2026-11-03 19:44:59,648 | INFO | EPOCH 185 | {"step": 185, "train_loss": 0.3025897826622337, "val_loss": 0.6988646388053894, "val_macro_f1": 0.5639621217093672, "elapsed_s": 226.8591520000191, "communication_bytes": null}
+2026-11-03 19:45:00,894 | INFO | EPOCH 186 | {"step": 186, "train_loss": 0.29743087546966296, "val_loss": 0.6920760869979858, "val_macro_f1": 0.5806823654095231, "elapsed_s": 228.1048363330192, "communication_bytes": null}
+2026-11-03 19:45:02,064 | INFO | EPOCH 187 | {"step": 187, "train_loss": 0.3004692001206986, "val_loss": 0.7002938985824585, "val_macro_f1": 0.5732274068118606, "elapsed_s": 229.27508270801627, "communication_bytes": null}
+2026-11-03 19:45:03,291 | INFO | EPOCH 188 | {"step": 188, "train_loss": 0.3001858792737441, "val_loss": 0.6935153007507324, "val_macro_f1": 0.5728344141419199, "elapsed_s": 230.50138225001865, "communication_bytes": null}
+2026-11-03 19:45:04,471 | INFO | EPOCH 189 | {"step": 189, "train_loss": 0.29767784576093653, "val_loss": 0.7088609337806702, "val_macro_f1": 0.5605609184673055, "elapsed_s": 231.68192208302207, "communication_bytes": null}
+2026-11-03 19:45:05,745 | INFO | EPOCH 190 | {"step": 190, "train_loss": 0.3057586137984637, "val_loss": 0.6937670707702637, "val_macro_f1": 0.5606232232436332, "elapsed_s": 232.95552112502628, "communication_bytes": null}
+2026-11-03 19:45:07,002 | INFO | EPOCH 191 | {"step": 191, "train_loss": 0.3034035051771006, "val_loss": 0.7024834752082825, "val_macro_f1": 0.5671511838170591, "elapsed_s": 234.21302300001844, "communication_bytes": null}
+2026-11-03 19:45:08,194 | INFO | EPOCH 192 | {"step": 192, "train_loss": 0.29561408826651875, "val_loss": 0.7240490913391113, "val_macro_f1": 0.5523015884797497, "elapsed_s": 235.40476108301664, "communication_bytes": null}
+2026-11-03 19:45:09,355 | INFO | EPOCH 193 | {"step": 193, "train_loss": 0.2979743651550749, "val_loss": 0.7074198126792908, "val_macro_f1": 0.5618419167369683, "elapsed_s": 236.56617683300283, "communication_bytes": null}
+2026-11-03 19:45:10,625 | INFO | EPOCH 194 | {"step": 194, "train_loss": 0.30044118335117304, "val_loss": 0.7014983892440796, "val_macro_f1": 0.5479235378046274, "elapsed_s": 237.83604787502554, "communication_bytes": null}
+2026-11-03 19:45:11,853 | INFO | EPOCH 195 | {"step": 195, "train_loss": 0.30457769133882023, "val_loss": 0.696409285068512, "val_macro_f1": 0.5585600094015757, "elapsed_s": 239.06391025002813, "communication_bytes": null}
+2026-11-03 19:45:13,056 | INFO | EPOCH 196 | {"step": 196, "train_loss": 0.2966843799313137, "val_loss": 0.7079694867134094, "val_macro_f1": 0.5643840185925038, "elapsed_s": 240.26655804101028, "communication_bytes": null}
+2026-11-03 19:45:14,328 | INFO | EPOCH 197 | {"step": 197, "train_loss": 0.29695419350712854, "val_loss": 0.702127993106842, "val_macro_f1": 0.5718470994462665, "elapsed_s": 241.53846354101552, "communication_bytes": null}
+2026-11-03 19:45:15,505 | INFO | EPOCH 198 | {"step": 198, "train_loss": 0.296400321838008, "val_loss": 0.7096192836761475, "val_macro_f1": 0.5624335752106513, "elapsed_s": 242.7152120830142, "communication_bytes": null}
+2026-11-03 19:45:16,723 | INFO | EPOCH 199 | {"step": 199, "train_loss": 0.29738338605437015, "val_loss": 0.7015463709831238, "val_macro_f1": 0.556610196895165, "elapsed_s": 243.9333279580169, "communication_bytes": null}
+2026-11-03 19:45:18,035 | INFO | EPOCH 200 | {"step": 200, "train_loss": 0.29773760183936143, "val_loss": 0.7175306677818298, "val_macro_f1": 0.5721562890714769, "elapsed_s": 245.24519470802625, "communication_bytes": null}
+2026-11-03 19:45:18,422 | INFO | FINAL TEST RESULTS
+{
+  "accuracy": 0.7415464218044017,
+  "loss": 1.3457176685333252,
+  "per_class": {
+    "Normal": {
+      "precision": 0.9488562203750773,
+      "recall": 0.7466216216216216,
+      "f1-score": 0.8356777687025441,
+      "support": 37000.0
+    },
+    "Analysis": {
+      "precision": 0.006498781478472786,
+      "recall": 0.011816838995568686,
+      "f1-score": 0.008385744234800839,
+      "support": 677.0
+    },
+    "Backdoor": {
+      "precision": 0.022967386311437757,
+      "recall": 0.08576329331046312,
+      "f1-score": 0.036231884057971016,
+      "support": 583.0
+    },
+    "DoS": {
+      "precision": 0.36577805331680097,
+      "recall": 0.14428955734898508,
+      "f1-score": 0.20694493160294633,
+      "support": 4089.0
+    },
+    "Exploits": {
+      "precision": 0.5818337617823479,
+      "recall": 0.7929392741645707,
+      "f1-score": 0.6711781926016044,
+      "support": 11132.0
+    },
+    "Fuzzers": {
+      "precision": 0.2613401091661961,
+      "recall": 0.4580996370834708,
+      "f1-score": 0.33281399808245443,
+      "support": 6062.0
+    },
+    "Generic": {
+      "precision": 0.9902223193314033,
+      "recall": 0.9606274177309099,
+      "f1-score": 0.9752003873258379,
+      "support": 18871.0
+    },
+    "Reconnaissance": {
+      "precision": 0.8942462230793957,
+      "recall": 0.795766590389016,
+      "f1-score": 0.8421371272892387,
+      "support": 3496.0
+    },
+    "Shellcode": {
+      "precision": 0.2653927813163482,
+      "recall": 0.6613756613756614,
+      "f1-score": 0.3787878787878788,
+      "support": 378.0
+    },
+    "Worms": {
+      "precision": 0.4,
+      "recall": 0.36363636363636365,
+      "f1-score": 0.38095238095238093,
+      "support": 44.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      27625,
+      558,
+      4,
+      83,
+      896,
+      7557,
+      36,
+      64,
+      176,
+      1
+    ],
+    [
+      26,
+      8,
+      103,
+      70,
+      469,
+      0,
+      1,
+      0,
+      0,
+      0
+    ],
+    [
+      2,
+      8,
+      50,
+      59,
+      452,
+      1,
+      2,
+      2,
+      7,
+      0
+    ],
+    [
+      25,
+      289,
+      885,
+      590,
+      2137,
+      45,
+      32,
+      31,
+      55,
+      0
+    ],
+    [
+      136,
+      281,
+      849,
+      501,
+      8827,
+      150,
+      71,
+      164,
+      135,
+      18
+    ],
+    [
+      1262,
+      51,
+      160,
+      207,
+      1284,
+      2777,
+      24,
+      49,
+      246,
+      2
+    ],
+    [
+      13,
+      0,
+      6,
+      62,
+      599,
+      36,
+      18128,
+      3,
+      21,
+      3
+    ],
+    [
+      13,
+      36,
+      116,
+      30,
+      442,
+      21,
+      7,
+      2782,
+      49,
+      0
+    ],
+    [
+      12,
+      0,
+      4,
+      11,
+      43,
+      37,
+      5,
+      16,
+      250,
+      0
+    ],
+    [
+      0,
+      0,
+      0,
+      0,
+      22,
+      2,
+      1,
+      0,
+      3,
+      16
+    ]
+  ],
+  "class_names": [
+    "Normal",
+    "Analysis",
+    "Backdoor",
+    "DoS",
+    "Exploits",
+    "Fuzzers",
+    "Generic",
+    "Reconnaissance",
+    "Shellcode",
+    "Worms"
+  ],
+  "macro_precision": 0.473713563615748,
+  "macro_recall": 0.5020936255656631,
+  "macro_f1-score": 0.46683102936376564,
+  "weighted_precision": 0.8090783912503449,
+  "weighted_recall": 0.7415464218044017,
+  "weighted_f1-score": 0.7626343503153212,
+  "roc_auc_ovr_macro": 0.9348267305877396,
+  "roc_auc_unavailable_reason": null,
+  "method": "centralized",
+  "case": "equal_iid",
+  "seed": 42,
+  "train_s": 245.24746658300865,
+  "evaluation_s": 0.3738567079999484,
+  "model": "torch_mlp",
+  "communication_bytes": null,
+  "train_loss": 0.29773760183936143,
+  "world_size": 1,
+  "test_samples": 82332,
+  "selected_val_macro_f1": 0.5919614607078464
+}
+2026-11-03 19:45:18,423 | INFO | COMPLETED | artifacts=/Users/dangchauanh/Downloads/Cloud/experiments/centralized

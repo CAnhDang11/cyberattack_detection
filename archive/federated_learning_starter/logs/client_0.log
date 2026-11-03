@@ -1,0 +1,296 @@
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:01:35] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:03:15] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:03:15] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:18:45] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:20:26] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:20:26] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:21:23] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:22:06] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:23:11] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:24:53] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:24:53] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:26:29] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:28:00] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:28:00] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:30:09] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:31:39] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:31:39] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:33:07] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:35:02] [ERROR] [FL-Client-0] Error during client operation: Socket connection closed unexpectedly after receiving 0/12 bytes.
+Traceback (most recent call last):
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/client.py", line 162, in start
+    header, payload = recv_msg(sock)
+                      ^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 40, in recv_msg
+    prefix = _recv_exact(sock, 12)
+             ^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/dangchauanh/Downloads/Cloud/federated_learning_starter/src/network.py", line 32, in _recv_exact
+    raise ConnectionError(f"Socket connection closed unexpectedly after receiving {pos}/{num_bytes} bytes.")
+ConnectionError: Socket connection closed unexpectedly after receiving 0/12 bytes.
+[2026-10-18 15:35:02] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:35:06] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:35:20] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:35:22] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:35:34] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:5000
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:5000
+[2026-10-18 15:35:42] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:35:53] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:8080
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:8080
+[2026-10-18 15:36:02] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:36:04] [INFO] [FL-Client-0] 
+--- [Round 1] Received Global Model ---
+[2026-10-18 15:36:08] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.2445
+[2026-10-18 15:36:09] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1347
+[2026-10-18 15:36:09] [INFO] [FL-Client-0]   Local Eval: Loss=0.1213, Acc=0.9426 (Duration: 4.40s)
+[2026-10-18 15:36:09] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:11] [INFO] [FL-Client-0] 
+--- [Round 2] Received Global Model ---
+[2026-10-18 15:36:12] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1284
+[2026-10-18 15:36:13] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1255
+[2026-10-18 15:36:13] [INFO] [FL-Client-0]   Local Eval: Loss=0.1182, Acc=0.9451 (Duration: 2.32s)
+[2026-10-18 15:36:13] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:16] [INFO] [FL-Client-0] 
+--- [Round 3] Received Global Model ---
+[2026-10-18 15:36:17] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1226
+[2026-10-18 15:36:18] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1210
+[2026-10-18 15:36:19] [INFO] [FL-Client-0]   Local Eval: Loss=0.1146, Acc=0.9448 (Duration: 2.32s)
+[2026-10-18 15:36:19] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:20] [INFO] [FL-Client-0] 
+--- [Round 4] Received Global Model ---
+[2026-10-18 15:36:21] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1194
+[2026-10-18 15:36:22] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1191
+[2026-10-18 15:36:22] [INFO] [FL-Client-0]   Local Eval: Loss=0.1157, Acc=0.9462 (Duration: 2.27s)
+[2026-10-18 15:36:22] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:23] [INFO] [FL-Client-0] 
+--- [Round 5] Received Global Model ---
+[2026-10-18 15:36:24] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1179
+[2026-10-18 15:36:26] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1172
+[2026-10-18 15:36:26] [INFO] [FL-Client-0]   Local Eval: Loss=0.1138, Acc=0.9434 (Duration: 2.34s)
+[2026-10-18 15:36:26] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:27] [INFO] [FL-Client-0] 
+--- [Round 6] Received Global Model ---
+[2026-10-18 15:36:28] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1162
+[2026-10-18 15:36:29] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1156
+[2026-10-18 15:36:30] [INFO] [FL-Client-0]   Local Eval: Loss=0.1102, Acc=0.9480 (Duration: 2.34s)
+[2026-10-18 15:36:30] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:31] [INFO] [FL-Client-0] 
+--- [Round 7] Received Global Model ---
+[2026-10-18 15:36:32] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1150
+[2026-10-18 15:36:33] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1143
+[2026-10-18 15:36:33] [INFO] [FL-Client-0]   Local Eval: Loss=0.1119, Acc=0.9472 (Duration: 2.38s)
+[2026-10-18 15:36:33] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:34] [INFO] [FL-Client-0] 
+--- [Round 8] Received Global Model ---
+[2026-10-18 15:36:36] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1137
+[2026-10-18 15:36:37] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1128
+[2026-10-18 15:36:37] [INFO] [FL-Client-0]   Local Eval: Loss=0.1102, Acc=0.9467 (Duration: 2.26s)
+[2026-10-18 15:36:37] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:38] [INFO] [FL-Client-0] 
+--- [Round 9] Received Global Model ---
+[2026-10-18 15:36:39] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1130
+[2026-10-18 15:36:40] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1120
+[2026-10-18 15:36:40] [INFO] [FL-Client-0]   Local Eval: Loss=0.1145, Acc=0.9446 (Duration: 2.30s)
+[2026-10-18 15:36:40] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:42] [INFO] [FL-Client-0] 
+--- [Round 10] Received Global Model ---
+[2026-10-18 15:36:43] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1119
+[2026-10-18 15:36:44] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1113
+[2026-10-18 15:36:44] [INFO] [FL-Client-0]   Local Eval: Loss=0.1113, Acc=0.9451 (Duration: 2.30s)
+[2026-10-18 15:36:44] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:36:45] [INFO] [FL-Client-0] Received TRAINING_COMPLETE from server. Shutting down gracefully.
+[2026-10-18 15:36:45] [INFO] [FL-Client-0] Client connection closed.
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Starting Client 0
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Connecting to Server at 127.0.0.1:8080
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Local Data Partition: 70137 train, 17534 val samples
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Device: mps
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] ============================================================
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Successfully connected to server at 127.0.0.1:8080
+[2026-10-18 15:38:19] [INFO] [FL-Client-0] Sent registration for Client_0. Waiting for training to start...
+[2026-10-18 15:38:21] [INFO] [FL-Client-0] 
+--- [Round 1] Received Global Model ---
+[2026-10-18 15:38:22] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.2435
+[2026-10-18 15:38:24] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1350
+[2026-10-18 15:38:24] [INFO] [FL-Client-0]   Local Eval: Loss=0.1267, Acc=0.9394 (Duration: 2.52s)
+[2026-10-18 15:38:24] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:28] [INFO] [FL-Client-0] 
+--- [Round 2] Received Global Model ---
+[2026-10-18 15:38:29] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1292
+[2026-10-18 15:38:30] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1250
+[2026-10-18 15:38:31] [INFO] [FL-Client-0]   Local Eval: Loss=0.1161, Acc=0.9452 (Duration: 2.40s)
+[2026-10-18 15:38:31] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:32] [INFO] [FL-Client-0] 
+--- [Round 3] Received Global Model ---
+[2026-10-18 15:38:33] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1230
+[2026-10-18 15:38:34] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1212
+[2026-10-18 15:38:34] [INFO] [FL-Client-0]   Local Eval: Loss=0.1144, Acc=0.9462 (Duration: 2.27s)
+[2026-10-18 15:38:34] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:36] [INFO] [FL-Client-0] 
+--- [Round 4] Received Global Model ---
+[2026-10-18 15:38:37] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1196
+[2026-10-18 15:38:38] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1182
+[2026-10-18 15:38:38] [INFO] [FL-Client-0]   Local Eval: Loss=0.1156, Acc=0.9409 (Duration: 2.28s)
+[2026-10-18 15:38:38] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:39] [INFO] [FL-Client-0] 
+--- [Round 5] Received Global Model ---
+[2026-10-18 15:38:40] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1183
+[2026-10-18 15:38:42] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1165
+[2026-10-18 15:38:42] [INFO] [FL-Client-0]   Local Eval: Loss=0.1121, Acc=0.9456 (Duration: 2.35s)
+[2026-10-18 15:38:42] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:43] [INFO] [FL-Client-0] 
+--- [Round 6] Received Global Model ---
+[2026-10-18 15:38:44] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1162
+[2026-10-18 15:38:45] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1155
+[2026-10-18 15:38:45] [INFO] [FL-Client-0]   Local Eval: Loss=0.1134, Acc=0.9434 (Duration: 2.27s)
+[2026-10-18 15:38:45] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:46] [INFO] [FL-Client-0] 
+--- [Round 7] Received Global Model ---
+[2026-10-18 15:38:48] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1149
+[2026-10-18 15:38:49] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1141
+[2026-10-18 15:38:49] [INFO] [FL-Client-0]   Local Eval: Loss=0.1106, Acc=0.9449 (Duration: 2.26s)
+[2026-10-18 15:38:49] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:50] [INFO] [FL-Client-0] 
+--- [Round 8] Received Global Model ---
+[2026-10-18 15:38:51] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1142
+[2026-10-18 15:38:52] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1134
+[2026-10-18 15:38:53] [INFO] [FL-Client-0]   Local Eval: Loss=0.1099, Acc=0.9475 (Duration: 2.27s)
+[2026-10-18 15:38:53] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:54] [INFO] [FL-Client-0] 
+--- [Round 9] Received Global Model ---
+[2026-10-18 15:38:55] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1129
+[2026-10-18 15:38:56] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1126
+[2026-10-18 15:38:56] [INFO] [FL-Client-0]   Local Eval: Loss=0.1100, Acc=0.9451 (Duration: 2.34s)
+[2026-10-18 15:38:56] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:38:57] [INFO] [FL-Client-0] 
+--- [Round 10] Received Global Model ---
+[2026-10-18 15:38:59] [INFO] [FL-Client-0]   Epoch 1/2 - Loss: 0.1123
+[2026-10-18 15:39:00] [INFO] [FL-Client-0]   Epoch 2/2 - Loss: 0.1122
+[2026-10-18 15:39:00] [INFO] [FL-Client-0]   Local Eval: Loss=0.1114, Acc=0.9466 (Duration: 2.28s)
+[2026-10-18 15:39:00] [INFO] [FL-Client-0]   ✓ Sent updated weights to server (139.5 KB)
+[2026-10-18 15:39:01] [INFO] [FL-Client-0] Received TRAINING_COMPLETE from server. Shutting down gracefully.
+[2026-10-18 15:39:01] [INFO] [FL-Client-0] Client connection closed.

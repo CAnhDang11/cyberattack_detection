@@ -1,0 +1,3 @@
+# Historical binary starters
+
+Both starter directories were reviewed through their imports, CLI entry points and README files. They implement independent binary pipelines: DDP used test accuracy for checkpoint selection; the federated starter used custom TCP sockets rather than Flower. Their internal modules are referenced by their entry points and are not verified dead code. The complete trees, including logs and checkpoints, are therefore retained here for reference. Active experiments use `unsw/`; archived relative dataset lookup and old absolute README commands are not maintained. No datasets, notebook experiments or baseline outputs were deleted.

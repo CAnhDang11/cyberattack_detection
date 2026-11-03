@@ -1,0 +1,35 @@
+{
+  "train_counts": {
+    "Normal": 56000,
+    "Generic": 40000,
+    "Exploits": 33393,
+    "Fuzzers": 18184,
+    "DoS": 12264,
+    "Reconnaissance": 10491,
+    "Analysis": 2000,
+    "Backdoor": 1746,
+    "Shellcode": 1133,
+    "Worms": 130
+  },
+  "test_counts": {
+    "Normal": 37000,
+    "Generic": 18871,
+    "Exploits": 11132,
+    "Fuzzers": 6062,
+    "DoS": 4089,
+    "Reconnaissance": 3496,
+    "Analysis": 677,
+    "Backdoor": 583,
+    "Shellcode": 378,
+    "Worms": 44
+  },
+  "test_rows_with_train_feature_duplicate": 8541,
+  "seed": 42,
+  "limit_per_class": 0,
+  "train_csv": "UNSW_NB15_training-set.csv",
+  "test_csv": "UNSW_NB15_testing-set.csv",
+  "selected_training_csv_rows": 175341,
+  "fit_rows": 140273,
+  "validation_rows": 35068,
+  "test_rows": 82332
+}

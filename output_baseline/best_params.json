@@ -1,0 +1,33 @@
+{
+  "Logistic Regression": {
+    "alpha": 2.231090560744303e-06,
+    "epochs": 60,
+    "eta0": 0.008169189024867433
+  },
+  "MLP": {
+    "alpha": 0.0001410889228367583,
+    "batch_size": 128,
+    "epochs": 60,
+    "hidden": [
+      128,
+      64,
+      32
+    ],
+    "lr": 0.028688397387750718
+  },
+  "XGBoost": {
+    "colsample_bytree": 1.0,
+    "learning_rate": 0.11299721774595123,
+    "max_depth": 8,
+    "min_child_weight": 5,
+    "n_estimators": 500,
+    "reg_lambda": 0.10440310373117892,
+    "subsample": 1.0
+  },
+  "Random Forest": {
+    "n_estimators": 300,
+    "min_samples_leaf": 2,
+    "max_features": 0.3,
+    "max_depth": 20
+  }
+}

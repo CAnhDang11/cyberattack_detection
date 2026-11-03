@@ -1,0 +1,1081 @@
+Mô hình,Cấu hình,Seed,Điểm hoạt động,Loại,Recall
+Logistic Regression,Mặc định,0,"τ=0,5",Generic,0.9917333474643633
+Logistic Regression,Mặc định,0,"τ=0,5",Exploits,0.784495149119655
+Logistic Regression,Mặc định,0,"τ=0,5",Fuzzers,0.5018145826459914
+Logistic Regression,Mặc định,0,"τ=0,5",DoS,0.8823673269748105
+Logistic Regression,Mặc định,0,"τ=0,5",Reconnaissance,0.9410755148741419
+Logistic Regression,Mặc định,0,"τ=0,5",Analysis,0.914327917282127
+Logistic Regression,Mặc định,0,"τ=0,5",Backdoor,0.9725557461406518
+Logistic Regression,Mặc định,0,"τ=0,5",Shellcode,0.8888888888888888
+Logistic Regression,Mặc định,0,"τ=0,5",Worms,0.9090909090909091
+Logistic Regression,Mặc định,0,Youden,Generic,0.998516241852578
+Logistic Regression,Mặc định,0,Youden,Exploits,0.9245418613007546
+Logistic Regression,Mặc định,0,Youden,Fuzzers,0.7982514021774991
+Logistic Regression,Mặc định,0,Youden,DoS,0.9557348985081927
+Logistic Regression,Mặc định,0,Youden,Reconnaissance,0.9948512585812357
+Logistic Regression,Mặc định,0,Youden,Analysis,0.9158050221565731
+Logistic Regression,Mặc định,0,Youden,Backdoor,0.9948542024013722
+Logistic Regression,Mặc định,0,Youden,Shellcode,0.9735449735449735
+Logistic Regression,Mặc định,0,Youden,Worms,0.9772727272727273
+Logistic Regression,Mặc định,0,FPR≤10%,Generic,0.9970324837051561
+Logistic Regression,Mặc định,0,FPR≤10%,Exploits,0.8890585698886094
+Logistic Regression,Mặc định,0,FPR≤10%,Fuzzers,0.7024084460574068
+Logistic Regression,Mặc định,0,FPR≤10%,DoS,0.9351919784788457
+Logistic Regression,Mặc định,0,FPR≤10%,Reconnaissance,0.98941647597254
+Logistic Regression,Mặc định,0,FPR≤10%,Analysis,0.9158050221565731
+Logistic Regression,Mặc định,0,FPR≤10%,Backdoor,0.9897084048027445
+Logistic Regression,Mặc định,0,FPR≤10%,Shellcode,0.9735449735449735
+Logistic Regression,Mặc định,0,FPR≤10%,Worms,0.9772727272727273
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Generic,0.999311112288697
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Exploits,0.9489759252605102
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Fuzzers,0.8076542395249092
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",DoS,0.9806798728295427
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Reconnaissance,0.994279176201373
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Backdoor,0.9897084048027445
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Shellcode,0.9788359788359788
+Logistic Regression,Tinh chỉnh,0,"τ=0,5",Worms,1.0
+Logistic Regression,Tinh chỉnh,0,Youden,Generic,0.9984632504901702
+Logistic Regression,Tinh chỉnh,0,Youden,Exploits,0.9232842256557672
+Logistic Regression,Tinh chỉnh,0,Youden,Fuzzers,0.6179478719894425
+Logistic Regression,Tinh chỉnh,0,Youden,DoS,0.9650281242357545
+Logistic Regression,Tinh chỉnh,0,Youden,Reconnaissance,0.9754004576659039
+Logistic Regression,Tinh chỉnh,0,Youden,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,0,Youden,Backdoor,0.9794168096054888
+Logistic Regression,Tinh chỉnh,0,Youden,Shellcode,0.9391534391534392
+Logistic Regression,Tinh chỉnh,0,Youden,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Generic,0.9990461554766573
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Exploits,0.9433165648580668
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Fuzzers,0.7764764104256021
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,DoS,0.9782342871117633
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Reconnaissance,0.9925629290617849
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Backdoor,0.9862778730703259
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Shellcode,0.9788359788359788
+Logistic Regression,Tinh chỉnh,0,FPR≤10%,Worms,1.0
+MLP,Mặc định,0,"τ=0,5",Generic,0.9999470086375921
+MLP,Mặc định,0,"τ=0,5",Exploits,0.9968559108875314
+MLP,Mặc định,0,"τ=0,5",Fuzzers,0.9239524909270868
+MLP,Mặc định,0,"τ=0,5",DoS,0.9990217657128883
+MLP,Mặc định,0,"τ=0,5",Reconnaissance,0.9982837528604119
+MLP,Mặc định,0,"τ=0,5",Analysis,0.9985228951255539
+MLP,Mặc định,0,"τ=0,5",Backdoor,1.0
+MLP,Mặc định,0,"τ=0,5",Shellcode,0.9947089947089947
+MLP,Mặc định,0,"τ=0,5",Worms,1.0
+MLP,Mặc định,0,Youden,Generic,0.9995230777383286
+MLP,Mặc định,0,Youden,Exploits,0.9854473589651456
+MLP,Mặc định,0,Youden,Fuzzers,0.7223688551633124
+MLP,Mặc định,0,Youden,DoS,0.9941305942773294
+MLP,Mặc định,0,Youden,Reconnaissance,0.9937070938215103
+MLP,Mặc định,0,Youden,Analysis,0.9955686853766618
+MLP,Mặc định,0,Youden,Backdoor,0.9965694682675815
+MLP,Mặc định,0,Youden,Shellcode,0.9814814814814815
+MLP,Mặc định,0,Youden,Worms,0.9772727272727273
+MLP,Mặc định,0,FPR≤10%,Generic,0.9998410259127762
+MLP,Mặc định,0,FPR≤10%,Exploits,0.994699964067553
+MLP,Mặc định,0,FPR≤10%,Fuzzers,0.8746288353678654
+MLP,Mặc định,0,FPR≤10%,DoS,0.9980435314257765
+MLP,Mặc định,0,FPR≤10%,Reconnaissance,0.9982837528604119
+MLP,Mặc định,0,FPR≤10%,Analysis,0.9985228951255539
+MLP,Mặc định,0,FPR≤10%,Backdoor,1.0
+MLP,Mặc định,0,FPR≤10%,Shellcode,0.9920634920634921
+MLP,Mặc định,0,FPR≤10%,Worms,1.0
+MLP,Tinh chỉnh,0,"τ=0,5",Generic,0.9997880345503682
+MLP,Tinh chỉnh,0,"τ=0,5",Exploits,0.9897592526051024
+MLP,Tinh chỉnh,0,"τ=0,5",Fuzzers,0.8264599142197294
+MLP,Tinh chỉnh,0,"τ=0,5",DoS,0.9941305942773294
+MLP,Tinh chỉnh,0,"τ=0,5",Reconnaissance,0.9957093821510298
+MLP,Tinh chỉnh,0,"τ=0,5",Analysis,0.9970457902511078
+MLP,Tinh chỉnh,0,"τ=0,5",Backdoor,0.9982847341337907
+MLP,Tinh chỉnh,0,"τ=0,5",Shellcode,0.9814814814814815
+MLP,Tinh chỉnh,0,"τ=0,5",Worms,1.0
+MLP,Tinh chỉnh,0,Youden,Generic,0.9993641036511048
+MLP,Tinh chỉnh,0,Youden,Exploits,0.9816744520301832
+MLP,Tinh chỉnh,0,Youden,Fuzzers,0.731936654569449
+MLP,Tinh chỉnh,0,Youden,DoS,0.9892394228417706
+MLP,Tinh chỉnh,0,Youden,Reconnaissance,0.9917048054919908
+MLP,Tinh chỉnh,0,Youden,Analysis,0.9852289512555391
+MLP,Tinh chỉnh,0,Youden,Backdoor,0.9948542024013722
+MLP,Tinh chỉnh,0,Youden,Shellcode,0.9788359788359788
+MLP,Tinh chỉnh,0,Youden,Worms,1.0
+MLP,Tinh chỉnh,0,FPR≤10%,Generic,0.9998410259127762
+MLP,Tinh chỉnh,0,FPR≤10%,Exploits,0.992903341717571
+MLP,Tinh chỉnh,0,FPR≤10%,Fuzzers,0.8805674694820191
+MLP,Tinh chỉnh,0,FPR≤10%,DoS,0.9955979457079971
+MLP,Tinh chỉnh,0,FPR≤10%,Reconnaissance,0.9977116704805492
+MLP,Tinh chỉnh,0,FPR≤10%,Analysis,0.9985228951255539
+MLP,Tinh chỉnh,0,FPR≤10%,Backdoor,1.0
+MLP,Tinh chỉnh,0,FPR≤10%,Shellcode,0.9920634920634921
+MLP,Tinh chỉnh,0,FPR≤10%,Worms,1.0
+XGBoost,Mặc định,0,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Mặc định,0,"τ=0,5",Exploits,0.9939813151275602
+XGBoost,Mặc định,0,"τ=0,5",Fuzzers,0.894919168591224
+XGBoost,Mặc định,0,"τ=0,5",DoS,0.9990217657128883
+XGBoost,Mặc định,0,"τ=0,5",Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,0,"τ=0,5",Analysis,0.9453471196454948
+XGBoost,Mặc định,0,"τ=0,5",Backdoor,1.0
+XGBoost,Mặc định,0,"τ=0,5",Shellcode,0.9947089947089947
+XGBoost,Mặc định,0,"τ=0,5",Worms,1.0
+XGBoost,Mặc định,0,Youden,Generic,0.9997350431879604
+XGBoost,Mặc định,0,Youden,Exploits,0.9869744879626302
+XGBoost,Mặc định,0,Youden,Fuzzers,0.7317716925107225
+XGBoost,Mặc định,0,Youden,DoS,0.995842504279775
+XGBoost,Mặc định,0,Youden,Reconnaissance,0.9974256292906178
+XGBoost,Mặc định,0,Youden,Analysis,0.9261447562776958
+XGBoost,Mặc định,0,Youden,Backdoor,0.9965694682675815
+XGBoost,Mặc định,0,Youden,Shellcode,0.9814814814814815
+XGBoost,Mặc định,0,Youden,Worms,1.0
+XGBoost,Mặc định,0,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Mặc định,0,FPR≤10%,Exploits,0.9951491196550485
+XGBoost,Mặc định,0,FPR≤10%,Fuzzers,0.9161992741669416
+XGBoost,Mặc định,0,FPR≤10%,DoS,0.9992663242846662
+XGBoost,Mặc định,0,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,0,FPR≤10%,Analysis,0.9497784342688331
+XGBoost,Mặc định,0,FPR≤10%,Backdoor,1.0
+XGBoost,Mặc định,0,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Mặc định,0,FPR≤10%,Worms,1.0
+XGBoost,Tinh chỉnh,0,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,0,"τ=0,5",Exploits,0.9934423284225655
+XGBoost,Tinh chỉnh,0,"τ=0,5",Fuzzers,0.859122401847575
+XGBoost,Tinh chỉnh,0,"τ=0,5",DoS,0.9980435314257765
+XGBoost,Tinh chỉnh,0,"τ=0,5",Reconnaissance,0.9991418764302059
+XGBoost,Tinh chỉnh,0,"τ=0,5",Analysis,0.9497784342688331
+XGBoost,Tinh chỉnh,0,"τ=0,5",Backdoor,1.0
+XGBoost,Tinh chỉnh,0,"τ=0,5",Shellcode,0.9920634920634921
+XGBoost,Tinh chỉnh,0,"τ=0,5",Worms,1.0
+XGBoost,Tinh chỉnh,0,Youden,Generic,0.9996290604631445
+XGBoost,Tinh chỉnh,0,Youden,Exploits,0.986794825727632
+XGBoost,Tinh chỉnh,0,Youden,Fuzzers,0.696799736060706
+XGBoost,Tinh chỉnh,0,Youden,DoS,0.9951088285644412
+XGBoost,Tinh chỉnh,0,Youden,Reconnaissance,0.9965675057208238
+XGBoost,Tinh chỉnh,0,Youden,Analysis,0.9335302806499262
+XGBoost,Tinh chỉnh,0,Youden,Backdoor,0.9982847341337907
+XGBoost,Tinh chỉnh,0,Youden,Shellcode,0.9735449735449735
+XGBoost,Tinh chỉnh,0,Youden,Worms,1.0
+XGBoost,Tinh chỉnh,0,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,0,FPR≤10%,Exploits,0.9949694574200503
+XGBoost,Tinh chỉnh,0,FPR≤10%,Fuzzers,0.8893104585945233
+XGBoost,Tinh chỉnh,0,FPR≤10%,DoS,0.9985326485693323
+XGBoost,Tinh chỉnh,0,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Tinh chỉnh,0,FPR≤10%,Analysis,0.9571639586410635
+XGBoost,Tinh chỉnh,0,FPR≤10%,Backdoor,1.0
+XGBoost,Tinh chỉnh,0,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Tinh chỉnh,0,FPR≤10%,Worms,1.0
+Random Forest,Mặc định,0,"τ=0,5",Generic,1.0
+Random Forest,Mặc định,0,"τ=0,5",Exploits,0.9979338842975206
+Random Forest,Mặc định,0,"τ=0,5",Fuzzers,0.9366545694490267
+Random Forest,Mặc định,0,"τ=0,5",DoS,0.9992663242846662
+Random Forest,Mặc định,0,"τ=0,5",Reconnaissance,0.9994279176201373
+Random Forest,Mặc định,0,"τ=0,5",Analysis,1.0
+Random Forest,Mặc định,0,"τ=0,5",Backdoor,1.0
+Random Forest,Mặc định,0,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Mặc định,0,"τ=0,5",Worms,1.0
+Random Forest,Mặc định,0,Youden,Generic,0.9996290604631445
+Random Forest,Mặc định,0,Youden,Exploits,0.9859863456701401
+Random Forest,Mặc định,0,Youden,Fuzzers,0.6666116793137579
+Random Forest,Mặc định,0,Youden,DoS,0.9943751528491074
+Random Forest,Mặc định,0,Youden,Reconnaissance,0.9954233409610984
+Random Forest,Mặc định,0,Youden,Analysis,0.9748892171344166
+Random Forest,Mặc định,0,Youden,Backdoor,0.9948542024013722
+Random Forest,Mặc định,0,Youden,Shellcode,0.9814814814814815
+Random Forest,Mặc định,0,Youden,Worms,0.9772727272727273
+Random Forest,Mặc định,0,FPR≤10%,Generic,1.0
+Random Forest,Mặc định,0,FPR≤10%,Exploits,0.9961372619475386
+Random Forest,Mặc định,0,FPR≤10%,Fuzzers,0.8888155724183437
+Random Forest,Mặc định,0,FPR≤10%,DoS,0.9992663242846662
+Random Forest,Mặc định,0,FPR≤10%,Reconnaissance,0.9991418764302059
+Random Forest,Mặc định,0,FPR≤10%,Analysis,1.0
+Random Forest,Mặc định,0,FPR≤10%,Backdoor,1.0
+Random Forest,Mặc định,0,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Mặc định,0,FPR≤10%,Worms,1.0
+Random Forest,Tinh chỉnh,0,"τ=0,5",Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,0,"τ=0,5",Exploits,0.9963169241825368
+Random Forest,Tinh chỉnh,0,"τ=0,5",Fuzzers,0.9226327944572749
+Random Forest,Tinh chỉnh,0,"τ=0,5",DoS,0.9995108828564441
+Random Forest,Tinh chỉnh,0,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,0,"τ=0,5",Analysis,0.982274741506647
+Random Forest,Tinh chỉnh,0,"τ=0,5",Backdoor,1.0
+Random Forest,Tinh chỉnh,0,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,0,"τ=0,5",Worms,1.0
+Random Forest,Tinh chỉnh,0,Youden,Generic,0.9996820518255525
+Random Forest,Tinh chỉnh,0,Youden,Exploits,0.9903880704275961
+Random Forest,Tinh chỉnh,0,Youden,Fuzzers,0.7599802045529528
+Random Forest,Tinh chỉnh,0,Youden,DoS,0.9941305942773294
+Random Forest,Tinh chỉnh,0,Youden,Reconnaissance,0.9965675057208238
+Random Forest,Tinh chỉnh,0,Youden,Analysis,0.9645494830132939
+Random Forest,Tinh chỉnh,0,Youden,Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,0,Youden,Shellcode,0.9841269841269841
+Random Forest,Tinh chỉnh,0,Youden,Worms,0.9772727272727273
+Random Forest,Tinh chỉnh,0,FPR≤10%,Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,0,FPR≤10%,Exploits,0.9965864175350342
+Random Forest,Tinh chỉnh,0,FPR≤10%,Fuzzers,0.9312108215110525
+Random Forest,Tinh chỉnh,0,FPR≤10%,DoS,0.9995108828564441
+Random Forest,Tinh chỉnh,0,FPR≤10%,Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,0,FPR≤10%,Analysis,0.9852289512555391
+Random Forest,Tinh chỉnh,0,FPR≤10%,Backdoor,1.0
+Random Forest,Tinh chỉnh,0,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,0,FPR≤10%,Worms,1.0
+Logistic Regression,Mặc định,1,"τ=0,5",Generic,0.9974034232420116
+Logistic Regression,Mặc định,1,"τ=0,5",Exploits,0.9298418972332015
+Logistic Regression,Mặc định,1,"τ=0,5",Fuzzers,0.6290003299241175
+Logistic Regression,Mặc định,1,"τ=0,5",DoS,0.9682073856688677
+Logistic Regression,Mặc định,1,"τ=0,5",Reconnaissance,0.9430778032036613
+Logistic Regression,Mặc định,1,"τ=0,5",Analysis,0.914327917282127
+Logistic Regression,Mặc định,1,"τ=0,5",Backdoor,0.9777015437392796
+Logistic Regression,Mặc định,1,"τ=0,5",Shellcode,0.9206349206349206
+Logistic Regression,Mặc định,1,"τ=0,5",Worms,0.9090909090909091
+Logistic Regression,Mặc định,1,Youden,Generic,0.996343595993853
+Logistic Regression,Mặc định,1,Youden,Exploits,0.9147502694933525
+Logistic Regression,Mặc định,1,Youden,Fuzzers,0.5626855823160674
+Logistic Regression,Mặc định,1,Youden,DoS,0.9608706285155295
+Logistic Regression,Mặc định,1,Youden,Reconnaissance,0.9224828375286042
+Logistic Regression,Mặc định,1,Youden,Analysis,0.914327917282127
+Logistic Regression,Mặc định,1,Youden,Backdoor,0.9742710120068611
+Logistic Regression,Mặc định,1,Youden,Shellcode,0.8915343915343915
+Logistic Regression,Mặc định,1,Youden,Worms,0.9090909090909091
+Logistic Regression,Mặc định,1,FPR≤10%,Generic,0.9980923109533146
+Logistic Regression,Mặc định,1,FPR≤10%,Exploits,0.9473589651455264
+Logistic Regression,Mặc định,1,FPR≤10%,Fuzzers,0.7043879907621247
+Logistic Regression,Mặc định,1,FPR≤10%,DoS,0.9755441428222059
+Logistic Regression,Mặc định,1,FPR≤10%,Reconnaissance,0.9602402745995423
+Logistic Regression,Mặc định,1,FPR≤10%,Analysis,0.914327917282127
+Logistic Regression,Mặc định,1,FPR≤10%,Backdoor,0.9845626072041166
+Logistic Regression,Mặc định,1,FPR≤10%,Shellcode,0.9444444444444444
+Logistic Regression,Mặc định,1,FPR≤10%,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Generic,0.9998410259127762
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Exploits,0.9892202659001078
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Fuzzers,0.9442428241504454
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",DoS,0.9911958914159942
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Reconnaissance,0.9985697940503433
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Analysis,0.9852289512555391
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Backdoor,0.9982847341337907
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Shellcode,0.9947089947089947
+Logistic Regression,Tinh chỉnh,1,"τ=0,5",Worms,1.0
+Logistic Regression,Tinh chỉnh,1,Youden,Generic,0.9978803455036829
+Logistic Regression,Tinh chỉnh,1,Youden,Exploits,0.9409809558030902
+Logistic Regression,Tinh chỉnh,1,Youden,Fuzzers,0.6248762784559552
+Logistic Regression,Tinh chỉnh,1,Youden,DoS,0.9733431156762045
+Logistic Regression,Tinh chỉnh,1,Youden,Reconnaissance,0.9716819221967964
+Logistic Regression,Tinh chỉnh,1,Youden,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,1,Youden,Backdoor,0.9845626072041166
+Logistic Regression,Tinh chỉnh,1,Youden,Shellcode,0.9470899470899471
+Logistic Regression,Tinh chỉnh,1,Youden,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Generic,0.9990461554766573
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Exploits,0.9582285303629177
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Fuzzers,0.7575057736720554
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,DoS,0.9801907556859868
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Reconnaissance,0.9897025171624714
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Analysis,0.9172821270310192
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Backdoor,0.9931389365351629
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Shellcode,0.9682539682539683
+Logistic Regression,Tinh chỉnh,1,FPR≤10%,Worms,0.9772727272727273
+MLP,Mặc định,1,"τ=0,5",Generic,0.9998940172751841
+MLP,Mặc định,1,"τ=0,5",Exploits,0.9942508084800575
+MLP,Mặc định,1,"τ=0,5",Fuzzers,0.9150445397558562
+MLP,Mặc định,1,"τ=0,5",DoS,0.9982880899975544
+MLP,Mặc định,1,"τ=0,5",Reconnaissance,0.9979977116704806
+MLP,Mặc định,1,"τ=0,5",Analysis,0.9985228951255539
+MLP,Mặc định,1,"τ=0,5",Backdoor,1.0
+MLP,Mặc định,1,"τ=0,5",Shellcode,0.9894179894179894
+MLP,Mặc định,1,"τ=0,5",Worms,1.0
+MLP,Mặc định,1,Youden,Generic,0.9995760691007366
+MLP,Mặc định,1,Youden,Exploits,0.979698167445203
+MLP,Mặc định,1,Youden,Fuzzers,0.7063675354668426
+MLP,Mặc định,1,Youden,DoS,0.9924186842748839
+MLP,Mặc định,1,Youden,Reconnaissance,0.9879862700228833
+MLP,Mặc định,1,Youden,Analysis,0.9852289512555391
+MLP,Mặc định,1,Youden,Backdoor,0.9931389365351629
+MLP,Mặc định,1,Youden,Shellcode,0.9682539682539683
+MLP,Mặc định,1,Youden,Worms,1.0
+MLP,Mặc định,1,FPR≤10%,Generic,0.9998940172751841
+MLP,Mặc định,1,FPR≤10%,Exploits,0.9933524973050665
+MLP,Mặc định,1,FPR≤10%,Fuzzers,0.8960739030023095
+MLP,Mặc định,1,FPR≤10%,DoS,0.9977989728539985
+MLP,Mặc định,1,FPR≤10%,Reconnaissance,0.9974256292906178
+MLP,Mặc định,1,FPR≤10%,Analysis,0.9985228951255539
+MLP,Mặc định,1,FPR≤10%,Backdoor,1.0
+MLP,Mặc định,1,FPR≤10%,Shellcode,0.9894179894179894
+MLP,Mặc định,1,FPR≤10%,Worms,1.0
+MLP,Tinh chỉnh,1,"τ=0,5",Generic,0.9996820518255525
+MLP,Tinh chỉnh,1,"τ=0,5",Exploits,0.9913762127200862
+MLP,Tinh chỉnh,1,"τ=0,5",Fuzzers,0.860442098317387
+MLP,Tinh chỉnh,1,"τ=0,5",DoS,0.9953533871362191
+MLP,Tinh chỉnh,1,"τ=0,5",Reconnaissance,0.9968535469107551
+MLP,Tinh chỉnh,1,"τ=0,5",Analysis,0.9940915805022157
+MLP,Tinh chỉnh,1,"τ=0,5",Backdoor,1.0
+MLP,Tinh chỉnh,1,"τ=0,5",Shellcode,0.9894179894179894
+MLP,Tinh chỉnh,1,"τ=0,5",Worms,1.0
+MLP,Tinh chỉnh,1,Youden,Generic,0.9993641036511048
+MLP,Tinh chỉnh,1,Youden,Exploits,0.9785303629177147
+MLP,Tinh chỉnh,1,Youden,Fuzzers,0.7024084460574068
+MLP,Tinh chỉnh,1,Youden,DoS,0.9899730985571045
+MLP,Tinh chỉnh,1,Youden,Reconnaissance,0.9902745995423341
+MLP,Tinh chỉnh,1,Youden,Analysis,0.9926144756277696
+MLP,Tinh chỉnh,1,Youden,Backdoor,0.9948542024013722
+MLP,Tinh chỉnh,1,Youden,Shellcode,0.9761904761904762
+MLP,Tinh chỉnh,1,Youden,Worms,1.0
+MLP,Tinh chỉnh,1,FPR≤10%,Generic,0.9996820518255525
+MLP,Tinh chỉnh,1,FPR≤10%,Exploits,0.9913762127200862
+MLP,Tinh chỉnh,1,FPR≤10%,Fuzzers,0.8596172880237546
+MLP,Tinh chỉnh,1,FPR≤10%,DoS,0.9953533871362191
+MLP,Tinh chỉnh,1,FPR≤10%,Reconnaissance,0.9968535469107551
+MLP,Tinh chỉnh,1,FPR≤10%,Analysis,0.9940915805022157
+MLP,Tinh chỉnh,1,FPR≤10%,Backdoor,1.0
+MLP,Tinh chỉnh,1,FPR≤10%,Shellcode,0.9894179894179894
+MLP,Tinh chỉnh,1,FPR≤10%,Worms,1.0
+XGBoost,Mặc định,1,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Mặc định,1,"τ=0,5",Exploits,0.9939813151275602
+XGBoost,Mặc định,1,"τ=0,5",Fuzzers,0.894919168591224
+XGBoost,Mặc định,1,"τ=0,5",DoS,0.9990217657128883
+XGBoost,Mặc định,1,"τ=0,5",Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,1,"τ=0,5",Analysis,0.9453471196454948
+XGBoost,Mặc định,1,"τ=0,5",Backdoor,1.0
+XGBoost,Mặc định,1,"τ=0,5",Shellcode,0.9947089947089947
+XGBoost,Mặc định,1,"τ=0,5",Worms,1.0
+XGBoost,Mặc định,1,Youden,Generic,0.9997350431879604
+XGBoost,Mặc định,1,Youden,Exploits,0.9869744879626302
+XGBoost,Mặc định,1,Youden,Fuzzers,0.7317716925107225
+XGBoost,Mặc định,1,Youden,DoS,0.995842504279775
+XGBoost,Mặc định,1,Youden,Reconnaissance,0.9974256292906178
+XGBoost,Mặc định,1,Youden,Analysis,0.9261447562776958
+XGBoost,Mặc định,1,Youden,Backdoor,0.9965694682675815
+XGBoost,Mặc định,1,Youden,Shellcode,0.9814814814814815
+XGBoost,Mặc định,1,Youden,Worms,1.0
+XGBoost,Mặc định,1,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Mặc định,1,FPR≤10%,Exploits,0.9951491196550485
+XGBoost,Mặc định,1,FPR≤10%,Fuzzers,0.9161992741669416
+XGBoost,Mặc định,1,FPR≤10%,DoS,0.9992663242846662
+XGBoost,Mặc định,1,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,1,FPR≤10%,Analysis,0.9497784342688331
+XGBoost,Mặc định,1,FPR≤10%,Backdoor,1.0
+XGBoost,Mặc định,1,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Mặc định,1,FPR≤10%,Worms,1.0
+XGBoost,Tinh chỉnh,1,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,1,"τ=0,5",Exploits,0.9934423284225655
+XGBoost,Tinh chỉnh,1,"τ=0,5",Fuzzers,0.859122401847575
+XGBoost,Tinh chỉnh,1,"τ=0,5",DoS,0.9980435314257765
+XGBoost,Tinh chỉnh,1,"τ=0,5",Reconnaissance,0.9991418764302059
+XGBoost,Tinh chỉnh,1,"τ=0,5",Analysis,0.9497784342688331
+XGBoost,Tinh chỉnh,1,"τ=0,5",Backdoor,1.0
+XGBoost,Tinh chỉnh,1,"τ=0,5",Shellcode,0.9920634920634921
+XGBoost,Tinh chỉnh,1,"τ=0,5",Worms,1.0
+XGBoost,Tinh chỉnh,1,Youden,Generic,0.9996290604631445
+XGBoost,Tinh chỉnh,1,Youden,Exploits,0.986794825727632
+XGBoost,Tinh chỉnh,1,Youden,Fuzzers,0.696799736060706
+XGBoost,Tinh chỉnh,1,Youden,DoS,0.9951088285644412
+XGBoost,Tinh chỉnh,1,Youden,Reconnaissance,0.9965675057208238
+XGBoost,Tinh chỉnh,1,Youden,Analysis,0.9335302806499262
+XGBoost,Tinh chỉnh,1,Youden,Backdoor,0.9982847341337907
+XGBoost,Tinh chỉnh,1,Youden,Shellcode,0.9735449735449735
+XGBoost,Tinh chỉnh,1,Youden,Worms,1.0
+XGBoost,Tinh chỉnh,1,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,1,FPR≤10%,Exploits,0.9949694574200503
+XGBoost,Tinh chỉnh,1,FPR≤10%,Fuzzers,0.8893104585945233
+XGBoost,Tinh chỉnh,1,FPR≤10%,DoS,0.9985326485693323
+XGBoost,Tinh chỉnh,1,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Tinh chỉnh,1,FPR≤10%,Analysis,0.9571639586410635
+XGBoost,Tinh chỉnh,1,FPR≤10%,Backdoor,1.0
+XGBoost,Tinh chỉnh,1,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Tinh chỉnh,1,FPR≤10%,Worms,1.0
+Random Forest,Mặc định,1,"τ=0,5",Generic,1.0
+Random Forest,Mặc định,1,"τ=0,5",Exploits,0.9980237154150198
+Random Forest,Mặc định,1,"τ=0,5",Fuzzers,0.9453975585615308
+Random Forest,Mặc định,1,"τ=0,5",DoS,0.999755441428222
+Random Forest,Mặc định,1,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Mặc định,1,"τ=0,5",Analysis,1.0
+Random Forest,Mặc định,1,"τ=0,5",Backdoor,1.0
+Random Forest,Mặc định,1,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Mặc định,1,"τ=0,5",Worms,1.0
+Random Forest,Mặc định,1,Youden,Generic,0.9979333368660909
+Random Forest,Mặc định,1,Youden,Exploits,0.9831117499101689
+Random Forest,Mặc định,1,Youden,Fuzzers,0.616133289343451
+Random Forest,Mặc định,1,Youden,DoS,0.9941305942773294
+Random Forest,Mặc định,1,Youden,Reconnaissance,0.9928489702517163
+Random Forest,Mặc định,1,Youden,Analysis,0.9364844903988183
+Random Forest,Mặc định,1,Youden,Backdoor,0.9948542024013722
+Random Forest,Mặc định,1,Youden,Shellcode,0.9708994708994709
+Random Forest,Mặc định,1,Youden,Worms,0.9772727272727273
+Random Forest,Mặc định,1,FPR≤10%,Generic,1.0
+Random Forest,Mặc định,1,FPR≤10%,Exploits,0.9968559108875314
+Random Forest,Mặc định,1,FPR≤10%,Fuzzers,0.8945892444737711
+Random Forest,Mặc định,1,FPR≤10%,DoS,0.9992663242846662
+Random Forest,Mặc định,1,FPR≤10%,Reconnaissance,0.9997139588100686
+Random Forest,Mặc định,1,FPR≤10%,Analysis,1.0
+Random Forest,Mặc định,1,FPR≤10%,Backdoor,1.0
+Random Forest,Mặc định,1,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Mặc định,1,FPR≤10%,Worms,1.0
+Random Forest,Tinh chỉnh,1,"τ=0,5",Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,1,"τ=0,5",Exploits,0.996406755300036
+Random Forest,Tinh chỉnh,1,"τ=0,5",Fuzzers,0.9173540085780271
+Random Forest,Tinh chỉnh,1,"τ=0,5",DoS,0.9995108828564441
+Random Forest,Tinh chỉnh,1,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,1,"τ=0,5",Analysis,0.9881831610044313
+Random Forest,Tinh chỉnh,1,"τ=0,5",Backdoor,1.0
+Random Forest,Tinh chỉnh,1,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,1,"τ=0,5",Worms,1.0
+Random Forest,Tinh chỉnh,1,Youden,Generic,0.9996820518255525
+Random Forest,Tinh chỉnh,1,Youden,Exploits,0.9884117858426159
+Random Forest,Tinh chỉnh,1,Youden,Fuzzers,0.7029033322335863
+Random Forest,Tinh chỉnh,1,Youden,DoS,0.9970652971386648
+Random Forest,Tinh chỉnh,1,Youden,Reconnaissance,0.9948512585812357
+Random Forest,Tinh chỉnh,1,Youden,Analysis,0.9586410635155096
+Random Forest,Tinh chỉnh,1,Youden,Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,1,Youden,Shellcode,0.9788359788359788
+Random Forest,Tinh chỉnh,1,Youden,Worms,0.9772727272727273
+Random Forest,Tinh chỉnh,1,FPR≤10%,Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,1,FPR≤10%,Exploits,0.9967660797700323
+Random Forest,Tinh chỉnh,1,FPR≤10%,Fuzzers,0.9289013526888815
+Random Forest,Tinh chỉnh,1,FPR≤10%,DoS,0.999755441428222
+Random Forest,Tinh chỉnh,1,FPR≤10%,Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,1,FPR≤10%,Analysis,0.9926144756277696
+Random Forest,Tinh chỉnh,1,FPR≤10%,Backdoor,1.0
+Random Forest,Tinh chỉnh,1,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,1,FPR≤10%,Worms,1.0
+Logistic Regression,Mặc định,2,"τ=0,5",Generic,0.9997350431879604
+Logistic Regression,Mặc định,2,"τ=0,5",Exploits,0.9824829320876751
+Logistic Regression,Mặc định,2,"τ=0,5",Fuzzers,0.9280765423952491
+Logistic Regression,Mặc định,2,"τ=0,5",DoS,0.987772071411103
+Logistic Regression,Mặc định,2,"τ=0,5",Reconnaissance,0.9962814645308925
+Logistic Regression,Mặc định,2,"τ=0,5",Analysis,0.9276218611521418
+Logistic Regression,Mặc định,2,"τ=0,5",Backdoor,0.9948542024013722
+Logistic Regression,Mặc định,2,"τ=0,5",Shellcode,0.9894179894179894
+Logistic Regression,Mặc định,2,"τ=0,5",Worms,1.0
+Logistic Regression,Mặc định,2,Youden,Generic,0.9981453023157225
+Logistic Regression,Mặc định,2,Youden,Exploits,0.9377470355731226
+Logistic Regression,Mặc định,2,Youden,Fuzzers,0.7243483998680303
+Logistic Regression,Mặc định,2,Youden,DoS,0.9528001956468575
+Logistic Regression,Mặc định,2,Youden,Reconnaissance,0.9839816933638444
+Logistic Regression,Mặc định,2,Youden,Analysis,0.9187592319054653
+Logistic Regression,Mặc định,2,Youden,Backdoor,0.9811320754716981
+Logistic Regression,Mặc định,2,Youden,Shellcode,0.9470899470899471
+Logistic Regression,Mặc định,2,Youden,Worms,0.9318181818181818
+Logistic Regression,Mặc định,2,FPR≤10%,Generic,0.9984632504901702
+Logistic Regression,Mặc định,2,FPR≤10%,Exploits,0.9459216672655408
+Logistic Regression,Mặc định,2,FPR≤10%,Fuzzers,0.7622896733751238
+Logistic Regression,Mặc định,2,FPR≤10%,DoS,0.9606260699437515
+Logistic Regression,Mặc định,2,FPR≤10%,Reconnaissance,0.9868421052631579
+Logistic Regression,Mặc định,2,FPR≤10%,Analysis,0.9202363367799113
+Logistic Regression,Mặc định,2,FPR≤10%,Backdoor,0.9811320754716981
+Logistic Regression,Mặc định,2,FPR≤10%,Shellcode,0.9576719576719577
+Logistic Regression,Mặc định,2,FPR≤10%,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Generic,0.9998940172751841
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Exploits,0.9817642831476824
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Fuzzers,0.966182777961069
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",DoS,0.9880166299828809
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Reconnaissance,0.9988558352402745
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Analysis,0.9689807976366323
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Backdoor,0.9948542024013722
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Shellcode,1.0
+Logistic Regression,Tinh chỉnh,2,"τ=0,5",Worms,1.0
+Logistic Regression,Tinh chỉnh,2,Youden,Generic,0.9990991468390652
+Logistic Regression,Tinh chỉnh,2,Youden,Exploits,0.931099532878189
+Logistic Regression,Tinh chỉnh,2,Youden,Fuzzers,0.7103266248762784
+Logistic Regression,Tinh chỉnh,2,Youden,DoS,0.9672291513817559
+Logistic Regression,Tinh chỉnh,2,Youden,Reconnaissance,0.982837528604119
+Logistic Regression,Tinh chỉnh,2,Youden,Analysis,0.9158050221565731
+Logistic Regression,Tinh chỉnh,2,Youden,Backdoor,0.9845626072041166
+Logistic Regression,Tinh chỉnh,2,Youden,Shellcode,0.9656084656084656
+Logistic Regression,Tinh chỉnh,2,Youden,Worms,0.9772727272727273
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Generic,0.9994170950135128
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Exploits,0.9426877470355731
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Fuzzers,0.7962718574727813
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,DoS,0.9760332599657618
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Reconnaissance,0.9917048054919908
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Analysis,0.9158050221565731
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Backdoor,0.9862778730703259
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Shellcode,0.9708994708994709
+Logistic Regression,Tinh chỉnh,2,FPR≤10%,Worms,0.9772727272727273
+MLP,Mặc định,2,"τ=0,5",Generic,0.9996820518255525
+MLP,Mặc định,2,"τ=0,5",Exploits,0.9886812791951132
+MLP,Mặc định,2,"τ=0,5",Fuzzers,0.8619267568459255
+MLP,Mặc định,2,"τ=0,5",DoS,0.9965761799951088
+MLP,Mặc định,2,"τ=0,5",Reconnaissance,0.9957093821510298
+MLP,Mặc định,2,"τ=0,5",Analysis,0.9911373707533235
+MLP,Mặc định,2,"τ=0,5",Backdoor,1.0
+MLP,Mặc định,2,"τ=0,5",Shellcode,0.9894179894179894
+MLP,Mặc định,2,"τ=0,5",Worms,1.0
+MLP,Mặc định,2,Youden,Generic,0.999311112288697
+MLP,Mặc định,2,Youden,Exploits,0.9722421846927776
+MLP,Mặc định,2,Youden,Fuzzers,0.6946552292972616
+MLP,Mặc định,2,Youden,DoS,0.987772071411103
+MLP,Mặc định,2,Youden,Reconnaissance,0.9834096109839817
+MLP,Mặc định,2,Youden,Analysis,0.9689807976366323
+MLP,Mặc định,2,Youden,Backdoor,0.9914236706689536
+MLP,Mặc định,2,Youden,Shellcode,0.9656084656084656
+MLP,Mặc định,2,Youden,Worms,0.9772727272727273
+MLP,Mặc định,2,FPR≤10%,Generic,0.9996290604631445
+MLP,Mặc định,2,FPR≤10%,Exploits,0.9870643190801294
+MLP,Mặc định,2,FPR≤10%,Fuzzers,0.8432860442098318
+MLP,Mặc định,2,FPR≤10%,DoS,0.9955979457079971
+MLP,Mặc định,2,FPR≤10%,Reconnaissance,0.995137299771167
+MLP,Mặc định,2,FPR≤10%,Analysis,0.9896602658788775
+MLP,Mặc định,2,FPR≤10%,Backdoor,1.0
+MLP,Mặc định,2,FPR≤10%,Shellcode,0.9894179894179894
+MLP,Mặc định,2,FPR≤10%,Worms,1.0
+MLP,Tinh chỉnh,2,"τ=0,5",Generic,0.9997350431879604
+MLP,Tinh chỉnh,2,"τ=0,5",Exploits,0.9894897592526051
+MLP,Tinh chỉnh,2,"τ=0,5",Fuzzers,0.8439458924447377
+MLP,Tinh chỉnh,2,"τ=0,5",DoS,0.9946197114208853
+MLP,Tinh chỉnh,2,"τ=0,5",Reconnaissance,0.9979977116704806
+MLP,Tinh chỉnh,2,"τ=0,5",Analysis,0.9985228951255539
+MLP,Tinh chỉnh,2,"τ=0,5",Backdoor,1.0
+MLP,Tinh chỉnh,2,"τ=0,5",Shellcode,0.9867724867724867
+MLP,Tinh chỉnh,2,"τ=0,5",Worms,1.0
+MLP,Tinh chỉnh,2,Youden,Generic,0.9995230777383286
+MLP,Tinh chỉnh,2,Youden,Exploits,0.9806863097376931
+MLP,Tinh chỉnh,2,Youden,Fuzzers,0.7537116463213461
+MLP,Tinh chỉnh,2,Youden,DoS,0.9887503056982148
+MLP,Tinh chỉnh,2,Youden,Reconnaissance,0.9959954233409611
+MLP,Tinh chỉnh,2,Youden,Analysis,0.9985228951255539
+MLP,Tinh chỉnh,2,Youden,Backdoor,0.9982847341337907
+MLP,Tinh chỉnh,2,Youden,Shellcode,0.9735449735449735
+MLP,Tinh chỉnh,2,Youden,Worms,0.9772727272727273
+MLP,Tinh chỉnh,2,FPR≤10%,Generic,0.9997350431879604
+MLP,Tinh chỉnh,2,FPR≤10%,Exploits,0.9895795903701042
+MLP,Tinh chỉnh,2,FPR≤10%,Fuzzers,0.847740019795447
+MLP,Tinh chỉnh,2,FPR≤10%,DoS,0.9946197114208853
+MLP,Tinh chỉnh,2,FPR≤10%,Reconnaissance,0.9979977116704806
+MLP,Tinh chỉnh,2,FPR≤10%,Analysis,0.9985228951255539
+MLP,Tinh chỉnh,2,FPR≤10%,Backdoor,1.0
+MLP,Tinh chỉnh,2,FPR≤10%,Shellcode,0.9867724867724867
+MLP,Tinh chỉnh,2,FPR≤10%,Worms,1.0
+XGBoost,Mặc định,2,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Mặc định,2,"τ=0,5",Exploits,0.9939813151275602
+XGBoost,Mặc định,2,"τ=0,5",Fuzzers,0.894919168591224
+XGBoost,Mặc định,2,"τ=0,5",DoS,0.9990217657128883
+XGBoost,Mặc định,2,"τ=0,5",Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,2,"τ=0,5",Analysis,0.9453471196454948
+XGBoost,Mặc định,2,"τ=0,5",Backdoor,1.0
+XGBoost,Mặc định,2,"τ=0,5",Shellcode,0.9947089947089947
+XGBoost,Mặc định,2,"τ=0,5",Worms,1.0
+XGBoost,Mặc định,2,Youden,Generic,0.9997350431879604
+XGBoost,Mặc định,2,Youden,Exploits,0.9869744879626302
+XGBoost,Mặc định,2,Youden,Fuzzers,0.7317716925107225
+XGBoost,Mặc định,2,Youden,DoS,0.995842504279775
+XGBoost,Mặc định,2,Youden,Reconnaissance,0.9974256292906178
+XGBoost,Mặc định,2,Youden,Analysis,0.9261447562776958
+XGBoost,Mặc định,2,Youden,Backdoor,0.9965694682675815
+XGBoost,Mặc định,2,Youden,Shellcode,0.9814814814814815
+XGBoost,Mặc định,2,Youden,Worms,1.0
+XGBoost,Mặc định,2,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Mặc định,2,FPR≤10%,Exploits,0.9951491196550485
+XGBoost,Mặc định,2,FPR≤10%,Fuzzers,0.9161992741669416
+XGBoost,Mặc định,2,FPR≤10%,DoS,0.9992663242846662
+XGBoost,Mặc định,2,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,2,FPR≤10%,Analysis,0.9497784342688331
+XGBoost,Mặc định,2,FPR≤10%,Backdoor,1.0
+XGBoost,Mặc định,2,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Mặc định,2,FPR≤10%,Worms,1.0
+XGBoost,Tinh chỉnh,2,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,2,"τ=0,5",Exploits,0.9934423284225655
+XGBoost,Tinh chỉnh,2,"τ=0,5",Fuzzers,0.859122401847575
+XGBoost,Tinh chỉnh,2,"τ=0,5",DoS,0.9980435314257765
+XGBoost,Tinh chỉnh,2,"τ=0,5",Reconnaissance,0.9991418764302059
+XGBoost,Tinh chỉnh,2,"τ=0,5",Analysis,0.9497784342688331
+XGBoost,Tinh chỉnh,2,"τ=0,5",Backdoor,1.0
+XGBoost,Tinh chỉnh,2,"τ=0,5",Shellcode,0.9920634920634921
+XGBoost,Tinh chỉnh,2,"τ=0,5",Worms,1.0
+XGBoost,Tinh chỉnh,2,Youden,Generic,0.9996290604631445
+XGBoost,Tinh chỉnh,2,Youden,Exploits,0.986794825727632
+XGBoost,Tinh chỉnh,2,Youden,Fuzzers,0.696799736060706
+XGBoost,Tinh chỉnh,2,Youden,DoS,0.9951088285644412
+XGBoost,Tinh chỉnh,2,Youden,Reconnaissance,0.9965675057208238
+XGBoost,Tinh chỉnh,2,Youden,Analysis,0.9335302806499262
+XGBoost,Tinh chỉnh,2,Youden,Backdoor,0.9982847341337907
+XGBoost,Tinh chỉnh,2,Youden,Shellcode,0.9735449735449735
+XGBoost,Tinh chỉnh,2,Youden,Worms,1.0
+XGBoost,Tinh chỉnh,2,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,2,FPR≤10%,Exploits,0.9949694574200503
+XGBoost,Tinh chỉnh,2,FPR≤10%,Fuzzers,0.8893104585945233
+XGBoost,Tinh chỉnh,2,FPR≤10%,DoS,0.9985326485693323
+XGBoost,Tinh chỉnh,2,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Tinh chỉnh,2,FPR≤10%,Analysis,0.9571639586410635
+XGBoost,Tinh chỉnh,2,FPR≤10%,Backdoor,1.0
+XGBoost,Tinh chỉnh,2,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Tinh chỉnh,2,FPR≤10%,Worms,1.0
+Random Forest,Mặc định,2,"τ=0,5",Generic,1.0
+Random Forest,Mặc định,2,"τ=0,5",Exploits,0.9980237154150198
+Random Forest,Mặc định,2,"τ=0,5",Fuzzers,0.9424282415044539
+Random Forest,Mặc định,2,"τ=0,5",DoS,0.999755441428222
+Random Forest,Mặc định,2,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Mặc định,2,"τ=0,5",Analysis,1.0
+Random Forest,Mặc định,2,"τ=0,5",Backdoor,1.0
+Random Forest,Mặc định,2,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Mặc định,2,"τ=0,5",Worms,1.0
+Random Forest,Mặc định,2,Youden,Generic,0.9996820518255525
+Random Forest,Mặc định,2,Youden,Exploits,0.9843693855551563
+Random Forest,Mặc định,2,Youden,Fuzzers,0.6478060046189377
+Random Forest,Mặc định,2,Youden,DoS,0.9926632428466617
+Random Forest,Mặc định,2,Youden,Reconnaissance,0.993421052631579
+Random Forest,Mặc định,2,Youden,Analysis,0.9645494830132939
+Random Forest,Mặc định,2,Youden,Backdoor,0.9948542024013722
+Random Forest,Mặc định,2,Youden,Shellcode,0.9761904761904762
+Random Forest,Mặc định,2,Youden,Worms,1.0
+Random Forest,Mặc định,2,FPR≤10%,Generic,1.0
+Random Forest,Mặc định,2,FPR≤10%,Exploits,0.996496586417535
+Random Forest,Mặc định,2,FPR≤10%,Fuzzers,0.9015176509402837
+Random Forest,Mặc định,2,FPR≤10%,DoS,0.9990217657128883
+Random Forest,Mặc định,2,FPR≤10%,Reconnaissance,0.9991418764302059
+Random Forest,Mặc định,2,FPR≤10%,Analysis,1.0
+Random Forest,Mặc định,2,FPR≤10%,Backdoor,1.0
+Random Forest,Mặc định,2,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Mặc định,2,FPR≤10%,Worms,1.0
+Random Forest,Tinh chỉnh,2,"τ=0,5",Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,2,"τ=0,5",Exploits,0.996406755300036
+Random Forest,Tinh chỉnh,2,"τ=0,5",Fuzzers,0.919333553282745
+Random Forest,Tinh chỉnh,2,"τ=0,5",DoS,0.999755441428222
+Random Forest,Tinh chỉnh,2,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,2,"τ=0,5",Analysis,0.9896602658788775
+Random Forest,Tinh chỉnh,2,"τ=0,5",Backdoor,1.0
+Random Forest,Tinh chỉnh,2,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,2,"τ=0,5",Worms,1.0
+Random Forest,Tinh chỉnh,2,Youden,Generic,0.9997350431879604
+Random Forest,Tinh chỉnh,2,Youden,Exploits,0.9907473948975926
+Random Forest,Tinh chỉnh,2,Youden,Fuzzers,0.7708677004289014
+Random Forest,Tinh chỉnh,2,Youden,DoS,0.9941305942773294
+Random Forest,Tinh chỉnh,2,Youden,Reconnaissance,0.9965675057208238
+Random Forest,Tinh chỉnh,2,Youden,Analysis,0.9615952732644018
+Random Forest,Tinh chỉnh,2,Youden,Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,2,Youden,Shellcode,0.9814814814814815
+Random Forest,Tinh chỉnh,2,Youden,Worms,0.9772727272727273
+Random Forest,Tinh chỉnh,2,FPR≤10%,Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,2,FPR≤10%,Exploits,0.9968559108875314
+Random Forest,Tinh chỉnh,2,FPR≤10%,Fuzzers,0.9287363906301551
+Random Forest,Tinh chỉnh,2,FPR≤10%,DoS,0.999755441428222
+Random Forest,Tinh chỉnh,2,FPR≤10%,Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,2,FPR≤10%,Analysis,0.9896602658788775
+Random Forest,Tinh chỉnh,2,FPR≤10%,Backdoor,1.0
+Random Forest,Tinh chỉnh,2,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,2,FPR≤10%,Worms,1.0
+Logistic Regression,Mặc định,3,"τ=0,5",Generic,0.9996820518255525
+Logistic Regression,Mặc định,3,"τ=0,5",Exploits,0.9816744520301832
+Logistic Regression,Mặc định,3,"τ=0,5",Fuzzers,0.9194985153414714
+Logistic Regression,Mặc định,3,"τ=0,5",DoS,0.9870383956957691
+Logistic Regression,Mặc định,3,"τ=0,5",Reconnaissance,0.9997139588100686
+Logistic Regression,Mặc định,3,"τ=0,5",Analysis,0.9763663220088626
+Logistic Regression,Mặc định,3,"τ=0,5",Backdoor,1.0
+Logistic Regression,Mặc định,3,"τ=0,5",Shellcode,1.0
+Logistic Regression,Mặc định,3,"τ=0,5",Worms,1.0
+Logistic Regression,Mặc định,3,Youden,Generic,0.9962376132690371
+Logistic Regression,Mặc định,3,Youden,Exploits,0.921307941070787
+Logistic Regression,Mặc định,3,Youden,Fuzzers,0.6214120752226988
+Logistic Regression,Mặc định,3,Youden,DoS,0.9620934213744192
+Logistic Regression,Mặc định,3,Youden,Reconnaissance,0.9839816933638444
+Logistic Regression,Mặc định,3,Youden,Analysis,0.9158050221565731
+Logistic Regression,Mặc định,3,Youden,Backdoor,0.9862778730703259
+Logistic Regression,Mặc định,3,Youden,Shellcode,0.9603174603174603
+Logistic Regression,Mặc định,3,Youden,Worms,0.9772727272727273
+Logistic Regression,Mặc định,3,FPR≤10%,Generic,0.9975094059668274
+Logistic Regression,Mặc định,3,FPR≤10%,Exploits,0.9425080848005749
+Logistic Regression,Mặc định,3,FPR≤10%,Fuzzers,0.7040580666446717
+Logistic Regression,Mặc định,3,FPR≤10%,DoS,0.9682073856688677
+Logistic Regression,Mặc định,3,FPR≤10%,Reconnaissance,0.9905606407322655
+Logistic Regression,Mặc định,3,FPR≤10%,Analysis,0.9202363367799113
+Logistic Regression,Mặc định,3,FPR≤10%,Backdoor,0.9914236706689536
+Logistic Regression,Mặc định,3,FPR≤10%,Shellcode,0.9708994708994709
+Logistic Regression,Mặc định,3,FPR≤10%,Worms,1.0
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Generic,0.9996820518255525
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Exploits,0.985896514552641
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Fuzzers,0.9244473771032663
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",DoS,0.9880166299828809
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Reconnaissance,0.9968535469107551
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Analysis,0.9630723781388478
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Backdoor,0.9948542024013722
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Shellcode,0.9894179894179894
+Logistic Regression,Tinh chỉnh,3,"τ=0,5",Worms,1.0
+Logistic Regression,Tinh chỉnh,3,Youden,Generic,0.9977213714164591
+Logistic Regression,Tinh chỉnh,3,Youden,Exploits,0.9333453108156665
+Logistic Regression,Tinh chỉnh,3,Youden,Fuzzers,0.5770372814252722
+Logistic Regression,Tinh chỉnh,3,Youden,DoS,0.9694301785277574
+Logistic Regression,Tinh chỉnh,3,Youden,Reconnaissance,0.9439359267734554
+Logistic Regression,Tinh chỉnh,3,Youden,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,3,Youden,Backdoor,0.9828473413379074
+Logistic Regression,Tinh chỉnh,3,Youden,Shellcode,0.8835978835978836
+Logistic Regression,Tinh chỉnh,3,Youden,Worms,0.9318181818181818
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Generic,0.9992051295638811
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Exploits,0.9608336327703917
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Fuzzers,0.7594853183767734
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,DoS,0.9804353142577648
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Reconnaissance,0.9836956521739131
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Analysis,0.9158050221565731
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Backdoor,0.9862778730703259
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Shellcode,0.9656084656084656
+Logistic Regression,Tinh chỉnh,3,FPR≤10%,Worms,0.9772727272727273
+MLP,Mặc định,3,"τ=0,5",Generic,0.9997350431879604
+MLP,Mặc định,3,"τ=0,5",Exploits,0.9884117858426159
+MLP,Mặc định,3,"τ=0,5",Fuzzers,0.8353678653909601
+MLP,Mặc định,3,"τ=0,5",DoS,0.9960870628515529
+MLP,Mặc định,3,"τ=0,5",Reconnaissance,0.9965675057208238
+MLP,Mặc định,3,"τ=0,5",Analysis,0.9926144756277696
+MLP,Mặc định,3,"τ=0,5",Backdoor,0.9982847341337907
+MLP,Mặc định,3,"τ=0,5",Shellcode,0.9867724867724867
+MLP,Mặc định,3,"τ=0,5",Worms,1.0
+MLP,Mặc định,3,Youden,Generic,0.9993641036511048
+MLP,Mặc định,3,Youden,Exploits,0.9762845849802372
+MLP,Mặc định,3,Youden,Fuzzers,0.6936654569449027
+MLP,Mặc định,3,Youden,DoS,0.9897285399853265
+MLP,Mặc định,3,Youden,Reconnaissance,0.9831235697940504
+MLP,Mặc định,3,Youden,Analysis,0.9852289512555391
+MLP,Mặc định,3,Youden,Backdoor,0.9897084048027445
+MLP,Mặc định,3,Youden,Shellcode,0.9682539682539683
+MLP,Mặc định,3,Youden,Worms,1.0
+MLP,Mặc định,3,FPR≤10%,Generic,0.9997350431879604
+MLP,Mặc định,3,FPR≤10%,Exploits,0.9896694214876033
+MLP,Mặc định,3,FPR≤10%,Fuzzers,0.8734741009567799
+MLP,Mặc định,3,FPR≤10%,DoS,0.9973098557104426
+MLP,Mặc định,3,FPR≤10%,Reconnaissance,0.9971395881006865
+MLP,Mặc định,3,FPR≤10%,Analysis,0.9940915805022157
+MLP,Mặc định,3,FPR≤10%,Backdoor,1.0
+MLP,Mặc định,3,FPR≤10%,Shellcode,0.9947089947089947
+MLP,Mặc định,3,FPR≤10%,Worms,1.0
+MLP,Tinh chỉnh,3,"τ=0,5",Generic,0.9997880345503682
+MLP,Tinh chỉnh,3,"τ=0,5",Exploits,0.9900287459575997
+MLP,Tinh chỉnh,3,"τ=0,5",Fuzzers,0.8441108545034642
+MLP,Tinh chỉnh,3,"τ=0,5",DoS,0.9970652971386648
+MLP,Tinh chỉnh,3,"τ=0,5",Reconnaissance,0.9979977116704806
+MLP,Tinh chỉnh,3,"τ=0,5",Analysis,0.9985228951255539
+MLP,Tinh chỉnh,3,"τ=0,5",Backdoor,1.0
+MLP,Tinh chỉnh,3,"τ=0,5",Shellcode,0.9920634920634921
+MLP,Tinh chỉnh,3,"τ=0,5",Worms,1.0
+MLP,Tinh chỉnh,3,Youden,Generic,0.9992051295638811
+MLP,Tinh chỉnh,3,Youden,Exploits,0.9754761049227453
+MLP,Tinh chỉnh,3,Youden,Fuzzers,0.7060376113493897
+MLP,Tinh chỉnh,3,Youden,DoS,0.9887503056982148
+MLP,Tinh chỉnh,3,Youden,Reconnaissance,0.9919908466819222
+MLP,Tinh chỉnh,3,Youden,Analysis,0.9970457902511078
+MLP,Tinh chỉnh,3,Youden,Backdoor,0.9948542024013722
+MLP,Tinh chỉnh,3,Youden,Shellcode,0.9788359788359788
+MLP,Tinh chỉnh,3,Youden,Worms,1.0
+MLP,Tinh chỉnh,3,FPR≤10%,Generic,0.9996820518255525
+MLP,Tinh chỉnh,3,FPR≤10%,Exploits,0.9899389148401007
+MLP,Tinh chỉnh,3,FPR≤10%,Fuzzers,0.8418013856812933
+MLP,Tinh chỉnh,3,FPR≤10%,DoS,0.9970652971386648
+MLP,Tinh chỉnh,3,FPR≤10%,Reconnaissance,0.9977116704805492
+MLP,Tinh chỉnh,3,FPR≤10%,Analysis,0.9985228951255539
+MLP,Tinh chỉnh,3,FPR≤10%,Backdoor,1.0
+MLP,Tinh chỉnh,3,FPR≤10%,Shellcode,0.9920634920634921
+MLP,Tinh chỉnh,3,FPR≤10%,Worms,1.0
+XGBoost,Mặc định,3,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Mặc định,3,"τ=0,5",Exploits,0.9939813151275602
+XGBoost,Mặc định,3,"τ=0,5",Fuzzers,0.894919168591224
+XGBoost,Mặc định,3,"τ=0,5",DoS,0.9990217657128883
+XGBoost,Mặc định,3,"τ=0,5",Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,3,"τ=0,5",Analysis,0.9453471196454948
+XGBoost,Mặc định,3,"τ=0,5",Backdoor,1.0
+XGBoost,Mặc định,3,"τ=0,5",Shellcode,0.9947089947089947
+XGBoost,Mặc định,3,"τ=0,5",Worms,1.0
+XGBoost,Mặc định,3,Youden,Generic,0.9997350431879604
+XGBoost,Mặc định,3,Youden,Exploits,0.9869744879626302
+XGBoost,Mặc định,3,Youden,Fuzzers,0.7317716925107225
+XGBoost,Mặc định,3,Youden,DoS,0.995842504279775
+XGBoost,Mặc định,3,Youden,Reconnaissance,0.9974256292906178
+XGBoost,Mặc định,3,Youden,Analysis,0.9261447562776958
+XGBoost,Mặc định,3,Youden,Backdoor,0.9965694682675815
+XGBoost,Mặc định,3,Youden,Shellcode,0.9814814814814815
+XGBoost,Mặc định,3,Youden,Worms,1.0
+XGBoost,Mặc định,3,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Mặc định,3,FPR≤10%,Exploits,0.9951491196550485
+XGBoost,Mặc định,3,FPR≤10%,Fuzzers,0.9161992741669416
+XGBoost,Mặc định,3,FPR≤10%,DoS,0.9992663242846662
+XGBoost,Mặc định,3,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,3,FPR≤10%,Analysis,0.9497784342688331
+XGBoost,Mặc định,3,FPR≤10%,Backdoor,1.0
+XGBoost,Mặc định,3,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Mặc định,3,FPR≤10%,Worms,1.0
+XGBoost,Tinh chỉnh,3,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,3,"τ=0,5",Exploits,0.9934423284225655
+XGBoost,Tinh chỉnh,3,"τ=0,5",Fuzzers,0.859122401847575
+XGBoost,Tinh chỉnh,3,"τ=0,5",DoS,0.9980435314257765
+XGBoost,Tinh chỉnh,3,"τ=0,5",Reconnaissance,0.9991418764302059
+XGBoost,Tinh chỉnh,3,"τ=0,5",Analysis,0.9497784342688331
+XGBoost,Tinh chỉnh,3,"τ=0,5",Backdoor,1.0
+XGBoost,Tinh chỉnh,3,"τ=0,5",Shellcode,0.9920634920634921
+XGBoost,Tinh chỉnh,3,"τ=0,5",Worms,1.0
+XGBoost,Tinh chỉnh,3,Youden,Generic,0.9996290604631445
+XGBoost,Tinh chỉnh,3,Youden,Exploits,0.986794825727632
+XGBoost,Tinh chỉnh,3,Youden,Fuzzers,0.696799736060706
+XGBoost,Tinh chỉnh,3,Youden,DoS,0.9951088285644412
+XGBoost,Tinh chỉnh,3,Youden,Reconnaissance,0.9965675057208238
+XGBoost,Tinh chỉnh,3,Youden,Analysis,0.9335302806499262
+XGBoost,Tinh chỉnh,3,Youden,Backdoor,0.9982847341337907
+XGBoost,Tinh chỉnh,3,Youden,Shellcode,0.9735449735449735
+XGBoost,Tinh chỉnh,3,Youden,Worms,1.0
+XGBoost,Tinh chỉnh,3,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,3,FPR≤10%,Exploits,0.9949694574200503
+XGBoost,Tinh chỉnh,3,FPR≤10%,Fuzzers,0.8893104585945233
+XGBoost,Tinh chỉnh,3,FPR≤10%,DoS,0.9985326485693323
+XGBoost,Tinh chỉnh,3,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Tinh chỉnh,3,FPR≤10%,Analysis,0.9571639586410635
+XGBoost,Tinh chỉnh,3,FPR≤10%,Backdoor,1.0
+XGBoost,Tinh chỉnh,3,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Tinh chỉnh,3,FPR≤10%,Worms,1.0
+Random Forest,Mặc định,3,"τ=0,5",Generic,1.0
+Random Forest,Mặc định,3,"τ=0,5",Exploits,0.9977542220625225
+Random Forest,Mặc định,3,"τ=0,5",Fuzzers,0.9493566479709666
+Random Forest,Mặc định,3,"τ=0,5",DoS,0.9992663242846662
+Random Forest,Mặc định,3,"τ=0,5",Reconnaissance,0.9991418764302059
+Random Forest,Mặc định,3,"τ=0,5",Analysis,1.0
+Random Forest,Mặc định,3,"τ=0,5",Backdoor,1.0
+Random Forest,Mặc định,3,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Mặc định,3,"τ=0,5",Worms,1.0
+Random Forest,Mặc định,3,Youden,Generic,0.9998410259127762
+Random Forest,Mặc định,3,Youden,Exploits,0.9895795903701042
+Random Forest,Mặc định,3,Youden,Fuzzers,0.741999340151765
+Random Forest,Mặc định,3,Youden,DoS,0.9977989728539985
+Random Forest,Mặc định,3,Youden,Reconnaissance,0.9979977116704806
+Random Forest,Mặc định,3,Youden,Analysis,0.983751846381093
+Random Forest,Mặc định,3,Youden,Backdoor,0.9982847341337907
+Random Forest,Mặc định,3,Youden,Shellcode,0.9788359788359788
+Random Forest,Mặc định,3,Youden,Worms,1.0
+Random Forest,Mặc định,3,FPR≤10%,Generic,1.0
+Random Forest,Mặc định,3,FPR≤10%,Exploits,0.9967660797700323
+Random Forest,Mặc định,3,FPR≤10%,Fuzzers,0.9043220059386341
+Random Forest,Mặc định,3,FPR≤10%,DoS,0.9990217657128883
+Random Forest,Mặc định,3,FPR≤10%,Reconnaissance,0.9991418764302059
+Random Forest,Mặc định,3,FPR≤10%,Analysis,1.0
+Random Forest,Mặc định,3,FPR≤10%,Backdoor,1.0
+Random Forest,Mặc định,3,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Mặc định,3,FPR≤10%,Worms,1.0
+Random Forest,Tinh chỉnh,3,"τ=0,5",Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,3,"τ=0,5",Exploits,0.9961372619475386
+Random Forest,Tinh chỉnh,3,"τ=0,5",Fuzzers,0.9221379082810953
+Random Forest,Tinh chỉnh,3,"τ=0,5",DoS,0.9990217657128883
+Random Forest,Tinh chỉnh,3,"τ=0,5",Reconnaissance,0.9994279176201373
+Random Forest,Tinh chỉnh,3,"τ=0,5",Analysis,0.982274741506647
+Random Forest,Tinh chỉnh,3,"τ=0,5",Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,3,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,3,"τ=0,5",Worms,1.0
+Random Forest,Tinh chỉnh,3,Youden,Generic,0.9998410259127762
+Random Forest,Tinh chỉnh,3,Youden,Exploits,0.9903880704275961
+Random Forest,Tinh chỉnh,3,Youden,Fuzzers,0.7636093698449357
+Random Forest,Tinh chỉnh,3,Youden,DoS,0.9975544142822206
+Random Forest,Tinh chỉnh,3,Youden,Reconnaissance,0.9974256292906178
+Random Forest,Tinh chỉnh,3,Youden,Analysis,0.9350073855243722
+Random Forest,Tinh chỉnh,3,Youden,Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,3,Youden,Shellcode,0.9814814814814815
+Random Forest,Tinh chỉnh,3,Youden,Worms,0.9772727272727273
+Random Forest,Tinh chỉnh,3,FPR≤10%,Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,3,FPR≤10%,Exploits,0.9965864175350342
+Random Forest,Tinh chỉnh,3,FPR≤10%,Fuzzers,0.929726162982514
+Random Forest,Tinh chỉnh,3,FPR≤10%,DoS,0.9992663242846662
+Random Forest,Tinh chỉnh,3,FPR≤10%,Reconnaissance,0.9994279176201373
+Random Forest,Tinh chỉnh,3,FPR≤10%,Analysis,0.982274741506647
+Random Forest,Tinh chỉnh,3,FPR≤10%,Backdoor,1.0
+Random Forest,Tinh chỉnh,3,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,3,FPR≤10%,Worms,1.0
+Logistic Regression,Mặc định,4,"τ=0,5",Generic,0.9991521382014732
+Logistic Regression,Mặc định,4,"τ=0,5",Exploits,0.9697269134028027
+Logistic Regression,Mặc định,4,"τ=0,5",Fuzzers,0.812933025404157
+Logistic Regression,Mặc định,4,"τ=0,5",DoS,0.9811689899730985
+Logistic Regression,Mặc định,4,"τ=0,5",Reconnaissance,0.9959954233409611
+Logistic Regression,Mặc định,4,"τ=0,5",Analysis,0.9158050221565731
+Logistic Regression,Mặc định,4,"τ=0,5",Backdoor,0.9982847341337907
+Logistic Regression,Mặc định,4,"τ=0,5",Shellcode,0.9735449735449735
+Logistic Regression,Mặc định,4,"τ=0,5",Worms,1.0
+Logistic Regression,Mặc định,4,Youden,Generic,0.9953897514705103
+Logistic Regression,Mặc định,4,Youden,Exploits,0.9232842256557672
+Logistic Regression,Mặc định,4,Youden,Fuzzers,0.5270537776311448
+Logistic Regression,Mặc định,4,Youden,DoS,0.9572022499388604
+Logistic Regression,Mặc định,4,Youden,Reconnaissance,0.965675057208238
+Logistic Regression,Mặc định,4,Youden,Analysis,0.914327917282127
+Logistic Regression,Mặc định,4,Youden,Backdoor,0.9811320754716981
+Logistic Regression,Mặc định,4,Youden,Shellcode,0.9074074074074074
+Logistic Regression,Mặc định,4,Youden,Worms,0.9318181818181818
+Logistic Regression,Mặc định,4,FPR≤10%,Generic,0.9975623973292354
+Logistic Regression,Mặc định,4,FPR≤10%,Exploits,0.9513115343154869
+Logistic Regression,Mặc định,4,FPR≤10%,Fuzzers,0.674694820191356
+Logistic Regression,Mặc định,4,FPR≤10%,DoS,0.971386647101981
+Logistic Regression,Mặc định,4,FPR≤10%,Reconnaissance,0.9842677345537757
+Logistic Regression,Mặc định,4,FPR≤10%,Analysis,0.9158050221565731
+Logistic Regression,Mặc định,4,FPR≤10%,Backdoor,0.9862778730703259
+Logistic Regression,Mặc định,4,FPR≤10%,Shellcode,0.9391534391534392
+Logistic Regression,Mặc định,4,FPR≤10%,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Generic,0.9998410259127762
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Exploits,0.9748472871002515
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Fuzzers,0.9351699109204883
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",DoS,0.9865492785522133
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Reconnaissance,0.9982837528604119
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Analysis,0.9438700147710487
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Backdoor,0.9931389365351629
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Shellcode,0.9867724867724867
+Logistic Regression,Tinh chỉnh,4,"τ=0,5",Worms,1.0
+Logistic Regression,Tinh chỉnh,4,Youden,Generic,0.9986222245773939
+Logistic Regression,Tinh chỉnh,4,Youden,Exploits,0.9345131153431548
+Logistic Regression,Tinh chỉnh,4,Youden,Fuzzers,0.663972286374134
+Logistic Regression,Tinh chỉnh,4,Youden,DoS,0.970897529958425
+Logistic Regression,Tinh chỉnh,4,Youden,Reconnaissance,0.9811212814645309
+Logistic Regression,Tinh chỉnh,4,Youden,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,4,Youden,Backdoor,0.9811320754716981
+Logistic Regression,Tinh chỉnh,4,Youden,Shellcode,0.9470899470899471
+Logistic Regression,Tinh chỉnh,4,Youden,Worms,0.9545454545454546
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Generic,0.9990461554766573
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Exploits,0.9499640675530003
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Fuzzers,0.7700428901352689
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,DoS,0.9779897285399853
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Reconnaissance,0.9917048054919908
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Analysis,0.914327917282127
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Backdoor,0.9862778730703259
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Shellcode,0.9735449735449735
+Logistic Regression,Tinh chỉnh,4,FPR≤10%,Worms,1.0
+MLP,Mặc định,4,"τ=0,5",Generic,0.9997350431879604
+MLP,Mặc định,4,"τ=0,5",Exploits,0.994699964067553
+MLP,Mặc định,4,"τ=0,5",Fuzzers,0.8978884856483009
+MLP,Mặc định,4,"τ=0,5",DoS,0.9973098557104426
+MLP,Mặc định,4,"τ=0,5",Reconnaissance,0.9985697940503433
+MLP,Mặc định,4,"τ=0,5",Analysis,0.9985228951255539
+MLP,Mặc định,4,"τ=0,5",Backdoor,1.0
+MLP,Mặc định,4,"τ=0,5",Shellcode,0.9973544973544973
+MLP,Mặc định,4,"τ=0,5",Worms,1.0
+MLP,Mặc định,4,Youden,Generic,0.9995230777383286
+MLP,Mặc định,4,Youden,Exploits,0.984099892202659
+MLP,Mặc định,4,Youden,Fuzzers,0.7424942263279446
+MLP,Mặc định,4,Youden,DoS,0.9938860357055515
+MLP,Mặc định,4,Youden,Reconnaissance,0.9931350114416476
+MLP,Mặc định,4,Youden,Analysis,0.9911373707533235
+MLP,Mặc định,4,Youden,Backdoor,0.9948542024013722
+MLP,Mặc định,4,Youden,Shellcode,0.9894179894179894
+MLP,Mặc định,4,Youden,Worms,0.9772727272727273
+MLP,Mặc định,4,FPR≤10%,Generic,0.9997350431879604
+MLP,Mặc định,4,FPR≤10%,Exploits,0.9940711462450593
+MLP,Mặc định,4,FPR≤10%,Fuzzers,0.8658858462553612
+MLP,Mặc định,4,FPR≤10%,DoS,0.9965761799951088
+MLP,Mặc định,4,FPR≤10%,Reconnaissance,0.9979977116704806
+MLP,Mặc định,4,FPR≤10%,Analysis,0.9985228951255539
+MLP,Mặc định,4,FPR≤10%,Backdoor,1.0
+MLP,Mặc định,4,FPR≤10%,Shellcode,0.9947089947089947
+MLP,Mặc định,4,FPR≤10%,Worms,1.0
+MLP,Tinh chỉnh,4,"τ=0,5",Generic,0.9997880345503682
+MLP,Tinh chỉnh,4,"τ=0,5",Exploits,0.9955084441250449
+MLP,Tinh chỉnh,4,"τ=0,5",Fuzzers,0.8977235235895744
+MLP,Tinh chỉnh,4,"τ=0,5",DoS,0.9973098557104426
+MLP,Tinh chỉnh,4,"τ=0,5",Reconnaissance,0.9974256292906178
+MLP,Tinh chỉnh,4,"τ=0,5",Analysis,1.0
+MLP,Tinh chỉnh,4,"τ=0,5",Backdoor,0.9982847341337907
+MLP,Tinh chỉnh,4,"τ=0,5",Shellcode,0.9894179894179894
+MLP,Tinh chỉnh,4,"τ=0,5",Worms,1.0
+MLP,Tinh chỉnh,4,Youden,Generic,0.9993641036511048
+MLP,Tinh chỉnh,4,Youden,Exploits,0.9828422565576715
+MLP,Tinh chỉnh,4,Youden,Fuzzers,0.7156054107555262
+MLP,Tinh chỉnh,4,Youden,DoS,0.9909513328442162
+MLP,Tinh chỉnh,4,Youden,Reconnaissance,0.9902745995423341
+MLP,Tinh chỉnh,4,Youden,Analysis,0.9985228951255539
+MLP,Tinh chỉnh,4,Youden,Backdoor,0.9931389365351629
+MLP,Tinh chỉnh,4,Youden,Shellcode,0.9788359788359788
+MLP,Tinh chỉnh,4,Youden,Worms,1.0
+MLP,Tinh chỉnh,4,FPR≤10%,Generic,0.9997880345503682
+MLP,Tinh chỉnh,4,FPR≤10%,Exploits,0.9957779374775422
+MLP,Tinh chỉnh,4,FPR≤10%,Fuzzers,0.9036621577037282
+MLP,Tinh chỉnh,4,FPR≤10%,DoS,0.9973098557104426
+MLP,Tinh chỉnh,4,FPR≤10%,Reconnaissance,0.9977116704805492
+MLP,Tinh chỉnh,4,FPR≤10%,Analysis,1.0
+MLP,Tinh chỉnh,4,FPR≤10%,Backdoor,0.9982847341337907
+MLP,Tinh chỉnh,4,FPR≤10%,Shellcode,0.9920634920634921
+MLP,Tinh chỉnh,4,FPR≤10%,Worms,1.0
+XGBoost,Mặc định,4,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Mặc định,4,"τ=0,5",Exploits,0.9939813151275602
+XGBoost,Mặc định,4,"τ=0,5",Fuzzers,0.894919168591224
+XGBoost,Mặc định,4,"τ=0,5",DoS,0.9990217657128883
+XGBoost,Mặc định,4,"τ=0,5",Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,4,"τ=0,5",Analysis,0.9453471196454948
+XGBoost,Mặc định,4,"τ=0,5",Backdoor,1.0
+XGBoost,Mặc định,4,"τ=0,5",Shellcode,0.9947089947089947
+XGBoost,Mặc định,4,"τ=0,5",Worms,1.0
+XGBoost,Mặc định,4,Youden,Generic,0.9997350431879604
+XGBoost,Mặc định,4,Youden,Exploits,0.9869744879626302
+XGBoost,Mặc định,4,Youden,Fuzzers,0.7317716925107225
+XGBoost,Mặc định,4,Youden,DoS,0.995842504279775
+XGBoost,Mặc định,4,Youden,Reconnaissance,0.9974256292906178
+XGBoost,Mặc định,4,Youden,Analysis,0.9261447562776958
+XGBoost,Mặc định,4,Youden,Backdoor,0.9965694682675815
+XGBoost,Mặc định,4,Youden,Shellcode,0.9814814814814815
+XGBoost,Mặc định,4,Youden,Worms,1.0
+XGBoost,Mặc định,4,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Mặc định,4,FPR≤10%,Exploits,0.9951491196550485
+XGBoost,Mặc định,4,FPR≤10%,Fuzzers,0.9161992741669416
+XGBoost,Mặc định,4,FPR≤10%,DoS,0.9992663242846662
+XGBoost,Mặc định,4,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Mặc định,4,FPR≤10%,Analysis,0.9497784342688331
+XGBoost,Mặc định,4,FPR≤10%,Backdoor,1.0
+XGBoost,Mặc định,4,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Mặc định,4,FPR≤10%,Worms,1.0
+XGBoost,Tinh chỉnh,4,"τ=0,5",Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,4,"τ=0,5",Exploits,0.9934423284225655
+XGBoost,Tinh chỉnh,4,"τ=0,5",Fuzzers,0.859122401847575
+XGBoost,Tinh chỉnh,4,"τ=0,5",DoS,0.9980435314257765
+XGBoost,Tinh chỉnh,4,"τ=0,5",Reconnaissance,0.9991418764302059
+XGBoost,Tinh chỉnh,4,"τ=0,5",Analysis,0.9497784342688331
+XGBoost,Tinh chỉnh,4,"τ=0,5",Backdoor,1.0
+XGBoost,Tinh chỉnh,4,"τ=0,5",Shellcode,0.9920634920634921
+XGBoost,Tinh chỉnh,4,"τ=0,5",Worms,1.0
+XGBoost,Tinh chỉnh,4,Youden,Generic,0.9996290604631445
+XGBoost,Tinh chỉnh,4,Youden,Exploits,0.986794825727632
+XGBoost,Tinh chỉnh,4,Youden,Fuzzers,0.696799736060706
+XGBoost,Tinh chỉnh,4,Youden,DoS,0.9951088285644412
+XGBoost,Tinh chỉnh,4,Youden,Reconnaissance,0.9965675057208238
+XGBoost,Tinh chỉnh,4,Youden,Analysis,0.9335302806499262
+XGBoost,Tinh chỉnh,4,Youden,Backdoor,0.9982847341337907
+XGBoost,Tinh chỉnh,4,Youden,Shellcode,0.9735449735449735
+XGBoost,Tinh chỉnh,4,Youden,Worms,1.0
+XGBoost,Tinh chỉnh,4,FPR≤10%,Generic,0.9998940172751841
+XGBoost,Tinh chỉnh,4,FPR≤10%,Exploits,0.9949694574200503
+XGBoost,Tinh chỉnh,4,FPR≤10%,Fuzzers,0.8893104585945233
+XGBoost,Tinh chỉnh,4,FPR≤10%,DoS,0.9985326485693323
+XGBoost,Tinh chỉnh,4,FPR≤10%,Reconnaissance,0.9994279176201373
+XGBoost,Tinh chỉnh,4,FPR≤10%,Analysis,0.9571639586410635
+XGBoost,Tinh chỉnh,4,FPR≤10%,Backdoor,1.0
+XGBoost,Tinh chỉnh,4,FPR≤10%,Shellcode,0.9947089947089947
+XGBoost,Tinh chỉnh,4,FPR≤10%,Worms,1.0
+Random Forest,Mặc định,4,"τ=0,5",Generic,1.0
+Random Forest,Mặc định,4,"τ=0,5",Exploits,0.9975745598275243
+Random Forest,Mặc định,4,"τ=0,5",Fuzzers,0.942758165621907
+Random Forest,Mặc định,4,"τ=0,5",DoS,0.9992663242846662
+Random Forest,Mặc định,4,"τ=0,5",Reconnaissance,0.9994279176201373
+Random Forest,Mặc định,4,"τ=0,5",Analysis,1.0
+Random Forest,Mặc định,4,"τ=0,5",Backdoor,1.0
+Random Forest,Mặc định,4,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Mặc định,4,"τ=0,5",Worms,1.0
+Random Forest,Mặc định,4,Youden,Generic,0.9994700863759207
+Random Forest,Mặc định,4,Youden,Exploits,0.9828422565576715
+Random Forest,Mặc định,4,Youden,Fuzzers,0.6486308149125701
+Random Forest,Mặc định,4,Youden,DoS,0.9938860357055515
+Random Forest,Mặc định,4,Youden,Reconnaissance,0.9905606407322655
+Random Forest,Mặc định,4,Youden,Analysis,0.948301329394387
+Random Forest,Mặc định,4,Youden,Backdoor,0.9965694682675815
+Random Forest,Mặc định,4,Youden,Shellcode,0.9735449735449735
+Random Forest,Mặc định,4,Youden,Worms,0.9545454545454546
+Random Forest,Mặc định,4,FPR≤10%,Generic,1.0
+Random Forest,Mặc định,4,FPR≤10%,Exploits,0.995598275242544
+Random Forest,Mặc định,4,FPR≤10%,Fuzzers,0.9016826129990102
+Random Forest,Mặc định,4,FPR≤10%,DoS,0.9990217657128883
+Random Forest,Mặc định,4,FPR≤10%,Reconnaissance,0.9991418764302059
+Random Forest,Mặc định,4,FPR≤10%,Analysis,1.0
+Random Forest,Mặc định,4,FPR≤10%,Backdoor,1.0
+Random Forest,Mặc định,4,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Mặc định,4,FPR≤10%,Worms,1.0
+Random Forest,Tinh chỉnh,4,"τ=0,5",Generic,0.9999470086375921
+Random Forest,Tinh chỉnh,4,"τ=0,5",Exploits,0.9962270930650378
+Random Forest,Tinh chỉnh,4,"τ=0,5",Fuzzers,0.9236225668096338
+Random Forest,Tinh chỉnh,4,"τ=0,5",DoS,0.999755441428222
+Random Forest,Tinh chỉnh,4,"τ=0,5",Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,4,"τ=0,5",Analysis,0.9911373707533235
+Random Forest,Tinh chỉnh,4,"τ=0,5",Backdoor,1.0
+Random Forest,Tinh chỉnh,4,"τ=0,5",Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,4,"τ=0,5",Worms,1.0
+Random Forest,Tinh chỉnh,4,Youden,Generic,0.9997350431879604
+Random Forest,Tinh chỉnh,4,Youden,Exploits,0.9895795903701042
+Random Forest,Tinh chỉnh,4,Youden,Fuzzers,0.745958429561201
+Random Forest,Tinh chỉnh,4,Youden,DoS,0.9941305942773294
+Random Forest,Tinh chỉnh,4,Youden,Reconnaissance,0.9959954233409611
+Random Forest,Tinh chỉnh,4,Youden,Analysis,0.9689807976366323
+Random Forest,Tinh chỉnh,4,Youden,Backdoor,0.9982847341337907
+Random Forest,Tinh chỉnh,4,Youden,Shellcode,0.9841269841269841
+Random Forest,Tinh chỉnh,4,Youden,Worms,0.9772727272727273
+Random Forest,Tinh chỉnh,4,FPR≤10%,Generic,1.0
+Random Forest,Tinh chỉnh,4,FPR≤10%,Exploits,0.9968559108875314
+Random Forest,Tinh chỉnh,4,FPR≤10%,Fuzzers,0.9317057076872319
+Random Forest,Tinh chỉnh,4,FPR≤10%,DoS,0.999755441428222
+Random Forest,Tinh chỉnh,4,FPR≤10%,Reconnaissance,0.9997139588100686
+Random Forest,Tinh chỉnh,4,FPR≤10%,Analysis,0.9911373707533235
+Random Forest,Tinh chỉnh,4,FPR≤10%,Backdoor,1.0
+Random Forest,Tinh chỉnh,4,FPR≤10%,Shellcode,0.9947089947089947
+Random Forest,Tinh chỉnh,4,FPR≤10%,Worms,1.0

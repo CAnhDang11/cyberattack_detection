@@ -1,0 +1,187 @@
+[2026-10-18 15:01:19] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:01:19] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:01:19] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:01:19] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:01:19] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:01:19] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:01:37] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:01:37] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:01:37] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:01:37] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:01:37] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:01:37] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:18:44] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:18:44] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:18:44] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:18:44] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:18:44] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:18:44] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:30:15] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:30:15] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:30:15] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:30:15] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:30:15] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:30:15] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:33:03] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:33:03] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:33:03] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:33:03] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:33:03] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:33:03] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:33:03] [INFO] [FL-Server] Server listening on 0.0.0.0:8080
+[2026-10-18 15:33:03] [INFO] [FL-Server] Waiting for at least 2 clients to register...
+[2026-10-18 15:35:07] [INFO] [FL-Server] Client 'Client_1' registered from 10.20.0.1:63664 (1/2 connected)
+[2026-10-18 15:35:26] [INFO] [FL-Server] Server socket closed.
+[2026-10-18 15:35:29] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:35:29] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:35:29] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:35:29] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:35:29] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:35:29] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:35:29] [INFO] [FL-Server] Server listening on 0.0.0.0:8080
+[2026-10-18 15:35:29] [INFO] [FL-Server] Waiting for at least 2 clients to register...
+[2026-10-18 15:35:38] [INFO] [FL-Server] Server socket closed.
+[2026-10-18 15:35:40] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:35:40] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:35:40] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:35:40] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:35:40] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:35:40] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:35:40] [INFO] [FL-Server] Server listening on 0.0.0.0:8080
+[2026-10-18 15:35:40] [INFO] [FL-Server] Waiting for at least 2 clients to register...
+[2026-10-18 15:35:46] [INFO] [FL-Server] Client 'Client_1' registered from 10.20.0.1:54253 (1/2 connected)
+[2026-10-18 15:36:02] [INFO] [FL-Server] Client 'Client_0' registered from 127.0.0.1:49158 (2/2 connected)
+[2026-10-18 15:36:02] [INFO] [FL-Server] All 2 required clients are connected! Starting FL loop.
+[2026-10-18 15:36:04] [INFO] [FL-Server] [Initial Eval] Loss=0.6929 | Acc=0.5213 | F1=0.6130
+[2026-10-18 15:36:04] [INFO] [FL-Server] 
+--- [Round 1/10] ---
+[2026-10-18 15:36:08] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1342, duration=1.85s
+[2026-10-18 15:36:09] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1347, duration=4.40s
+[2026-10-18 15:36:11] [INFO] [FL-Server] Round 01 Summary: Avg Local Loss=0.1345 | Test Loss=0.2974 | Acc=0.8349 | Precision=0.7728 | Recall=0.9918 | F1=0.8687 | Time=6.64s
+[2026-10-18 15:36:11] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8687, Acc: 0.8349)
+[2026-10-18 15:36:11] [INFO] [FL-Server] 
+--- [Round 2/10] ---
+[2026-10-18 15:36:13] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1255, duration=2.32s
+[2026-10-18 15:36:15] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1253, duration=4.03s
+[2026-10-18 15:36:16] [INFO] [FL-Server] Round 02 Summary: Avg Local Loss=0.1254 | Test Loss=0.2807 | Acc=0.8517 | Precision=0.7934 | Recall=0.9878 | F1=0.8800 | Time=5.43s
+[2026-10-18 15:36:16] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8800, Acc: 0.8517)
+[2026-10-18 15:36:16] [INFO] [FL-Server] 
+--- [Round 3/10] ---
+[2026-10-18 15:36:18] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1199, duration=1.81s
+[2026-10-18 15:36:19] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1210, duration=2.32s
+[2026-10-18 15:36:20] [INFO] [FL-Server] Round 03 Summary: Avg Local Loss=0.1205 | Test Loss=0.2829 | Acc=0.8501 | Precision=0.7919 | Recall=0.9871 | F1=0.8788 | Time=3.65s
+[2026-10-18 15:36:20] [INFO] [FL-Server] 
+--- [Round 4/10] ---
+[2026-10-18 15:36:22] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1184, duration=2.08s
+[2026-10-18 15:36:22] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1191, duration=2.27s
+[2026-10-18 15:36:23] [INFO] [FL-Server] Round 04 Summary: Avg Local Loss=0.1187 | Test Loss=0.2571 | Acc=0.8531 | Precision=0.7957 | Recall=0.9866 | F1=0.8809 | Time=3.58s
+[2026-10-18 15:36:23] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8809, Acc: 0.8531)
+[2026-10-18 15:36:23] [INFO] [FL-Server] 
+--- [Round 5/10] ---
+[2026-10-18 15:36:26] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1169, duration=2.04s
+[2026-10-18 15:36:26] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1172, duration=2.34s
+[2026-10-18 15:36:27] [INFO] [FL-Server] Round 05 Summary: Avg Local Loss=0.1170 | Test Loss=0.2542 | Acc=0.8607 | Precision=0.8046 | Recall=0.9866 | F1=0.8863 | Time=3.65s
+[2026-10-18 15:36:27] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8863, Acc: 0.8607)
+[2026-10-18 15:36:27] [INFO] [FL-Server] 
+--- [Round 6/10] ---
+[2026-10-18 15:36:29] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1150, duration=1.80s
+[2026-10-18 15:36:30] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1156, duration=2.34s
+[2026-10-18 15:36:31] [INFO] [FL-Server] Round 06 Summary: Avg Local Loss=0.1153 | Test Loss=0.2501 | Acc=0.8680 | Precision=0.8155 | Recall=0.9827 | F1=0.8913 | Time=3.68s
+[2026-10-18 15:36:31] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8913, Acc: 0.8680)
+[2026-10-18 15:36:31] [INFO] [FL-Server] 
+--- [Round 7/10] ---
+[2026-10-18 15:36:33] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1141, duration=1.88s
+[2026-10-18 15:36:33] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1143, duration=2.38s
+[2026-10-18 15:36:34] [INFO] [FL-Server] Round 07 Summary: Avg Local Loss=0.1142 | Test Loss=0.2616 | Acc=0.8516 | Precision=0.7922 | Recall=0.9902 | F1=0.8802 | Time=3.70s
+[2026-10-18 15:36:34] [INFO] [FL-Server] 
+--- [Round 8/10] ---
+[2026-10-18 15:36:36] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1131, duration=1.81s
+[2026-10-18 15:36:37] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1128, duration=2.26s
+[2026-10-18 15:36:38] [INFO] [FL-Server] Round 08 Summary: Avg Local Loss=0.1129 | Test Loss=0.2485 | Acc=0.8712 | Precision=0.8180 | Recall=0.9853 | F1=0.8939 | Time=3.60s
+[2026-10-18 15:36:38] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8939, Acc: 0.8712)
+[2026-10-18 15:36:38] [INFO] [FL-Server] 
+--- [Round 9/10] ---
+[2026-10-18 15:36:40] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1126, duration=1.71s
+[2026-10-18 15:36:40] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1120, duration=2.30s
+[2026-10-18 15:36:42] [INFO] [FL-Server] Round 09 Summary: Avg Local Loss=0.1123 | Test Loss=0.2492 | Acc=0.8655 | Precision=0.8110 | Recall=0.9856 | F1=0.8898 | Time=3.61s
+[2026-10-18 15:36:42] [INFO] [FL-Server] 
+--- [Round 10/10] ---
+[2026-10-18 15:36:43] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1118, duration=1.74s
+[2026-10-18 15:36:44] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1113, duration=2.30s
+[2026-10-18 15:36:45] [INFO] [FL-Server] Round 10 Summary: Avg Local Loss=0.1115 | Test Loss=0.2647 | Acc=0.8579 | Precision=0.7990 | Recall=0.9914 | F1=0.8848 | Time=3.60s
+[2026-10-18 15:36:45] [INFO] [FL-Server] 
+============================================================
+[2026-10-18 15:36:45] [INFO] [FL-Server] Training completed successfully! Best F1: 0.8939, Best Acc: 0.8712
+[2026-10-18 15:36:45] [INFO] [FL-Server] Notifying clients to terminate connections...
+[2026-10-18 15:36:45] [INFO] [FL-Server] Server socket closed.
+[2026-10-18 15:38:04] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:38:04] [INFO] [FL-Server] Starting Federated Learning Server
+[2026-10-18 15:38:04] [INFO] [FL-Server] Input Dim: 191 | Classes: 2 | Device: mps
+[2026-10-18 15:38:04] [INFO] [FL-Server] Rounds: 10 | Local Epochs: 2 | LR: 0.01 | Batch: 128
+[2026-10-18 15:38:04] [INFO] [FL-Server] Test samples for evaluation: 82332
+[2026-10-18 15:38:04] [INFO] [FL-Server] ============================================================
+[2026-10-18 15:38:04] [INFO] [FL-Server] Server listening on 0.0.0.0:8080
+[2026-10-18 15:38:04] [INFO] [FL-Server] Waiting for at least 2 clients to register...
+[2026-10-18 15:38:15] [INFO] [FL-Server] Client 'Client_1' registered from 10.20.0.1:60424 (1/2 connected)
+[2026-10-18 15:38:19] [INFO] [FL-Server] Client 'Client_0' registered from 127.0.0.1:49172 (2/2 connected)
+[2026-10-18 15:38:19] [INFO] [FL-Server] All 2 required clients are connected! Starting FL loop.
+[2026-10-18 15:38:21] [INFO] [FL-Server] [Initial Eval] Loss=0.6929 | Acc=0.5213 | F1=0.6130
+[2026-10-18 15:38:21] [INFO] [FL-Server] 
+--- [Round 1/10] ---
+[2026-10-18 15:38:24] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1350, duration=2.52s
+[2026-10-18 15:38:27] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1349, duration=3.81s
+[2026-10-18 15:38:28] [INFO] [FL-Server] Round 01 Summary: Avg Local Loss=0.1350 | Test Loss=0.2754 | Acc=0.8582 | Precision=0.8076 | Recall=0.9747 | F1=0.8833 | Time=7.28s
+[2026-10-18 15:38:28] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8833, Acc: 0.8582)
+[2026-10-18 15:38:28] [INFO] [FL-Server] 
+--- [Round 2/10] ---
+[2026-10-18 15:38:30] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1250, duration=1.72s
+[2026-10-18 15:38:31] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1250, duration=2.40s
+[2026-10-18 15:38:32] [INFO] [FL-Server] Round 02 Summary: Avg Local Loss=0.1250 | Test Loss=0.2892 | Acc=0.8392 | Precision=0.7784 | Recall=0.9896 | F1=0.8714 | Time=3.74s
+[2026-10-18 15:38:32] [INFO] [FL-Server] 
+--- [Round 3/10] ---
+[2026-10-18 15:38:34] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1212, duration=2.27s
+[2026-10-18 15:38:34] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1208, duration=1.76s
+[2026-10-18 15:38:36] [INFO] [FL-Server] Round 03 Summary: Avg Local Loss=0.1210 | Test Loss=0.2715 | Acc=0.8575 | Precision=0.8037 | Recall=0.9807 | F1=0.8834 | Time=3.94s
+[2026-10-18 15:38:36] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8834, Acc: 0.8575)
+[2026-10-18 15:38:36] [INFO] [FL-Server] 
+--- [Round 4/10] ---
+[2026-10-18 15:38:38] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1186, duration=1.76s
+[2026-10-18 15:38:38] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1182, duration=2.28s
+[2026-10-18 15:38:39] [INFO] [FL-Server] Round 04 Summary: Avg Local Loss=0.1184 | Test Loss=0.2656 | Acc=0.8462 | Precision=0.7853 | Recall=0.9918 | F1=0.8766 | Time=3.59s
+[2026-10-18 15:38:39] [INFO] [FL-Server] 
+--- [Round 5/10] ---
+[2026-10-18 15:38:41] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1166, duration=1.71s
+[2026-10-18 15:38:42] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1165, duration=2.35s
+[2026-10-18 15:38:43] [INFO] [FL-Server] Round 05 Summary: Avg Local Loss=0.1165 | Test Loss=0.2699 | Acc=0.8543 | Precision=0.7965 | Recall=0.9879 | F1=0.8819 | Time=3.69s
+[2026-10-18 15:38:43] [INFO] [FL-Server] 
+--- [Round 6/10] ---
+[2026-10-18 15:38:45] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1154, duration=1.73s
+[2026-10-18 15:38:45] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1155, duration=2.27s
+[2026-10-18 15:38:46] [INFO] [FL-Server] Round 06 Summary: Avg Local Loss=0.1155 | Test Loss=0.2717 | Acc=0.8466 | Precision=0.7865 | Recall=0.9903 | F1=0.8767 | Time=3.59s
+[2026-10-18 15:38:46] [INFO] [FL-Server] 
+--- [Round 7/10] ---
+[2026-10-18 15:38:48] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1140, duration=1.72s
+[2026-10-18 15:38:49] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1141, duration=2.26s
+[2026-10-18 15:38:50] [INFO] [FL-Server] Round 07 Summary: Avg Local Loss=0.1140 | Test Loss=0.2508 | Acc=0.8655 | Precision=0.8080 | Recall=0.9912 | F1=0.8903 | Time=3.58s
+[2026-10-18 15:38:50] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.8903, Acc: 0.8655)
+[2026-10-18 15:38:50] [INFO] [FL-Server] 
+--- [Round 8/10] ---
+[2026-10-18 15:38:52] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1134, duration=1.73s
+[2026-10-18 15:38:53] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1134, duration=2.27s
+[2026-10-18 15:38:54] [INFO] [FL-Server] Round 08 Summary: Avg Local Loss=0.1134 | Test Loss=0.2727 | Acc=0.8634 | Precision=0.8082 | Recall=0.9857 | F1=0.8882 | Time=3.59s
+[2026-10-18 15:38:54] [INFO] [FL-Server] 
+--- [Round 9/10] ---
+[2026-10-18 15:38:56] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1124, duration=1.77s
+[2026-10-18 15:38:56] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1126, duration=2.34s
+[2026-10-18 15:38:57] [INFO] [FL-Server] Round 09 Summary: Avg Local Loss=0.1125 | Test Loss=0.2513 | Acc=0.8636 | Precision=0.8079 | Recall=0.9870 | F1=0.8885 | Time=3.69s
+[2026-10-18 15:38:57] [INFO] [FL-Server] 
+--- [Round 10/10] ---
+[2026-10-18 15:38:59] [INFO] [FL-Server]   ✓ Received update from 'Client_1': samples=70136, local_loss=0.1117, duration=1.86s
+[2026-10-18 15:39:00] [INFO] [FL-Server]   ✓ Received update from 'Client_0': samples=70137, local_loss=0.1122, duration=2.28s
+[2026-10-18 15:39:01] [INFO] [FL-Server] Round 10 Summary: Avg Local Loss=0.1119 | Test Loss=0.2197 | Acc=0.8885 | Precision=0.8416 | Recall=0.9824 | F1=0.9066 | Time=3.60s
+[2026-10-18 15:39:01] [INFO] [FL-Server]   ★ New best model saved to outputs/checkpoints/best_global_model.pt (F1: 0.9066, Acc: 0.8885)
+[2026-10-18 15:39:01] [INFO] [FL-Server] 
+============================================================
+[2026-10-18 15:39:01] [INFO] [FL-Server] Training completed successfully! Best F1: 0.9066, Best Acc: 0.8885
+[2026-10-18 15:39:01] [INFO] [FL-Server] Notifying clients to terminate connections...
+[2026-10-18 15:39:01] [INFO] [FL-Server] Server socket closed.

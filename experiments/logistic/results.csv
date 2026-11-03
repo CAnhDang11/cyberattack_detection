@@ -1,0 +1,2 @@
+accuracy,loss,macro_precision,macro_recall,macro_f1-score,weighted_precision,weighted_recall,weighted_f1-score,roc_auc_ovr_macro,roc_auc_unavailable_reason,method,case,seed,train_s,evaluation_s,model,communication_bytes,train_loss,world_size,test_samples,selected_val_macro_f1
+0.7147889034640237,0.6611254215240479,0.3540298405682393,0.37888434963603346,0.3392281389343183,0.77686310326233,0.7147889034640237,0.7192980197455696,0.9485632873778851,,baseline,equal_iid,42,72.62955545799923,0.1626044169825036,logistic,,0.5788204669952393,1,82332,0.40816353976162373

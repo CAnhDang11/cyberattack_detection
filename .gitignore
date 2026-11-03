@@ -1,0 +1,27 @@
+# Python environments and caches (including archived projects)
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Local editor and OS files
+.vscode/
+.idea/
+.DS_Store
+
+# Raw datasets; keep source code, labels, and reports in Git
+/UNSW_NB15_*.csv
+/CSV Files/
+
+# Prepared arrays and serialized models can be very large
+*.npz
+*.npy
+*.joblib
+*.pkl
+*.pickle
+*.ckpt
+
+# Generated training logs
+

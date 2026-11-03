@@ -1,0 +1,2 @@
+-r requirements.txt
+flwr>=1.12,<2
