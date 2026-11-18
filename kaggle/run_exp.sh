@@ -5,6 +5,8 @@
 #   --no-wait: push and register in kaggle/_build/pending.txt; collect later with kaggle/wait_all.sh
 set -e
 cd "$(dirname $0)/.."
+# Optional .env (gitignored, see .env.example): KAGGLE_API_TOKEN, KAGGLE_USER
+[ -f .env ] && { set -a; . ./.env; set +a; }
 KAGGLE=.venv/bin/kaggle; PY=.venv/bin/python
 EXP=b1; SEED=42; CONFIG=''; SMOKE=0; WAIT=1; ACC=NvidiaTeslaT4; RETRY=0
 while [ $# -gt 0 ]; do case $1 in

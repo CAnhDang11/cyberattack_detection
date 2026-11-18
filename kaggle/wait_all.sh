@@ -1,6 +1,7 @@
 #!/bin/zsh
 # Wait for every kernel pushed with --no-wait, download each output, then clear the list.
 cd "$(dirname $0)/.."
+[ -f .env ] && { set -a; . ./.env; set +a; }   # KAGGLE_API_TOKEN (see .env.example)
 KAGGLE=.venv/bin/kaggle; P=kaggle/_build/pending.txt
 [ -s $P ] || { echo "nothing pending"; exit 0; }
 typeset -A done
