@@ -23,6 +23,18 @@ python -m unsw.run prepare --output experiments/data --limit-per-class 0
 python -m unsw.run centralized --epochs 10 --output experiments/centralized_full
 ```
 
+### Re-split from the raw files (`dataset/UNSW-NB15_1..4.csv`)
+
+Column names come from `NUSW-NB15_features.csv`. `srcip/sport/dstip/dsport/stime/ltime` are excluded from features (attacks all come from 175.45.176.0/24). Rows with an identical feature vector always land in the same split (group-stratified), so duplicates cannot leak between train/val/test.
+
+```bash
+python -m unsw.raw analyze --raw-dir dataset --output experiments/raw_analysis   # REPORT.md, class_stats.csv, conflict_matrix.csv
+python -m unsw.run prepare --raw-dir dataset --output experiments/data_raw       # 70/10/20; --test-size --val-size --limit-per-class
+python -m unsw.run prepare --raw-dir dataset --label-scheme merged --output experiments/data_raw_merged
+```
+
+`--label-scheme merged` trains on 7 classes: Analysis, Backdoor, DoS and Exploits become `Exploit-like` (on flow features their maximum achievable recall is 16–88%; merged it is 100%). No row is relabelled or dropped: the original `attack_cat` is stored as `y_orig_train/val/test` + `orig_names` in `data.npz`, the split is identical for both schemes (stratified on the original classes), and every run writes `original_breakdown.csv` (original class → predicted class). `labels.json` beside `data.npz` defines the classes; models size their output from it. Each run's `per_class.csv` includes `max_recall`, the ceiling imposed by identical test rows with different labels, and `results.json` includes `max_accuracy`.
+
 ## Exact training commands
 
 ```bash
