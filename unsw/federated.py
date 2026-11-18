@@ -2,8 +2,7 @@
 import math
 import numpy as np
 import torch
-from torch.utils.data import DataLoader
-from .model import model, dataset, train_epoch
+from .model import model, train_epoch, TensorLoader
 
 
 def run(data, parts, args, initial, callback):
@@ -24,14 +23,14 @@ def run(data, parts, args, initial, callback):
         def __init__(self, indices):
             self.indices = indices
         def fit(self, parameters, config):
-            net = model(data['X_train'].shape[1],args.hidden,args.hidden_layers)
+            net = model(data['X_train'].shape[1],args.hidden,args.hidden_layers,len(data['labels']))
             put(net,parameters)
             reference=[p.detach().clone() for p in net.parameters()]
             opt=torch.optim.Adam(net.parameters(),lr=args.lr,weight_decay=args.l2)
-            loader=DataLoader(dataset(data['X_train'][self.indices], data['y_train'][self.indices]),batch_size=args.batch_size,shuffle=True)
+            loader=TensorLoader(data['X_train'],data['y_train'],args.batch_size,indices=self.indices)
             total=count=0
             for _ in range(args.local_epochs):
-                s,n=train_epoch(net,loader,opt,reference=reference,mu=config.get('proximal_mu',0))
+                s,n=train_epoch(net,loader,opt,reference=reference,mu=config.get('proximal_mu',0),weight=args.weight_tensor)
                 total+=s; count+=n
             return get(net),len(self.indices),{'train_loss':total/count}
     clients=[Client(p) for p in parts]

@@ -13,7 +13,7 @@ def main():
         frame=pd.read_csv(path); frame['run_directory']=str(path.parent); frames.append(frame)
     if not frames: raise ValueError('No completed results')
     df=pd.concat(frames,ignore_index=True); df.to_csv(root/'comparison.csv',index=False)
-    cols=[c for c in ['model','method','seed','case','selected_val_macro_f1','accuracy','macro_f1-score','weighted_f1-score','train_s'] if c in df]
+    cols=[c for c in ['model','method','seed','case','selected_val_macro_f1','accuracy','macro_f1-score','weighted_f1-score','max_accuracy','train_s'] if c in df]
     report='# Measured multiclass results\n\n'+df[cols].to_csv(index=False)
     report+='\nThese are short CPU validation runs, not tuned benchmarks. No improvement claim is warranted. '
     report+='Centralized and DDP train on the union of client partitions; cases affect data order, not data availability. '
