@@ -1,0 +1,13 @@
+{
+  "id": "{user}/unsw-xgb-baseline",
+  "title": "UNSW XGB Baseline",
+  "code_file": "kaggle_run.ipynb",
+  "language": "python",
+  "kernel_type": "notebook",
+  "is_private": true,
+  "enable_gpu": true,
+  "enable_internet": false,
+  "dataset_sources": ["mrwellsdavid/unsw-nb15", "{user}/unsw-ids-code"],
+  "competition_sources": [],
+  "kernel_sources": []
+}
