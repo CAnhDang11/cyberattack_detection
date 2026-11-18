@@ -23,5 +23,22 @@ __pycache__/
 *.pickle
 *.ckpt
 
-# Generated training logs
+# Generated training logs and run stdout (results.json/csv, per_class.csv, PNGs stay tracked)
+*.stdout
+*.prepare.log
 
+dataset/*.csv
+
+claude.md
+experiments/
+
+# Kaggle / notebook scratch output
+/kaggle_working/
+*.zip
+.env
+
+# Kaggle build staging + one-off chains of experiments no longer in the code (B1, C2b)
+/kaggle/_build/
+/kaggle/overnight.sh
+/kaggle/chain_10class.sh
+/kaggle/push_and_run.sh
