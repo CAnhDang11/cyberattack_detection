@@ -1,0 +1,1 @@
+{"n_estimators":500,"max_depth":10,"tree_lr":0.1,"class_weight_alpha":0.5,"xgb_params":{}}

@@ -60,7 +60,10 @@ class PipelineTests(unittest.TestCase):
         pp=Preprocessor().fit(tr); before=pp.mean.copy()
         pp.transform(pd.DataFrame({'x':[999.],'proto':['unseen']}))
         np.testing.assert_array_equal(before,pp.mean)
-        self.assertEqual(pp.transform(tr).shape[1],2)
+        self.assertEqual(pp.transform(tr).shape[1],3)  # x + one column per training proto (a, b)
+        # an unseen category is all-zero, i.e. distinct from every training category
+        np.testing.assert_array_equal(pp.transform(pd.DataFrame({'x':[1.],'proto':['unseen']}))[0,1:],[0,0])
+        self.assertEqual(pp.transform(pd.DataFrame({'x':[1.],'proto':['a']}))[0,1:].sum(),1)
         r=metrics(np.arange(10),np.eye(10)*.99+.001)
         self.assertEqual(r['class_names'],NAMES); self.assertEqual(len(r['per_class']),10)
         self.assertEqual(np.asarray(r['confusion_matrix']).shape,(10,10))
@@ -83,25 +86,61 @@ class PipelineTests(unittest.TestCase):
             self.assertFalse(set(d['train_ids']) & set(d['val_ids']))
             self.assertEqual(len(d['y_test']),30)
             np.testing.assert_array_equal(d['y_test'],encode(test.attack_cat))
-            self.assertEqual(load(p/'prepared/data.npz')['X_train'].shape[1],1)
+            self.assertEqual(load(p/'prepared/data.npz')['X_train'].shape[1],2)
             for case in CASES:
                 parts=partition(d['y_train'],4,case)
                 union=np.concatenate(parts)
                 self.assertEqual(len(np.unique(union)),len(d['y_train']))
                 self.assertFalse(set(d['train_ids'][union]) & set(d['test_ids']))
 
-    def smoke(self,method,ddp=False,baseline_model='logistic'):
+    def test_merged_scheme(self):
+        from unsw.data import scheme_labels, prepare
+        m=scheme_labels('merged')
+        self.assertEqual(list(m),['Normal','Exploit-like','Fuzzers','Generic','Reconnaissance','Shellcode','Worms'])
+        np.testing.assert_array_equal(encode(['DoS','Backdoor','Analysis','Exploits','Worms'],m,'merged'),[1,1,1,1,6])
+        self.assertEqual(model(3,16,1,n_classes=7)(torch.ones(2,3)).shape,(2,7))
+        r=metrics(np.arange(7),np.eye(7)*.99+.001,list(m))
+        self.assertEqual(len(r['per_class']),7); self.assertEqual(r['accuracy'],1)
+        with tempfile.TemporaryDirectory() as tmp:
+            p=Path(tmp)
+            df=pd.DataFrame({'x':np.arange(300),'proto':['tcp']*300,'attack_cat':NAMES*30,'label':[1]*300})
+            df.to_csv(p/'train.csv',index=False); df.to_csv(p/'test.csv',index=False)
+            d=prepare(p/'train.csv',p/'test.csv',p/'prepared',scheme='merged')
+            loaded=load(p/'prepared/data.npz')
+            self.assertEqual(loaded['labels'],m)
+            # original attack_cat preserved untouched next to the merged target
+            np.testing.assert_array_equal(d['y_orig_test'],encode(df.attack_cat))
+            np.testing.assert_array_equal(d['y_test'],encode(df.attack_cat,m,'merged'))
+        self.smoke('centralized',n_classes=7); self.smoke('baseline',n_classes=7)
+
+    def test_class_weights(self):
+        from unsw.data import class_weights
+        y=np.array([0]*90+[1]*9+[2]*1)
+        np.testing.assert_allclose(class_weights(y,3,0),[1,1,1])
+        w=class_weights(y,3,1)
+        self.assertAlmostEqual((w[y]).sum(),len(y))           # weighted sample count preserved
+        np.testing.assert_allclose(w*np.bincount(y),[w[0]*90]*3)  # alpha=1 -> balanced class mass
+        self.assertTrue(w[2]>w[1]>w[0])
+        with self.assertRaises(ValueError): class_weights(y,3,-1)
+        with self.assertRaises(ValueError): class_weights(np.array([0,1]),3,1)
+        self.smoke('centralized',extra=['--class-weight-alpha','0.5'])
+        self.smoke('baseline',extra=['--class-weight-alpha','0.5'])
+
+    def smoke(self,method,ddp=False,baseline_model='logistic',n_classes=10,extra=()):
         with tempfile.TemporaryDirectory() as tmp:
             p=Path(tmp); rng=np.random.default_rng(7)
             arrays={}
             for split,n in [('train',200),('val',40),('test',40)]:
                 arrays['X_'+split]=rng.normal(size=(n,4)).astype('float32')
-                arrays['y_'+split]=np.arange(n)%10
+                arrays['y_'+split]=np.arange(n)%n_classes
             arrays['train_ids']=np.array([f'train:{i}' for i in range(200)])
             arrays['test_ids']=np.array([f'test:{i}' for i in range(40)])
             self.assertFalse(set(arrays['train_ids']) & set(arrays['test_ids']))
-            np.savez(p/'data.npz',**arrays); (p/'labels.json').write_text(json.dumps(LABELS))
-            cmd=[sys.executable,'-m','unsw.run',method,'--data',str(p/'data.npz'),'--output',str(p/'run'),'--epochs','1','--rounds','1','--clients','2','--hidden','16']
+            names=NAMES if n_classes==10 else [f'c{i}' for i in range(n_classes)]
+            if n_classes!=10:
+                arrays['y_orig_test']=np.arange(40)%10; arrays['orig_names']=np.asarray(NAMES)
+            np.savez(p/'data.npz',**arrays); (p/'labels.json').write_text(json.dumps({n:i for i,n in enumerate(names)}))
+            cmd=[sys.executable,'-m','unsw.run',method,'--data',str(p/'data.npz'),'--output',str(p/'run'),'--epochs','1','--rounds','1','--clients','2','--hidden','16']+list(extra)
             if method=='baseline':
                 cmd+=['--baseline-model',baseline_model,'--lr','0.002','--l2','0.01',
                       '--n-estimators','3','--max-depth','2','--tree-lr','0.2']
@@ -114,7 +153,9 @@ class PipelineTests(unittest.TestCase):
             self.assertIn('COMPLETED',log)
             self.assertIn('macro_f1-score',log)
             self.assertEqual(result['test_samples'],40)
-            self.assertEqual(result['class_names'],NAMES)
+            self.assertEqual(result['class_names'],names)
+            self.assertIn('max_accuracy',result)
+            if n_classes!=10: self.assertTrue((p/'run/original_breakdown.csv').exists())
             if method=='baseline':
                 params=json.loads((p/'run/estimator_params.json').read_text())
                 self.assertEqual(result['model'],baseline_model)
